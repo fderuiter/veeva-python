@@ -14,4 +14,4 @@
 
 
 # import models into model package
-from openapi_client.models.vobjects_object_name_actions_merge_post_request_inner import VobjectsObjectNameActionsMergePostRequestInner
+from veeva.models.merge_request import MergeRequest

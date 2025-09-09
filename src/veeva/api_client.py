@@ -25,17 +25,17 @@ import tempfile
 from urllib.parse import quote
 from pydantic import SecretStr
 
-from openapi_client.configuration import Configuration
-from openapi_client.api_response import ApiResponse
-import openapi_client.models
-from openapi_client import rest
-from openapi_client.exceptions import ApiValueError, ApiException
+from veeva.configuration import Configuration
+from veeva.api_response import ApiResponse
+import veeva.models
+from veeva import rest
+from veeva.exceptions import ApiValueError, ApiException
 
 
 class ApiClient:
-    """Generic API client for OpenAPI client library builds.
+    """Generic API client for Veeva Vault API.
 
-    OpenAPI generic API client. This client handles the client-
+    This client handles the client-
     server communication, and is invariant across implementations. Specifics of
     the methods and models for each application are generated from the OpenAPI
     templates.
@@ -77,7 +77,7 @@ class ApiClient:
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'OpenAPI-Generator/1.0.0/python'
+        self.user_agent = 'veeva-vault-sdk/1.0.0/python'
         self.client_side_validation = configuration.client_side_validation
 
     def __enter__(self):
@@ -291,7 +291,7 @@ class ApiClient:
             obj_dict = obj
         else:
             # Convert model obj to dict except
-            # attributes `openapi_types`, `attribute_map`
+            # attributes `veeva_types`, `attribute_map`
             # and attributes which value is not None.
             # Convert attribute name to json key in
             # model definition for request.
@@ -351,7 +351,7 @@ class ApiClient:
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(openapi_client.models, klass)
+                klass = getattr(veeva.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

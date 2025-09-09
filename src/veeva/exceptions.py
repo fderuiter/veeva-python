@@ -12,11 +12,11 @@
 """  # noqa: E501
 
 
-class OpenApiException(Exception):
-    """The base exception class for all OpenAPIExceptions"""
+class VeevaException(Exception):
+    """The base exception class for all VeevaExceptions"""
 
 
-class ApiTypeError(OpenApiException, TypeError):
+class ApiTypeError(VeevaException, TypeError):
     def __init__(self, msg, path_to_item=None, valid_classes=None,
                  key_type=None) -> None:
         """ Raises an exception for TypeErrors
@@ -45,7 +45,7 @@ class ApiTypeError(OpenApiException, TypeError):
         super(ApiTypeError, self).__init__(full_msg)
 
 
-class ApiValueError(OpenApiException, ValueError):
+class ApiValueError(VeevaException, ValueError):
     def __init__(self, msg, path_to_item=None) -> None:
         """
         Args:
@@ -63,7 +63,7 @@ class ApiValueError(OpenApiException, ValueError):
         super(ApiValueError, self).__init__(full_msg)
 
 
-class ApiAttributeError(OpenApiException, AttributeError):
+class ApiAttributeError(VeevaException, AttributeError):
     def __init__(self, msg, path_to_item=None) -> None:
         """
         Raised when an attribute reference or assignment fails.
@@ -82,7 +82,7 @@ class ApiAttributeError(OpenApiException, AttributeError):
         super(ApiAttributeError, self).__init__(full_msg)
 
 
-class ApiKeyError(OpenApiException, KeyError):
+class ApiKeyError(VeevaException, KeyError):
     def __init__(self, msg, path_to_item=None) -> None:
         """
         Args:
@@ -99,7 +99,7 @@ class ApiKeyError(OpenApiException, KeyError):
         super(ApiKeyError, self).__init__(full_msg)
 
 
-class ApiException(OpenApiException):
+class ApiException(VeevaException):
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
         if http_resp:

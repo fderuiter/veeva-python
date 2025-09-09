@@ -107,7 +107,7 @@ class Configuration:
         self.logger = {}
         """Logging Settings
         """
-        self.logger["package_logger"] = logging.getLogger("openapi_client")
+        self.logger["package_logger"] = logging.getLogger("veeva")
         self.logger["urllib3_logger"] = logging.getLogger("urllib3")
         self.logger_format = '%(asctime)s %(levelname)s %(message)s'
         """Log format
@@ -364,7 +364,7 @@ class Configuration:
 
         :return: The report for debugging.
         """
-        return "Python SDK Debug Report:\n"\
+        return "Veeva Vault SDK Debug Report:\n"\
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 1.0.0\n"\
@@ -376,28 +376,7 @@ class Configuration:
 
         :return: An array of host settings
         """
-        return [
-            {
-                'url': "{{vaultDNS}}/api/{version}",
-                'description': "No description provided",
-                'variables': {
-                    'version': {
-                        'description': "No description provided",
-                        'default_value': "v25.1",
-                        }
-                    }
-            },
-            {
-                'url': "login.veevavault.com/api/{version}",
-                'description': "No description provided",
-                'variables': {
-                    'version': {
-                        'description': "No description provided",
-                        'default_value': "v25.1",
-                        }
-                    }
-            }
-        ]
+        return []
 
     def get_host_from_settings(self, index, variables=None, servers=None):
         """Gets host URL based on the index and variables
