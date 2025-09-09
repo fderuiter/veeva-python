@@ -1,423 +1,423 @@
-# openapi_client.DefaultApi
+# veeva.VeevaApi
 
 All URIs are relative to *http://}/api/v25.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**api_get**](DefaultApi.md#api_get) | **GET** /api/ | Retrieve API Versions
-[**api_mdl_components_component_type_and_record_name_files_get**](DefaultApi.md#api_mdl_components_component_type_and_record_name_files_get) | **GET** /api/mdl/components/{component_type_and_record_name}/files | Retrieve Content File
-[**api_mdl_components_component_type_and_record_name_get**](DefaultApi.md#api_mdl_components_component_type_and_record_name_get) | **GET** /api/mdl/components/{component_type_and_record_name} | Retrieve Component Record (MDL)
-[**api_mdl_execute_async_job_id_results_get**](DefaultApi.md#api_mdl_execute_async_job_id_results_get) | **GET** /api/mdl/execute_async/{job_id}/results | Retrieve Asynchronous MDL Script Results
-[**api_mdl_execute_async_post**](DefaultApi.md#api_mdl_execute_async_post) | **POST** /api/mdl/execute_async | Execute MDL Script Asynchronously
-[**api_mdl_execute_post**](DefaultApi.md#api_mdl_execute_post) | **POST** /api/mdl/execute | Execute MDL Script
-[**api_mdl_files_post**](DefaultApi.md#api_mdl_files_post) | **POST** /api/mdl/files | Upload Content File
-[**audittrail_audit_trail_type_get**](DefaultApi.md#audittrail_audit_trail_type_get) | **GET** /audittrail/{audit_trail_type} | Retrieve Audit Details
-[**auth_discovery_post**](DefaultApi.md#auth_discovery_post) | **POST** /auth/discovery | Authentication Type Discovery
-[**auth_oauth_session_oath_oidc_profile_id_post**](DefaultApi.md#auth_oauth_session_oath_oidc_profile_id_post) | **POST** /auth/oauth/session/{oath_oidc_profile_id} | OAuth 2.0 / OpenID Connect
-[**auth_post**](DefaultApi.md#auth_post) | **POST** /auth | User Name and Password
-[**code_class_name_delete**](DefaultApi.md#code_class_name_delete) | **DELETE** /code/{class_name} | Delete Single Source Code File
-[**code_class_name_disable_put**](DefaultApi.md#code_class_name_disable_put) | **PUT** /code/{class_name}/disable | Disable Vault Extension
-[**code_class_name_enable_put**](DefaultApi.md#code_class_name_enable_put) | **PUT** /code/{class_name}/enable | Enable Vault Extension
-[**code_class_name_get**](DefaultApi.md#code_class_name_get) | **GET** /code/{class_name} | Retrieve Single Source Code File
-[**code_profiler_get**](DefaultApi.md#code_profiler_get) | **GET** /code/profiler | Retrieve All Profiling Sessions
-[**code_profiler_post**](DefaultApi.md#code_profiler_post) | **POST** /code/profiler | Create Profiling Session
-[**code_profiler_session_name_actions_end_post**](DefaultApi.md#code_profiler_session_name_actions_end_post) | **POST** /code/profiler/{session_name}/actions/end | End Profiling Session
-[**code_profiler_session_name_delete**](DefaultApi.md#code_profiler_session_name_delete) | **DELETE** /code/profiler/{session_name} | Delete Profiling Session
-[**code_profiler_session_name_get**](DefaultApi.md#code_profiler_session_name_get) | **GET** /code/profiler/{session_name} | Retrieve Profiling Session
-[**code_profiler_session_name_results_get**](DefaultApi.md#code_profiler_session_name_results_get) | **GET** /code/profiler/{session_name}/results | Download Profiling Session Results
-[**code_put**](DefaultApi.md#code_put) | **PUT** /code | Add or Replace Single Source Code File
-[**composites_trees_edl_hierarchy_or_template_actions_listnodes_post**](DefaultApi.md#composites_trees_edl_hierarchy_or_template_actions_listnodes_post) | **POST** /composites/trees/{edl_hierarchy_or_template}/actions/listnodes | Retrieve Specific Root Nodes
-[**composites_trees_edl_hierarchy_or_template_get**](DefaultApi.md#composites_trees_edl_hierarchy_or_template_get) | **GET** /composites/trees/{edl_hierarchy_or_template} | Retrieve All Root Nodes
-[**composites_trees_edl_hierarchy_v_parent_node_id_children_get**](DefaultApi.md#composites_trees_edl_hierarchy_v_parent_node_id_children_get) | **GET** /composites/trees/edl_hierarchy__v/{parent_node_id}/children | Retrieve a Node&#39;s Children
-[**composites_trees_edl_hierarchy_v_parent_node_id_children_put**](DefaultApi.md#composites_trees_edl_hierarchy_v_parent_node_id_children_put) | **PUT** /composites/trees/edl_hierarchy__v/{parent_node_id}/children | Update Node Order
-[**configuration_component_type_and_record_name_get**](DefaultApi.md#configuration_component_type_and_record_name_get) | **GET** /configuration/{component_type_and_record_name} | Retrieve Component Record (XML/JSON)
-[**configuration_component_type_get**](DefaultApi.md#configuration_component_type_get) | **GET** /configuration/{component_type} | Retrieve Component Record Collection
-[**configuration_object_name_and_object_type_get**](DefaultApi.md#configuration_object_name_and_object_type_get) | **GET** /configuration/{object_name_and_object_type} | Retrieve Details from a Specific Object
-[**configuration_objecttype_get**](DefaultApi.md#configuration_objecttype_get) | **GET** /configuration/Objecttype | Retrieve Details from All Object Types
-[**configuration_role_assignment_rule_delete**](DefaultApi.md#configuration_role_assignment_rule_delete) | **DELETE** /configuration/role_assignment_rule | Delete Lifecycle Role Assignment Override Rules
-[**configuration_role_assignment_rule_get**](DefaultApi.md#configuration_role_assignment_rule_get) | **GET** /configuration/role_assignment_rule | Retrieve Lifecycle Role Assignment Rules (Default &amp; Override)
-[**configuration_role_assignment_rule_post**](DefaultApi.md#configuration_role_assignment_rule_post) | **POST** /configuration/role_assignment_rule | Create Lifecycle Role Assignment Override Rules
-[**configuration_role_assignment_rule_put**](DefaultApi.md#configuration_role_assignment_rule_put) | **PUT** /configuration/role_assignment_rule | Update Lifecycle Role Assignment Rules (Default &amp; Override)
-[**delegation_login_post**](DefaultApi.md#delegation_login_post) | **POST** /delegation/login | Initiate Delegated Session
-[**delegation_vaults_get**](DefaultApi.md#delegation_vaults_get) | **GET** /delegation/vaults | Retrieve Delegations
-[**keep_alive_post**](DefaultApi.md#keep_alive_post) | **POST** /keep-alive | Session Keep Alive
-[**limits_get**](DefaultApi.md#limits_get) | **GET** /limits | Retrieve Limits on Objects
-[**logs_api_usage_get**](DefaultApi.md#logs_api_usage_get) | **GET** /logs/api_usage | Download Daily API Usage
-[**logs_code_debug_get**](DefaultApi.md#logs_code_debug_get) | **GET** /logs/code/debug | Retrieve All Debug Logs
-[**logs_code_debug_id_actions_reset_delete**](DefaultApi.md#logs_code_debug_id_actions_reset_delete) | **DELETE** /logs/code/debug/{id}/actions/reset | Delete Debug Log
-[**logs_code_debug_id_actions_reset_post**](DefaultApi.md#logs_code_debug_id_actions_reset_post) | **POST** /logs/code/debug/{id}/actions/reset | Reset Debug Log
-[**logs_code_debug_id_files_get**](DefaultApi.md#logs_code_debug_id_files_get) | **GET** /logs/code/debug/{id}/files | Download Debug Log Files
-[**logs_code_debug_id_get**](DefaultApi.md#logs_code_debug_id_get) | **GET** /logs/code/debug/{id} | Retrieve Single Debug Log
-[**logs_code_debug_post**](DefaultApi.md#logs_code_debug_post) | **POST** /logs/code/debug | Create Debug Log
-[**logs_code_runtime_get**](DefaultApi.md#logs_code_runtime_get) | **GET** /logs/code/runtime | Download SDK Runtime Log
-[**messages_message_type_actions_import_post**](DefaultApi.md#messages_message_type_actions_import_post) | **POST** /messages/{message_type}/actions/import | Import Bulk Translation File
-[**messages_message_type_language_lang_actions_export_post**](DefaultApi.md#messages_message_type_language_lang_actions_export_post) | **POST** /messages/{message_type}/language/{lang}/actions/export | Export Bulk Translation File
-[**metadata_audittrail_audit_trail_type_get**](DefaultApi.md#metadata_audittrail_audit_trail_type_get) | **GET** /metadata/audittrail/{audit_trail_type} | Retrieve Audit Metadata
-[**metadata_audittrail_get**](DefaultApi.md#metadata_audittrail_get) | **GET** /metadata/audittrail | Retrieve Audit Types
-[**metadata_components_component_type_get**](DefaultApi.md#metadata_components_component_type_get) | **GET** /metadata/components/{component_type} | Retrieve Component Type Metadata
-[**metadata_components_get**](DefaultApi.md#metadata_components_get) | **GET** /metadata/components | Retrieve All Component Metadata
-[**metadata_objects_binders_templates_bindernodes_get**](DefaultApi.md#metadata_objects_binders_templates_bindernodes_get) | **GET** /metadata/objects/binders/templates/bindernodes | Retrieve Binder Template Node Metadata
-[**metadata_objects_binders_templates_get**](DefaultApi.md#metadata_objects_binders_templates_get) | **GET** /metadata/objects/binders/templates | Retrieve Binder Template Metadata
-[**metadata_objects_documents_annotations_placemarks_types_placemark_type_get**](DefaultApi.md#metadata_objects_documents_annotations_placemarks_types_placemark_type_get) | **GET** /metadata/objects/documents/annotations/placemarks/types/{placemark_type} | Retrieve Annotation Placemark Type Metadata
-[**metadata_objects_documents_annotations_references_types_reference_type_get**](DefaultApi.md#metadata_objects_documents_annotations_references_types_reference_type_get) | **GET** /metadata/objects/documents/annotations/references/types/{reference_type} | Retrieve Annotation Reference Type Metadata
-[**metadata_objects_documents_annotations_types_annotation_type_get**](DefaultApi.md#metadata_objects_documents_annotations_types_annotation_type_get) | **GET** /metadata/objects/documents/annotations/types/{annotation_type} | Retrieve Annotation Type Metadata
-[**metadata_objects_documents_events_event_type_types_event_subtype_get**](DefaultApi.md#metadata_objects_documents_events_event_type_types_event_subtype_get) | **GET** /metadata/objects/documents/events/{event_type}/types/{event_subtype} | Retrieve Document Event SubType Metadata
-[**metadata_objects_documents_events_get**](DefaultApi.md#metadata_objects_documents_events_get) | **GET** /metadata/objects/documents/events | Retrieve Document Event Types and Subtypes
-[**metadata_objects_documents_lock_get**](DefaultApi.md#metadata_objects_documents_lock_get) | **GET** /metadata/objects/documents/lock | Retrieve Document Lock Metadata
-[**metadata_objects_documents_properties_find_common_post**](DefaultApi.md#metadata_objects_documents_properties_find_common_post) | **POST** /metadata/objects/documents/properties/find_common | Retrieve Common Document Fields
-[**metadata_objects_documents_properties_get**](DefaultApi.md#metadata_objects_documents_properties_get) | **GET** /metadata/objects/documents/properties | Retrieve All Document Fields
-[**metadata_objects_documents_templates_get**](DefaultApi.md#metadata_objects_documents_templates_get) | **GET** /metadata/objects/documents/templates | Retrieve Document Template Metadata
-[**metadata_objects_documents_types_get**](DefaultApi.md#metadata_objects_documents_types_get) | **GET** /metadata/objects/documents/types | Retrieve All Document Types
-[**metadata_objects_documents_types_type_get**](DefaultApi.md#metadata_objects_documents_types_type_get) | **GET** /metadata/objects/documents/types/{type} | Retrieve Document Type
-[**metadata_objects_documents_types_type_relationships_get**](DefaultApi.md#metadata_objects_documents_types_type_relationships_get) | **GET** /metadata/objects/documents/types/{type}/relationships | Retrieve Document Type Relationships
-[**metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get**](DefaultApi.md#metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get) | **GET** /metadata/objects/documents/types/{type}/subtypes/{subtype}/classifications/{classification} | Retrieve Document Classification
-[**metadata_objects_documents_types_type_subtypes_subtype_get**](DefaultApi.md#metadata_objects_documents_types_type_subtypes_subtype_get) | **GET** /metadata/objects/documents/types/{type}/subtypes/{subtype} | Retrieve Document Subtype
-[**metadata_objects_groups_get**](DefaultApi.md#metadata_objects_groups_get) | **GET** /metadata/objects/groups | Retrieve Group Metadata
-[**metadata_objects_securitypolicies_get**](DefaultApi.md#metadata_objects_securitypolicies_get) | **GET** /metadata/objects/securitypolicies | Retrieve Security Policy Metadata
-[**metadata_objects_users_get**](DefaultApi.md#metadata_objects_users_get) | **GET** /metadata/objects/users | Retrieve User Metadata
-[**metadata_query_archived_documents_relationships_document_signature_sysr_get**](DefaultApi.md#metadata_query_archived_documents_relationships_document_signature_sysr_get) | **GET** /metadata/query/archived_documents/relationships/document_signature__sysr | Retrieve Archived Document Signature Metadata
-[**metadata_query_documents_relationships_document_signature_sysr_get**](DefaultApi.md#metadata_query_documents_relationships_document_signature_sysr_get) | **GET** /metadata/query/documents/relationships/document_signature__sysr | Retrieve Document Signature Metadata
-[**metadata_vobjects_get**](DefaultApi.md#metadata_vobjects_get) | **GET** /metadata/vobjects | Retrieve Object Collection
-[**metadata_vobjects_object_name_actions_canceldeployment_post**](DefaultApi.md#metadata_vobjects_object_name_actions_canceldeployment_post) | **POST** /metadata/vobjects/{object_name}/actions/canceldeployment | Cancel Raw Object Deployment
-[**metadata_vobjects_object_name_fields_object_field_name_get**](DefaultApi.md#metadata_vobjects_object_name_fields_object_field_name_get) | **GET** /metadata/vobjects/{object_name}/fields/{object_field_name} | Retrieve Object Field Metadata
-[**metadata_vobjects_object_name_get**](DefaultApi.md#metadata_vobjects_object_name_get) | **GET** /metadata/vobjects/{object_name} | Retrieve Object Metadata
-[**metadata_vobjects_object_name_page_layouts_get**](DefaultApi.md#metadata_vobjects_object_name_page_layouts_get) | **GET** /metadata/vobjects/{object_name}/page_layouts | Retrieve Page Layouts
-[**metadata_vobjects_object_name_page_layouts_layout_name_get**](DefaultApi.md#metadata_vobjects_object_name_page_layouts_layout_name_get) | **GET** /metadata/vobjects/{object_name}/page_layouts/{layout_name} | Retrieve Page Layout Metadata
-[**notifications_histories_get**](DefaultApi.md#notifications_histories_get) | **GET** /notifications/histories | Retrieve Email Notification Histories
-[**object_workflow_actions_action_get**](DefaultApi.md#object_workflow_actions_action_get) | **GET** /object/workflow/actions/{action} | Retrieve Bulk Workflow Action Details
-[**object_workflow_actions_action_post**](DefaultApi.md#object_workflow_actions_action_post) | **POST** /object/workflow/actions/{action} | Initiate Workflow Actions on Multiple Workflows
-[**object_workflow_actions_canceltasks_post**](DefaultApi.md#object_workflow_actions_canceltasks_post) | **POST** /object/workflow/actions/canceltasks | Cancel Workflow Tasks
-[**object_workflow_actions_cancelworkflows_post**](DefaultApi.md#object_workflow_actions_cancelworkflows_post) | **POST** /object/workflow/actions/cancelworkflows | Cancel Workflows
-[**object_workflow_actions_get**](DefaultApi.md#object_workflow_actions_get) | **GET** /object/workflow/actions | Retrieve Bulk Workflow Actions
-[**object_workflow_actions_reassigntasks_post**](DefaultApi.md#object_workflow_actions_reassigntasks_post) | **POST** /object/workflow/actions/reassigntasks | Reassign Workflow Tasks
-[**object_workflow_actions_replaceworkflowowner_post**](DefaultApi.md#object_workflow_actions_replaceworkflowowner_post) | **POST** /object/workflow/actions/replaceworkflowowner | Replace Workflow Owner
-[**objects_binders_actions_export_job_id_results_get**](DefaultApi.md#objects_binders_actions_export_job_id_results_get) | **GET** /objects/binders/actions/export/{job_id}/results | Retrieve Binder Export Results
-[**objects_binders_binder_id_actions_export_post**](DefaultApi.md#objects_binders_binder_id_actions_export_post) | **POST** /objects/binders/{binder_id}/actions/export | Export Binder (Latest Version)
-[**objects_binders_binder_id_actions_post**](DefaultApi.md#objects_binders_binder_id_actions_post) | **POST** /objects/binders/{binder_id}/actions | Refresh Binder Auto-Filing
-[**objects_binders_binder_id_binding_rule_put**](DefaultApi.md#objects_binders_binder_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/binding_rule | Update Binding Rule
-[**objects_binders_binder_id_delete**](DefaultApi.md#objects_binders_binder_id_delete) | **DELETE** /objects/binders/{binder_id} | Delete Binder
-[**objects_binders_binder_id_documents_node_id_binding_rule_put**](DefaultApi.md#objects_binders_binder_id_documents_node_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/documents/{node_id}/binding_rule | Update Binder Document Binding Rule
-[**objects_binders_binder_id_documents_post**](DefaultApi.md#objects_binders_binder_id_documents_post) | **POST** /objects/binders/{binder_id}/documents | Add Document to Binder
-[**objects_binders_binder_id_documents_section_id_delete**](DefaultApi.md#objects_binders_binder_id_documents_section_id_delete) | **DELETE** /objects/binders/{binder_id}/documents/{section_id} | Remove Document from Binder
-[**objects_binders_binder_id_documents_section_id_put**](DefaultApi.md#objects_binders_binder_id_documents_section_id_put) | **PUT** /objects/binders/{binder_id}/documents/{section_id} | Move Document in Binder
-[**objects_binders_binder_id_get**](DefaultApi.md#objects_binders_binder_id_get) | **GET** /objects/binders/{binder_id} | Retrieve Binder
-[**objects_binders_binder_id_post**](DefaultApi.md#objects_binders_binder_id_post) | **POST** /objects/binders/{binder_id} | Create Binder Version
-[**objects_binders_binder_id_put**](DefaultApi.md#objects_binders_binder_id_put) | **PUT** /objects/binders/{binder_id} | Update Binder
-[**objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete**](DefaultApi.md#objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete) | **DELETE** /objects/binders/{binder_id}/roles/{role_name_and_user_or_group}/{id} | Remove Users &amp; Groups from Roles on a Single Binder
-[**objects_binders_binder_id_sections_node_id_binding_rule_put**](DefaultApi.md#objects_binders_binder_id_sections_node_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/sections/{node_id}/binding_rule | Update Binder Section Binding Rule
-[**objects_binders_binder_id_sections_node_id_put**](DefaultApi.md#objects_binders_binder_id_sections_node_id_put) | **PUT** /objects/binders/{binder_id}/sections/{node_id} | Update Binder Section
-[**objects_binders_binder_id_sections_post**](DefaultApi.md#objects_binders_binder_id_sections_post) | **POST** /objects/binders/{binder_id}/sections | Create Binder Section
-[**objects_binders_binder_id_sections_section_id_delete**](DefaultApi.md#objects_binders_binder_id_sections_section_id_delete) | **DELETE** /objects/binders/{binder_id}/sections/{section_id} | Delete Binder Section
-[**objects_binders_binder_id_sections_section_id_get**](DefaultApi.md#objects_binders_binder_id_sections_section_id_get) | **GET** /objects/binders/{binder_id}/sections/{section_id} | Retrieve Binder Sections
-[**objects_binders_binder_id_versions_get**](DefaultApi.md#objects_binders_binder_id_versions_get) | **GET** /objects/binders/{binder_id}/versions | Retrieve All Binder Versions
-[**objects_binders_binder_id_versions_major_version_minor_version_actions_export_post**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_actions_export_post) | **POST** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/actions/export | Export Binder (Specific Version)
-[**objects_binders_binder_id_versions_major_version_minor_version_delete**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_delete) | **DELETE** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Delete Binder Version
-[**objects_binders_binder_id_versions_major_version_minor_version_get**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Retrieve Binder Version
-[**objects_binders_binder_id_versions_major_version_minor_version_put**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_put) | **PUT** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Update Binder Version
-[**objects_binders_binder_id_versions_major_version_minor_version_relationships_post**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_post) | **POST** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships | Create Binder Relationship
-[**objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete) | **DELETE** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Delete Binder Relationship
-[**objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Retrieve Binder Relationship
-[**objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get**](DefaultApi.md#objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/sections/{section_id} | Retrieve Binder Version Section
-[**objects_binders_id_roles_get**](DefaultApi.md#objects_binders_id_roles_get) | **GET** /objects/binders/{id}/roles | Retrieve All Binder Roles
-[**objects_binders_id_roles_post**](DefaultApi.md#objects_binders_id_roles_post) | **POST** /objects/binders/{id}/roles | Assign Users &amp; Groups to Roles on a Single Binder
-[**objects_binders_id_roles_role_name_get**](DefaultApi.md#objects_binders_id_roles_role_name_get) | **GET** /objects/binders/{id}/roles/{role_name} | Retrieve Document Role
-[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get**](DefaultApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get) | **GET** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions | Retrieve Binder User Actions
-[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get**](DefaultApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get) | **GET** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v}/entry_requirements | Retrieve Binder Entry Criteria
-[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put**](DefaultApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put) | **PUT** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v} | Initiate Binder User Action
-[**objects_binders_lifecycle_actions_post**](DefaultApi.md#objects_binders_lifecycle_actions_post) | **POST** /objects/binders/lifecycle_actions | Retrieve User Actions on Multiple Binders
-[**objects_binders_lifecycle_actions_user_action_name_put**](DefaultApi.md#objects_binders_lifecycle_actions_user_action_name_put) | **PUT** /objects/binders/lifecycle_actions/{user_action_name} | Initiate Bulk Binder User Actions
-[**objects_binders_post**](DefaultApi.md#objects_binders_post) | **POST** /objects/binders | Create Binder
-[**objects_binders_templates_get**](DefaultApi.md#objects_binders_templates_get) | **GET** /objects/binders/templates | Retrieve Binder Template Collection
-[**objects_binders_templates_post**](DefaultApi.md#objects_binders_templates_post) | **POST** /objects/binders/templates | Create Binder Template
-[**objects_binders_templates_put**](DefaultApi.md#objects_binders_templates_put) | **PUT** /objects/binders/templates | Update Binder Template
-[**objects_binders_templates_template_name_bindernodes_get**](DefaultApi.md#objects_binders_templates_template_name_bindernodes_get) | **GET** /objects/binders/templates/{template_name}/bindernodes | Retrieve Binder Template Node Attributes
-[**objects_binders_templates_template_name_bindernodes_post**](DefaultApi.md#objects_binders_templates_template_name_bindernodes_post) | **POST** /objects/binders/templates/{template_name}/bindernodes | Create Binder Template Node
-[**objects_binders_templates_template_name_bindernodes_put**](DefaultApi.md#objects_binders_templates_template_name_bindernodes_put) | **PUT** /objects/binders/templates/{template_name}/bindernodes | Replace Binder Template Nodes
-[**objects_binders_templates_template_name_delete**](DefaultApi.md#objects_binders_templates_template_name_delete) | **DELETE** /objects/binders/templates/{template_name} | Delete Binder Template
-[**objects_binders_templates_template_name_get**](DefaultApi.md#objects_binders_templates_template_name_get) | **GET** /objects/binders/templates/{template_name} | Retrieve Binder Template Attributes
-[**objects_deletions_documents_get**](DefaultApi.md#objects_deletions_documents_get) | **GET** /objects/deletions/documents | Retrieve Deleted Document IDs
-[**objects_deletions_vobjects_object_name_get**](DefaultApi.md#objects_deletions_vobjects_object_name_get) | **GET** /objects/deletions/vobjects/{object_name} | Retrieve Deleted Object Record ID
-[**objects_documents_actions_get**](DefaultApi.md#objects_documents_actions_get) | **GET** /objects/documents/actions | Retrieve All Document Workflows
-[**objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get**](DefaultApi.md#objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get) | **GET** /objects/documents/actions/{lifecycle_and_state_and_action}/{job_id}/results | Download Controlled Copy Job Results
-[**objects_documents_actions_workflow_name_get**](DefaultApi.md#objects_documents_actions_workflow_name_get) | **GET** /objects/documents/actions/{workflow_name} | Retrieve Document Workflow Details
-[**objects_documents_actions_workflow_name_post**](DefaultApi.md#objects_documents_actions_workflow_name_post) | **POST** /objects/documents/actions/{workflow_name} | Initiate Document Workflow
-[**objects_documents_annotations_batch_delete**](DefaultApi.md#objects_documents_annotations_batch_delete) | **DELETE** /objects/documents/annotations/batch | Delete Annotations
-[**objects_documents_annotations_batch_post**](DefaultApi.md#objects_documents_annotations_batch_post) | **POST** /objects/documents/annotations/batch | Create Multiple Annotations
-[**objects_documents_annotations_batch_put**](DefaultApi.md#objects_documents_annotations_batch_put) | **PUT** /objects/documents/annotations/batch | Update Annotations
-[**objects_documents_annotations_replies_batch_post**](DefaultApi.md#objects_documents_annotations_replies_batch_post) | **POST** /objects/documents/annotations/replies/batch | Add Annotation Replies
-[**objects_documents_attachments_batch_delete**](DefaultApi.md#objects_documents_attachments_batch_delete) | **DELETE** /objects/documents/attachments/batch | Delete Multiple Document Attachments
-[**objects_documents_attachments_batch_post**](DefaultApi.md#objects_documents_attachments_batch_post) | **POST** /objects/documents/attachments/batch | Create Multiple Document Attachments
-[**objects_documents_attachments_batch_put**](DefaultApi.md#objects_documents_attachments_batch_put) | **PUT** /objects/documents/attachments/batch | Update Multiple Document Attachment Descriptions
-[**objects_documents_batch_actions_fileextract_job_id_results_get**](DefaultApi.md#objects_documents_batch_actions_fileextract_job_id_results_get) | **GET** /objects/documents/batch/actions/fileextract/{job_id}/results | Retrieve Document Export Results
-[**objects_documents_batch_actions_fileextract_post**](DefaultApi.md#objects_documents_batch_actions_fileextract_post) | **POST** /objects/documents/batch/actions/fileextract | Export Documents
-[**objects_documents_batch_actions_reclassify_put**](DefaultApi.md#objects_documents_batch_actions_reclassify_put) | **PUT** /objects/documents/batch/actions/reclassify | Reclassify Multiple Documents
-[**objects_documents_batch_actions_rerender_post**](DefaultApi.md#objects_documents_batch_actions_rerender_post) | **POST** /objects/documents/batch/actions/rerender | Update Multiple Document Renditions
-[**objects_documents_batch_delete**](DefaultApi.md#objects_documents_batch_delete) | **DELETE** /objects/documents/batch | Delete Multiple Documents
-[**objects_documents_batch_lock_delete**](DefaultApi.md#objects_documents_batch_lock_delete) | **DELETE** /objects/documents/batch/lock | Undo Collaborative Authoring Checkout
-[**objects_documents_batch_post**](DefaultApi.md#objects_documents_batch_post) | **POST** /objects/documents/batch | Create Multiple Documents
-[**objects_documents_batch_put**](DefaultApi.md#objects_documents_batch_put) | **PUT** /objects/documents/batch | Update Multiple Documents
-[**objects_documents_doc_id_anchors_get**](DefaultApi.md#objects_documents_doc_id_anchors_get) | **GET** /objects/documents/{doc_id}/anchors | Retrieve Anchor IDs
-[**objects_documents_doc_id_annotations_file_get**](DefaultApi.md#objects_documents_doc_id_annotations_file_get) | **GET** /objects/documents/{doc_id}/annotations/file | Export Document Annotations to PDF
-[**objects_documents_doc_id_annotations_file_post**](DefaultApi.md#objects_documents_doc_id_annotations_file_post) | **POST** /objects/documents/{doc_id}/annotations/file | Import Document Annotations from PDF
-[**objects_documents_doc_id_attachments_attachment_id_delete**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_delete) | **DELETE** /objects/documents/{doc_id}/attachments/{attachment_id} | Delete Single Document Attachment
-[**objects_documents_doc_id_attachments_attachment_id_file_get**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_file_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/file | Download Document Attachment
-[**objects_documents_doc_id_attachments_attachment_id_get**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id} | Retrieve Document Attachment Metadata
-[**objects_documents_doc_id_attachments_attachment_id_put**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_put) | **PUT** /objects/documents/{doc_id}/attachments/{attachment_id} | Update Document Attachment Description
-[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete) | **DELETE** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Delete Single Document Attachment Version
-[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Document Attachment Version
-[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Document Attachment Version Metadata
-[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post) | **POST** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Restore Document Attachment Version
-[**objects_documents_doc_id_attachments_attachment_id_versions_get**](DefaultApi.md#objects_documents_doc_id_attachments_attachment_id_versions_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions | Retrieve Document Attachment Versions
-[**objects_documents_doc_id_attachments_file_get**](DefaultApi.md#objects_documents_doc_id_attachments_file_get) | **GET** /objects/documents/{doc_id}/attachments/file | Download All Document Attachments
-[**objects_documents_doc_id_attachments_get**](DefaultApi.md#objects_documents_doc_id_attachments_get) | **GET** /objects/documents/{doc_id}/attachments | Retrieve Document Attachments
-[**objects_documents_doc_id_attachments_post**](DefaultApi.md#objects_documents_doc_id_attachments_post) | **POST** /objects/documents/{doc_id}/attachments | Create Document Attachment
-[**objects_documents_doc_id_audittrail_get**](DefaultApi.md#objects_documents_doc_id_audittrail_get) | **GET** /objects/documents/{doc_id}/audittrail | Retrieve Complete Audit History for a Single Document
-[**objects_documents_doc_id_delete**](DefaultApi.md#objects_documents_doc_id_delete) | **DELETE** /objects/documents/{doc_id} | Delete Single Document
-[**objects_documents_doc_id_events_get**](DefaultApi.md#objects_documents_doc_id_events_get) | **GET** /objects/documents/{doc_id}/events | Retrieve Document Events
-[**objects_documents_doc_id_file_get**](DefaultApi.md#objects_documents_doc_id_file_get) | **GET** /objects/documents/{doc_id}/file | Download Document File
-[**objects_documents_doc_id_get**](DefaultApi.md#objects_documents_doc_id_get) | **GET** /objects/documents/{doc_id} | Retrieve Document
-[**objects_documents_doc_id_lock_delete**](DefaultApi.md#objects_documents_doc_id_lock_delete) | **DELETE** /objects/documents/{doc_id}/lock | Delete Document Lock
-[**objects_documents_doc_id_lock_get**](DefaultApi.md#objects_documents_doc_id_lock_get) | **GET** /objects/documents/{doc_id}/lock | Retrieve Document Lock
-[**objects_documents_doc_id_lock_post**](DefaultApi.md#objects_documents_doc_id_lock_post) | **POST** /objects/documents/{doc_id}/lock | Create Document Lock
-[**objects_documents_doc_id_major_version_minor_version_attachments_file_get**](DefaultApi.md#objects_documents_doc_id_major_version_minor_version_attachments_file_get) | **GET** /objects/documents/{doc_id}/{major_version}/{minor_version}/attachments/file | Download All Document Version Attachments
-[**objects_documents_doc_id_post**](DefaultApi.md#objects_documents_doc_id_post) | **POST** /objects/documents/{doc_id} | Create Single Document Version
-[**objects_documents_doc_id_put**](DefaultApi.md#objects_documents_doc_id_put) | **PUT** /objects/documents/{doc_id} | Update Single Document
-[**objects_documents_doc_id_renditions_get**](DefaultApi.md#objects_documents_doc_id_renditions_get) | **GET** /objects/documents/{doc_id}/renditions | Retrieve Document Renditions
-[**objects_documents_doc_id_renditions_rendition_type_delete**](DefaultApi.md#objects_documents_doc_id_renditions_rendition_type_delete) | **DELETE** /objects/documents/{doc_id}/renditions/{rendition_type} | Delete Single Document Rendition
-[**objects_documents_doc_id_renditions_rendition_type_get**](DefaultApi.md#objects_documents_doc_id_renditions_rendition_type_get) | **GET** /objects/documents/{doc_id}/renditions/{rendition_type} | Download Document Rendition File
-[**objects_documents_doc_id_renditions_rendition_type_post**](DefaultApi.md#objects_documents_doc_id_renditions_rendition_type_post) | **POST** /objects/documents/{doc_id}/renditions/{rendition_type} | Add Single Document Rendition
-[**objects_documents_doc_id_renditions_rendition_type_put**](DefaultApi.md#objects_documents_doc_id_renditions_rendition_type_put) | **PUT** /objects/documents/{doc_id}/renditions/{rendition_type} | Replace Document Rendition
-[**objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete**](DefaultApi.md#objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete) | **DELETE** /objects/documents/{doc_id}/roles/{role_name_and_user_or_group}/{id} | Remove Users &amp; Groups from Roles on a Single Document
-[**objects_documents_doc_id_version_major_version_minor_version_attachments_get**](DefaultApi.md#objects_documents_doc_id_version_major_version_minor_version_attachments_get) | **GET** /objects/documents/{doc_id}/version/{major_version}/{minor_version}/attachments | Retrieve Document Version Attachments
-[**objects_documents_doc_id_versions_get**](DefaultApi.md#objects_documents_doc_id_versions_get) | **GET** /objects/documents/{doc_id}/versions | Retrieve Document Versions
-[**objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/{annotation_id} | Read Annotations by ID
-[**objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/{annotation_id}/replies | Read Replies of Parent Annotation
-[**objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/file | Export Document Version Annotations to PDF
-[**objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/file | Import Document Version Annotations from PDF
-[**objects_documents_doc_id_versions_major_version_minor_version_annotations_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations | Read Annotations by Document Version and Type
-[**objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Document Version Attachment Version
-[**objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Document Version Attachment Versions
-[**objects_documents_doc_id_versions_major_version_minor_version_delete**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Delete Single Document Version
-[**objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/doc-export-annotations-to-csv | Retrieve Document Version Notes as CSV
-[**objects_documents_doc_id_versions_major_version_minor_version_events_post**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_events_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/events | Create Document Event
-[**objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/export-video-annotations | Retrieve Video Annotations
-[**objects_documents_doc_id_versions_major_version_minor_version_file_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/file | Download Document Version File
-[**objects_documents_doc_id_versions_major_version_minor_version_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Retrieve Document Version
-[**objects_documents_doc_id_versions_major_version_minor_version_put**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_put) | **PUT** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Update Document Version
-[**objects_documents_doc_id_versions_major_version_minor_version_relationships_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships | Retrieve Document Relationships
-[**objects_documents_doc_id_versions_major_version_minor_version_relationships_post**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships | Create Single Document Relationship
-[**objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Delete Single Document Relationship
-[**objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Retrieve Document Relationship
-[**objects_documents_doc_id_versions_major_version_minor_version_renditions_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions | Retrieve Document Version Renditions
-[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Delete Document Version Rendition
-[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Download Document Version Rendition File
-[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Upload Document Version Rendition
-[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put) | **PUT** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Replace Document Version Rendition
-[**objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get**](DefaultApi.md#objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/thumbnail | Download Document Version Thumbnail File
-[**objects_documents_get**](DefaultApi.md#objects_documents_get) | **GET** /objects/documents | Retrieve All Documents
-[**objects_documents_id_roles_get**](DefaultApi.md#objects_documents_id_roles_get) | **GET** /objects/documents/{id}/roles | Retrieve All Document Roles
-[**objects_documents_id_roles_post**](DefaultApi.md#objects_documents_id_roles_post) | **POST** /objects/documents/{id}/roles | Assign Users &amp; Groups to Roles on a Single Document
-[**objects_documents_id_roles_role_name_get**](DefaultApi.md#objects_documents_id_roles_role_name_get) | **GET** /objects/documents/{id}/roles/{role_name} | Retrieve Document Role
-[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get**](DefaultApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get) | **GET** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions | Retrieve Document User Actions
-[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get**](DefaultApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get) | **GET** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v}/entry_requirements | Retrieve Document Entry Criteria
-[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put**](DefaultApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put) | **PUT** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v} | Initiate Document User Action
-[**objects_documents_lifecycle_actions_post**](DefaultApi.md#objects_documents_lifecycle_actions_post) | **POST** /objects/documents/lifecycle_actions | Retrieve User Actions on Multiple Documents
-[**objects_documents_lifecycle_actions_user_action_name_put**](DefaultApi.md#objects_documents_lifecycle_actions_user_action_name_put) | **PUT** /objects/documents/lifecycle_actions/{user_action_name} | Initiate Bulk Document User Actions
-[**objects_documents_post**](DefaultApi.md#objects_documents_post) | **POST** /objects/documents | Create Single Document
-[**objects_documents_relationships_batch_delete**](DefaultApi.md#objects_documents_relationships_batch_delete) | **DELETE** /objects/documents/relationships/batch | Delete Multiple Document Relationships
-[**objects_documents_relationships_batch_post**](DefaultApi.md#objects_documents_relationships_batch_post) | **POST** /objects/documents/relationships/batch | Create Multiple Document Relationships
-[**objects_documents_renditions_batch_delete**](DefaultApi.md#objects_documents_renditions_batch_delete) | **DELETE** /objects/documents/renditions/batch | Delete Multiple Document Renditions
-[**objects_documents_renditions_batch_post**](DefaultApi.md#objects_documents_renditions_batch_post) | **POST** /objects/documents/renditions/batch | Add Multiple Document Renditions
-[**objects_documents_roles_batch_delete**](DefaultApi.md#objects_documents_roles_batch_delete) | **DELETE** /objects/documents/roles/batch | Remove Users and Groups from Roles on Multiple Documents &amp; Binders
-[**objects_documents_roles_batch_post**](DefaultApi.md#objects_documents_roles_batch_post) | **POST** /objects/documents/roles/batch | Assign Users &amp; Groups to Roles on Multiple Documents &amp; Binders
-[**objects_documents_templates_get**](DefaultApi.md#objects_documents_templates_get) | **GET** /objects/documents/templates | Retrieve Document Template Collection
-[**objects_documents_templates_post**](DefaultApi.md#objects_documents_templates_post) | **POST** /objects/documents/templates | Create Single Document Template
-[**objects_documents_templates_put**](DefaultApi.md#objects_documents_templates_put) | **PUT** /objects/documents/templates | Update Multiple Document Templates
-[**objects_documents_templates_template_name_delete**](DefaultApi.md#objects_documents_templates_template_name_delete) | **DELETE** /objects/documents/templates/{template_name} | Delete Basic Document Template
-[**objects_documents_templates_template_name_file_get**](DefaultApi.md#objects_documents_templates_template_name_file_get) | **GET** /objects/documents/templates/{template_name}/file | Download Document Template File
-[**objects_documents_templates_template_name_get**](DefaultApi.md#objects_documents_templates_template_name_get) | **GET** /objects/documents/templates/{template_name} | Retrieve Document Template Attributes
-[**objects_documents_templates_template_name_put**](DefaultApi.md#objects_documents_templates_template_name_put) | **PUT** /objects/documents/templates/{template_name} | Update Single Document Template
-[**objects_documents_tokens_post**](DefaultApi.md#objects_documents_tokens_post) | **POST** /objects/documents/tokens | Document Tokens
-[**objects_documents_versions_batch_actions_fileextract_post**](DefaultApi.md#objects_documents_versions_batch_actions_fileextract_post) | **POST** /objects/documents/versions/batch/actions/fileextract | Export Document Versions
-[**objects_documents_versions_batch_delete**](DefaultApi.md#objects_documents_versions_batch_delete) | **DELETE** /objects/documents/versions/batch | Delete Multiple Document Versions
-[**objects_documents_versions_batch_post**](DefaultApi.md#objects_documents_versions_batch_post) | **POST** /objects/documents/versions/batch | Create Multiple Document Versions
-[**objects_domain_get**](DefaultApi.md#objects_domain_get) | **GET** /objects/domain | Retrieve Domain Information
-[**objects_domains_get**](DefaultApi.md#objects_domains_get) | **GET** /objects/domains | Retrieve Domains
-[**objects_edl_matched_documents_batch_actions_add_post**](DefaultApi.md#objects_edl_matched_documents_batch_actions_add_post) | **POST** /objects/edl_matched_documents/batch/actions/add | Add EDL Matched Documents
-[**objects_edl_matched_documents_batch_actions_remove_post**](DefaultApi.md#objects_edl_matched_documents_batch_actions_remove_post) | **POST** /objects/edl_matched_documents/batch/actions/remove | Remove EDL Matched Documents
-[**objects_groups_auto_get**](DefaultApi.md#objects_groups_auto_get) | **GET** /objects/groups/auto | Retrieve Auto Managed Groups
-[**objects_groups_get**](DefaultApi.md#objects_groups_get) | **GET** /objects/groups | Retrieve All Groups
-[**objects_groups_group_id_delete**](DefaultApi.md#objects_groups_group_id_delete) | **DELETE** /objects/groups/{group_id} | Delete Group
-[**objects_groups_group_id_get**](DefaultApi.md#objects_groups_group_id_get) | **GET** /objects/groups/{group_id} | Retrieve Group
-[**objects_groups_group_id_put**](DefaultApi.md#objects_groups_group_id_put) | **PUT** /objects/groups/{group_id} | Update Group
-[**objects_groups_post**](DefaultApi.md#objects_groups_post) | **POST** /objects/groups | Create Group 
-[**objects_licenses_get**](DefaultApi.md#objects_licenses_get) | **GET** /objects/licenses | Retrieve Application License Usage
-[**objects_objectworkflows_actions_get**](DefaultApi.md#objects_objectworkflows_actions_get) | **GET** /objects/objectworkflows/actions | Retrieve All Multi-Record Workflows
-[**objects_objectworkflows_actions_workflow_name_get**](DefaultApi.md#objects_objectworkflows_actions_workflow_name_get) | **GET** /objects/objectworkflows/actions/{workflow_name} | Retrieve Multi-Record Workflow Details
-[**objects_objectworkflows_actions_workflow_name_post**](DefaultApi.md#objects_objectworkflows_actions_workflow_name_post) | **POST** /objects/objectworkflows/actions/{workflow_name} | Initiate Multi-Record Workflow
-[**objects_objectworkflows_get**](DefaultApi.md#objects_objectworkflows_get) | **GET** /objects/objectworkflows | Retrieve Workflows
-[**objects_objectworkflows_tasks_get**](DefaultApi.md#objects_objectworkflows_tasks_get) | **GET** /objects/objectworkflows/tasks | Retrieve Workflow Tasks
-[**objects_objectworkflows_tasks_task_id_actions_accept_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_accept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/accept | Accept Single Record Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_cancel_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_cancel_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/cancel | Cancel Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_complete_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_complete_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/complete | Complete Single Record Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_get**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_get) | **GET** /objects/objectworkflows/tasks/{task_id}/actions | Retrieve Workflow Task Actions
-[**objects_objectworkflows_tasks_task_id_actions_mdwaccept_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_mdwaccept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwaccept | Accept Multi-item Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwcomplete | Complete Multi-item Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwmanagecontent | Manage Multi-Item Workflow Content
-[**objects_objectworkflows_tasks_task_id_actions_mdwreassign_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_mdwreassign_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwreassign | Reassign Multi-item Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_reassign_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_reassign_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/reassign | Reassign Single Record Workflow Task
-[**objects_objectworkflows_tasks_task_id_actions_task_action_get**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_task_action_get) | **GET** /objects/objectworkflows/tasks/{task_id}/actions/{task_action} | Retrieve Workflow Task Action Details
-[**objects_objectworkflows_tasks_task_id_actions_undoaccept_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_undoaccept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/undoaccept | Undo Workflow Task Acceptance
-[**objects_objectworkflows_tasks_task_id_actions_updateduedate_post**](DefaultApi.md#objects_objectworkflows_tasks_task_id_actions_updateduedate_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/updateduedate | Update Workflow Task Due Date
-[**objects_objectworkflows_tasks_task_id_get**](DefaultApi.md#objects_objectworkflows_tasks_task_id_get) | **GET** /objects/objectworkflows/tasks/{task_id} | Retrieve Workflow Task Details
-[**objects_objectworkflows_workflow_id_actions_get**](DefaultApi.md#objects_objectworkflows_workflow_id_actions_get) | **GET** /objects/objectworkflows/{workflow_id}/actions | Retrieve Workflow Actions
-[**objects_objectworkflows_workflow_id_actions_workflow_action_get**](DefaultApi.md#objects_objectworkflows_workflow_id_actions_workflow_action_get) | **GET** /objects/objectworkflows/{workflow_id}/actions/{workflow_action} | Retrieve Workflow Action Details
-[**objects_objectworkflows_workflow_id_actions_workflow_action_post**](DefaultApi.md#objects_objectworkflows_workflow_id_actions_workflow_action_post) | **POST** /objects/objectworkflows/{workflow_id}/actions/{workflow_action} | Initiate Workflow Action
-[**objects_objectworkflows_workflow_id_get**](DefaultApi.md#objects_objectworkflows_workflow_id_get) | **GET** /objects/objectworkflows/{workflow_id} | Retrieve Workflow Details
-[**objects_picklists_get**](DefaultApi.md#objects_picklists_get) | **GET** /objects/picklists | Retrieve All Picklists
-[**objects_picklists_picklist_name_get**](DefaultApi.md#objects_picklists_picklist_name_get) | **GET** /objects/picklists/{picklist_name} | Retrieve Picklist Values
-[**objects_picklists_picklist_name_picklist_value_name_delete**](DefaultApi.md#objects_picklists_picklist_name_picklist_value_name_delete) | **DELETE** /objects/picklists/{picklist_name}/{picklist_value_name} | Inactivate Picklist Value
-[**objects_picklists_picklist_name_picklist_value_name_put**](DefaultApi.md#objects_picklists_picklist_name_picklist_value_name_put) | **PUT** /objects/picklists/{picklist_name}/{picklist_value_name} | Update Picklist Value
-[**objects_picklists_picklist_name_post**](DefaultApi.md#objects_picklists_picklist_name_post) | **POST** /objects/picklists/{picklist_name} | Create Picklist Values
-[**objects_picklists_picklist_name_put**](DefaultApi.md#objects_picklists_picklist_name_put) | **PUT** /objects/picklists/{picklist_name} | Update Picklist Value Label
-[**objects_sandbox_actions_buildproduction_post**](DefaultApi.md#objects_sandbox_actions_buildproduction_post) | **POST** /objects/sandbox/actions/buildproduction | Build Production Vault
-[**objects_sandbox_actions_promoteproduction_post**](DefaultApi.md#objects_sandbox_actions_promoteproduction_post) | **POST** /objects/sandbox/actions/promoteproduction | Promote to Production
-[**objects_sandbox_actions_recheckusage_post**](DefaultApi.md#objects_sandbox_actions_recheckusage_post) | **POST** /objects/sandbox/actions/recheckusage | Recheck Sandbox Usage Limit
-[**objects_sandbox_batch_changesize_post**](DefaultApi.md#objects_sandbox_batch_changesize_post) | **POST** /objects/sandbox/batch/changesize | Change Sandbox Size
-[**objects_sandbox_entitlements_set_post**](DefaultApi.md#objects_sandbox_entitlements_set_post) | **POST** /objects/sandbox/entitlements/set | Set Sandbox Entitlements
-[**objects_sandbox_get**](DefaultApi.md#objects_sandbox_get) | **GET** /objects/sandbox | Retrieve Sandboxes
-[**objects_sandbox_name_delete**](DefaultApi.md#objects_sandbox_name_delete) | **DELETE** /objects/sandbox/{name} | Delete Sandbox
-[**objects_sandbox_post**](DefaultApi.md#objects_sandbox_post) | **POST** /objects/sandbox | Create or Refresh Sandbox
-[**objects_sandbox_snapshot_api_name_actions_update_post**](DefaultApi.md#objects_sandbox_snapshot_api_name_actions_update_post) | **POST** /objects/sandbox/snapshot/{api_name}/actions/update | Update Sandbox Snapshot
-[**objects_sandbox_snapshot_api_name_actions_upgrade_post**](DefaultApi.md#objects_sandbox_snapshot_api_name_actions_upgrade_post) | **POST** /objects/sandbox/snapshot/{api_name}/actions/upgrade | Upgrade Sandbox Snapshot
-[**objects_sandbox_snapshot_api_name_delete**](DefaultApi.md#objects_sandbox_snapshot_api_name_delete) | **DELETE** /objects/sandbox/snapshot/{api_name} | Delete Sandbox Snapshot
-[**objects_sandbox_snapshot_get**](DefaultApi.md#objects_sandbox_snapshot_get) | **GET** /objects/sandbox/snapshot | Retrieve Sandbox Snapshots
-[**objects_sandbox_snapshot_post**](DefaultApi.md#objects_sandbox_snapshot_post) | **POST** /objects/sandbox/snapshot | Create Sandbox Snapshot
-[**objects_sandbox_vault_id_actions_refresh_post**](DefaultApi.md#objects_sandbox_vault_id_actions_refresh_post) | **POST** /objects/sandbox/{vault_id}/actions/refresh | Refresh Sandbox from Snapshot
-[**objects_sandbox_vault_id_get**](DefaultApi.md#objects_sandbox_vault_id_get) | **GET** /objects/sandbox/{vault_id} | Retrieve Sandbox Details by ID
-[**objects_securitypolicies_get**](DefaultApi.md#objects_securitypolicies_get) | **GET** /objects/securitypolicies | Retrieve All Security Policies
-[**objects_securitypolicies_security_policy_name_get**](DefaultApi.md#objects_securitypolicies_security_policy_name_get) | **GET** /objects/securitypolicies/{security_policy_name} | Retrieve Security Policy
-[**objects_users_get**](DefaultApi.md#objects_users_get) | **GET** /objects/users/ | Retrieve All Users
-[**objects_users_id_get**](DefaultApi.md#objects_users_id_get) | **GET** /objects/users/{id} | Retrieve User
-[**objects_users_id_permissions_get**](DefaultApi.md#objects_users_id_permissions_get) | **GET** /objects/users/{id}/permissions | Retrieve User Permissions
-[**objects_users_id_put**](DefaultApi.md#objects_users_id_put) | **PUT** /objects/users/{id} | Update Single User
-[**objects_users_me_get**](DefaultApi.md#objects_users_me_get) | **GET** /objects/users/me | Validate Session User
-[**objects_users_me_password_post**](DefaultApi.md#objects_users_me_password_post) | **POST** /objects/users/me/password | Change My Password
-[**objects_users_me_permissions_get**](DefaultApi.md#objects_users_me_permissions_get) | **GET** /objects/users/me/permissions | Retrieve My User Permissions
-[**objects_users_me_put**](DefaultApi.md#objects_users_me_put) | **PUT** /objects/users/me | Update My User
-[**objects_users_post**](DefaultApi.md#objects_users_post) | **POST** /objects/users | Create Single User
-[**objects_users_put**](DefaultApi.md#objects_users_put) | **PUT** /objects/users | Update Multiple Users
-[**objects_users_user_id_delete**](DefaultApi.md#objects_users_user_id_delete) | **DELETE** /objects/users/{user_id} | Disable User
-[**objects_users_user_id_vault_membership_vault_id_put**](DefaultApi.md#objects_users_user_id_vault_membership_vault_id_put) | **PUT** /objects/users/{user_id}/vault_membership/{vault_id} | Update Vault Membership
-[**objects_vault_actions_compare_post**](DefaultApi.md#objects_vault_actions_compare_post) | **POST** /objects/vault/actions/compare | Vault Compare
-[**objects_vault_actions_configreport_post**](DefaultApi.md#objects_vault_actions_configreport_post) | **POST** /objects/vault/actions/configreport | Vault Configuration Report
-[**query_components_post**](DefaultApi.md#query_components_post) | **POST** /query/components | Component Definition Query
-[**query_next_page_post**](DefaultApi.md#query_next_page_post) | **POST** /query/{next_page} | Next Page URL
-[**query_post**](DefaultApi.md#query_post) | **POST** /query | Submitting a Query
-[**query_previous_page_post**](DefaultApi.md#query_previous_page_post) | **POST** /query/{previous_page} | Previous Page URL
-[**scim_v2_me_get**](DefaultApi.md#scim_v2_me_get) | **GET** /scim/v2/Me | Retrieve Current User with SCIM
-[**scim_v2_me_put**](DefaultApi.md#scim_v2_me_put) | **PUT** /scim/v2/Me | Update Current User with SCIM
-[**scim_v2_resource_types_get**](DefaultApi.md#scim_v2_resource_types_get) | **GET** /scim/v2/ResourceTypes | Retrieve All SCIM Resource Types
-[**scim_v2_resource_types_type_get**](DefaultApi.md#scim_v2_resource_types_type_get) | **GET** /scim/v2/ResourceTypes/{type} | Retrieve Single SCIM Resource Type
-[**scim_v2_schemas_get**](DefaultApi.md#scim_v2_schemas_get) | **GET** /scim/v2/Schemas | Retrieve All SCIM Schema Information
-[**scim_v2_schemas_id_get**](DefaultApi.md#scim_v2_schemas_id_get) | **GET** /scim/v2/Schemas/{id} | Retrieve Single SCIM Schema Information
-[**scim_v2_service_provider_config_get**](DefaultApi.md#scim_v2_service_provider_config_get) | **GET** /scim/v2/ServiceProviderConfig | Retrieve SCIM Provider
-[**scim_v2_type_get**](DefaultApi.md#scim_v2_type_get) | **GET** /scim/v2/{type} | Retrieve SCIM Resources
-[**scim_v2_type_id_get**](DefaultApi.md#scim_v2_type_id_get) | **GET** /scim/v2/{type}/{id} | Retrieve Single SCIM Resource
-[**scim_v2_users_get**](DefaultApi.md#scim_v2_users_get) | **GET** /scim/v2/Users | Retrieve All Users with SCIM
-[**scim_v2_users_id_get**](DefaultApi.md#scim_v2_users_id_get) | **GET** /scim/v2/Users/{id} | Retrieve Single User with SCIM
-[**scim_v2_users_id_put**](DefaultApi.md#scim_v2_users_id_put) | **PUT** /scim/v2/Users/{id} | Update User with SCIM
-[**scim_v2_users_post**](DefaultApi.md#scim_v2_users_post) | **POST** /scim/v2/Users | Create User with SCIM
-[**services_certificate_cert_id_get**](DefaultApi.md#services_certificate_cert_id_get) | **GET** /services/certificate/{cert_id} | Retrieve Signing Certificate
-[**services_configuration_mode_actions_disable_post**](DefaultApi.md#services_configuration_mode_actions_disable_post) | **POST** /services/configuration_mode/actions/disable | Disable Configuration Mode
-[**services_configuration_mode_actions_enable_post**](DefaultApi.md#services_configuration_mode_actions_enable_post) | **POST** /services/configuration_mode/actions/enable | Enable Configuration Mode
-[**services_directdata_files_get**](DefaultApi.md#services_directdata_files_get) | **GET** /services/directdata/files | Retrieve Available Direct Data Files
-[**services_directdata_files_name_get**](DefaultApi.md#services_directdata_files_name_get) | **GET** /services/directdata/files/{name} | Download Direct Data File
-[**services_file_staging_items_content_item_get**](DefaultApi.md#services_file_staging_items_content_item_get) | **GET** /services/file_staging/items/content/{item} | Download Item Content
-[**services_file_staging_items_item_delete**](DefaultApi.md#services_file_staging_items_item_delete) | **DELETE** /services/file_staging/items/{item} | Delete File or Folder
-[**services_file_staging_items_item_get**](DefaultApi.md#services_file_staging_items_item_get) | **GET** /services/file_staging/items/{item} | List Items at a Path
-[**services_file_staging_items_item_put**](DefaultApi.md#services_file_staging_items_item_put) | **PUT** /services/file_staging/items/{item} | Update Folder or File
-[**services_file_staging_items_post**](DefaultApi.md#services_file_staging_items_post) | **POST** /services/file_staging/items | Create Folder or File
-[**services_file_staging_upload_get**](DefaultApi.md#services_file_staging_upload_get) | **GET** /services/file_staging/upload/ | List Upload Sessions
-[**services_file_staging_upload_post**](DefaultApi.md#services_file_staging_upload_post) | **POST** /services/file_staging/upload | Create Resumable Upload Session
-[**services_file_staging_upload_upload_session_id_delete**](DefaultApi.md#services_file_staging_upload_upload_session_id_delete) | **DELETE** /services/file_staging/upload/{upload_session_id} | Abort Upload Session
-[**services_file_staging_upload_upload_session_id_get**](DefaultApi.md#services_file_staging_upload_upload_session_id_get) | **GET** /services/file_staging/upload/{upload_session_id} | Get Upload Session Details
-[**services_file_staging_upload_upload_session_id_parts_get**](DefaultApi.md#services_file_staging_upload_upload_session_id_parts_get) | **GET** /services/file_staging/upload/{upload_session_id}/parts | List File Parts Uploaded to Session
-[**services_file_staging_upload_upload_session_id_post**](DefaultApi.md#services_file_staging_upload_upload_session_id_post) | **POST** /services/file_staging/upload/{upload_session_id} | Commit Upload Session
-[**services_file_staging_upload_upload_session_id_put**](DefaultApi.md#services_file_staging_upload_upload_session_id_put) | **PUT** /services/file_staging/upload/{upload_session_id} | Upload to a Session
-[**services_jobs_histories_get**](DefaultApi.md#services_jobs_histories_get) | **GET** /services/jobs/histories | Retrieve Job Histories
-[**services_jobs_job_id_errors_get**](DefaultApi.md#services_jobs_job_id_errors_get) | **GET** /services/jobs/{job_id}/errors | Retrieve Import Bulk Translation File Job Errors
-[**services_jobs_job_id_get**](DefaultApi.md#services_jobs_job_id_get) | **GET** /services/jobs/{job_id} | Retrieve Job Status
-[**services_jobs_job_id_summary_get**](DefaultApi.md#services_jobs_job_id_summary_get) | **GET** /services/jobs/{job_id}/summary | Retrieve Import Bulk Translation File Job Summary
-[**services_jobs_job_id_tasks_get**](DefaultApi.md#services_jobs_job_id_tasks_get) | **GET** /services/jobs/{job_id}/tasks | Retrieve SDK Job Tasks
-[**services_jobs_monitors_get**](DefaultApi.md#services_jobs_monitors_get) | **GET** /services/jobs/monitors | Retrieve Job Monitors
-[**services_jobs_start_now_job_id_post**](DefaultApi.md#services_jobs_start_now_job_id_post) | **POST** /services/jobs/start_now/{job_id} | Start Job
-[**services_loader_extract_post**](DefaultApi.md#services_loader_extract_post) | **POST** /services/loader/extract | Extract Data Files
-[**services_loader_job_id_tasks_task_id_failurelog_get**](DefaultApi.md#services_loader_job_id_tasks_task_id_failurelog_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/failurelog | Retrieve Load Failure Log Results
-[**services_loader_job_id_tasks_task_id_results_get**](DefaultApi.md#services_loader_job_id_tasks_task_id_results_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/results | Retrieve Loader Extract Results
-[**services_loader_job_id_tasks_task_id_results_renditions_get**](DefaultApi.md#services_loader_job_id_tasks_task_id_results_renditions_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/results/renditions | Retrieve Loader Extract Renditions Results
-[**services_loader_job_id_tasks_task_id_successlog_get**](DefaultApi.md#services_loader_job_id_tasks_task_id_successlog_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/successlog | Retrieve Load Success Log Results
-[**services_loader_load_post**](DefaultApi.md#services_loader_load_post) | **POST** /services/loader/load | Load Data Objects
-[**services_package_actions_validate_post**](DefaultApi.md#services_package_actions_validate_post) | **POST** /services/package/actions/validate | Validate Package
-[**services_package_post**](DefaultApi.md#services_package_post) | **POST** /services/package | Export Package
-[**services_package_put**](DefaultApi.md#services_package_put) | **PUT** /services/package | Import Package
-[**services_queues_get**](DefaultApi.md#services_queues_get) | **GET** /services/queues | Retrieve All Queues
-[**services_queues_queue_name_actions_disable_delivery_put**](DefaultApi.md#services_queues_queue_name_actions_disable_delivery_put) | **PUT** /services/queues/{queue_name}/actions/disable_delivery | Disable Delivery
-[**services_queues_queue_name_actions_enable_delivery_put**](DefaultApi.md#services_queues_queue_name_actions_enable_delivery_put) | **PUT** /services/queues/{queue_name}/actions/enable_delivery | Enable Delivery
-[**services_queues_queue_name_actions_reset_put**](DefaultApi.md#services_queues_queue_name_actions_reset_put) | **PUT** /services/queues/{queue_name}/actions/reset | Reset Queue
-[**services_queues_queue_name_get**](DefaultApi.md#services_queues_queue_name_get) | **GET** /services/queues/{queue_name} | Retrieve Queue Status
-[**services_vobject_vault_package_v_package_id_actions_validate_post**](DefaultApi.md#services_vobject_vault_package_v_package_id_actions_validate_post) | **POST** /services/vobject/vault_package__v/{package_id}/actions/validate | Validate Imported Package
-[**session_delete**](DefaultApi.md#session_delete) | **DELETE** /session | End Session
-[**uicode_distributions_distribution_name_code_get**](DefaultApi.md#uicode_distributions_distribution_name_code_get) | **GET** /uicode/distributions/{distribution_name}/code | Download Single Client Code Distribution
-[**uicode_distributions_distribution_name_delete**](DefaultApi.md#uicode_distributions_distribution_name_delete) | **DELETE** /uicode/distributions/{distribution_name} | Delete Single Client Code Distribution
-[**uicode_distributions_distribution_name_get**](DefaultApi.md#uicode_distributions_distribution_name_get) | **GET** /uicode/distributions/{distribution_name} | Retrieve Single Client Code Distribution Metadata
-[**uicode_distributions_get**](DefaultApi.md#uicode_distributions_get) | **GET** /uicode/distributions | Retrieve All Client Code Distribution Metadata
-[**uicode_distributions_post**](DefaultApi.md#uicode_distributions_post) | **POST** /uicode/distributions | Add or Replace Single Client Code Distribution
-[**vobject_vault_package_v_package_id_actions_deploy_post**](DefaultApi.md#vobject_vault_package_v_package_id_actions_deploy_post) | **POST** /vobject/vault_package__v/{package_id}/actions/deploy | Deploy Package
-[**vobject_vault_package_v_package_id_actions_deploy_results_get**](DefaultApi.md#vobject_vault_package_v_package_id_actions_deploy_results_get) | **GET** /vobject/vault_package__v/{package_id}/actions/deploy/results | Retrieve Package Deploy Results
-[**vobjects_cascadedelete_results_object_name_job_status_job_id_get**](DefaultApi.md#vobjects_cascadedelete_results_object_name_job_status_job_id_get) | **GET** /vobjects/cascadedelete/results/{object_name}/{job_status}/{job_id} | Retrieve Results of Cascade Delete Job
-[**vobjects_deepcopy_results_object_name_job_status_job_id_get**](DefaultApi.md#vobjects_deepcopy_results_object_name_job_status_job_id_get) | **GET** /vobjects/deepcopy/results/{object_name}/{job_status}/{job_id} | Retrieve Results of Deep Copy Job
-[**vobjects_edl_item_v_actions_createplaceholder_post**](DefaultApi.md#vobjects_edl_item_v_actions_createplaceholder_post) | **POST** /vobjects/edl_item__v/actions/createplaceholder | Create a Placeholder from an EDL Item
-[**vobjects_merges_job_id_log_get**](DefaultApi.md#vobjects_merges_job_id_log_get) | **GET** /vobjects/merges/{job_id}/log | Download Merge Records Job Log
-[**vobjects_merges_job_id_results_get**](DefaultApi.md#vobjects_merges_job_id_results_get) | **GET** /vobjects/merges/{job_id}/results | Retrieve Record Merge Results
-[**vobjects_merges_job_id_status_get**](DefaultApi.md#vobjects_merges_job_id_status_get) | **GET** /vobjects/merges/{job_id}/status | Retrieve Record Merge Status
-[**vobjects_object_name_actions_action_name_post**](DefaultApi.md#vobjects_object_name_actions_action_name_post) | **POST** /vobjects/{object_name}/actions/{action_name} | Initiate Object Action on Multiple Records
-[**vobjects_object_name_actions_changetype_post**](DefaultApi.md#vobjects_object_name_actions_changetype_post) | **POST** /vobjects/{object_name}/actions/changetype | Change Object Type
-[**vobjects_object_name_actions_merge_post**](DefaultApi.md#vobjects_object_name_actions_merge_post) | **POST** /vobjects/{object_name}/actions/merge | Initiate Record Merge
-[**vobjects_object_name_actions_recalculaterollups_get**](DefaultApi.md#vobjects_object_name_actions_recalculaterollups_get) | **GET** /vobjects/{object_name}/actions/recalculaterollups | Retrieve Roll-up Field Recalculation Status
-[**vobjects_object_name_actions_recalculaterollups_post**](DefaultApi.md#vobjects_object_name_actions_recalculaterollups_post) | **POST** /vobjects/{object_name}/actions/recalculaterollups | Recalculate Roll-up Fields
-[**vobjects_object_name_actions_updatecorporatecurrency_put**](DefaultApi.md#vobjects_object_name_actions_updatecorporatecurrency_put) | **PUT** /vobjects/{object_name}/actions/updatecorporatecurrency | Update Corporate Currency Fields
-[**vobjects_object_name_attachments_batch_delete**](DefaultApi.md#vobjects_object_name_attachments_batch_delete) | **DELETE** /vobjects/{object_name}/attachments/batch | Delete Multiple Object Record Attachments
-[**vobjects_object_name_attachments_batch_post**](DefaultApi.md#vobjects_object_name_attachments_batch_post) | **POST** /vobjects/{object_name}/attachments/batch | Create Multiple Object Record Attachments
-[**vobjects_object_name_attachments_batch_put**](DefaultApi.md#vobjects_object_name_attachments_batch_put) | **PUT** /vobjects/{object_name}/attachments/batch | Update Multiple Object Record Attachment Descriptions
-[**vobjects_object_name_delete**](DefaultApi.md#vobjects_object_name_delete) | **DELETE** /vobjects/{object_name} | Delete Object Records
-[**vobjects_object_name_id_roles_role_name_get**](DefaultApi.md#vobjects_object_name_id_roles_role_name_get) | **GET** /vobjects/{object_name}/{id}/roles/{role_name} | Retrieve Object Record Roles
-[**vobjects_object_name_object_record_id_actions_action_name_get**](DefaultApi.md#vobjects_object_name_object_record_id_actions_action_name_get) | **GET** /vobjects/{object_name}/{object_record_id}/actions/{action_name} | Retrieve Object User Actions Details
-[**vobjects_object_name_object_record_id_actions_action_name_post**](DefaultApi.md#vobjects_object_name_object_record_id_actions_action_name_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/{action_name} | Initiate Object Action on a Single Record
-[**vobjects_object_name_object_record_id_actions_cascadedelete_post**](DefaultApi.md#vobjects_object_name_object_record_id_actions_cascadedelete_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/cascadedelete | Cascade Delete Object Record
-[**vobjects_object_name_object_record_id_actions_deepcopy_post**](DefaultApi.md#vobjects_object_name_object_record_id_actions_deepcopy_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/deepcopy | Deep Copy Object Record
-[**vobjects_object_name_object_record_id_actions_get**](DefaultApi.md#vobjects_object_name_object_record_id_actions_get) | **GET** /vobjects/{object_name}/{object_record_id}/actions | Retrieve Object Record User Actions
-[**vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachment_fields/{attachment_field_name}/file | Download Attachment Field File
-[**vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post**](DefaultApi.md#vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachment_fields/{attachment_field_name}/file | Update Attachment Field File
-[**vobjects_object_name_object_record_id_attachment_fields_file_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachment_fields_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachment_fields/file | Download All Attachment Field Files
-[**vobjects_object_name_object_record_id_attachments_attachment_id_delete**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_delete) | **DELETE** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Delete Object Record Attachment
-[**vobjects_object_name_object_record_id_attachments_attachment_id_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Retrieve Object Record Attachment Metadata
-[**vobjects_object_name_object_record_id_attachments_attachment_id_put**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_put) | **PUT** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Update Object Record Attachment Description
-[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete) | **DELETE** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Delete Object Record Attachment Version
-[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Object Record Attachment File
-[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Object Record Attachment Version Metadata
-[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Restore Object Record Attachment Version
-[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions | Retrieve Object Record Attachment Versions
-[**vobjects_object_name_object_record_id_attachments_file_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/file | Download All Object Record Attachment Files
-[**vobjects_object_name_object_record_id_attachments_get**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments | Retrieve Object Record Attachments
-[**vobjects_object_name_object_record_id_attachments_post**](DefaultApi.md#vobjects_object_name_object_record_id_attachments_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachments | Create Object Record Attachment
-[**vobjects_object_name_object_record_id_audittrail_get**](DefaultApi.md#vobjects_object_name_object_record_id_audittrail_get) | **GET** /vobjects/{object_name}/{object_record_id}/audittrail | Retrieve Complete Audit History for a Single Object Record
-[**vobjects_object_name_object_record_id_get**](DefaultApi.md#vobjects_object_name_object_record_id_get) | **GET** /vobjects/{object_name}/{object_record_id} | Retrieve Object Record
-[**vobjects_object_name_post**](DefaultApi.md#vobjects_object_name_post) | **POST** /vobjects/{object_name} | Create &amp; Upsert Object Records
-[**vobjects_object_name_put**](DefaultApi.md#vobjects_object_name_put) | **PUT** /vobjects/{object_name} | Update Object Records
-[**vobjects_object_name_roles_delete**](DefaultApi.md#vobjects_object_name_roles_delete) | **DELETE** /vobjects/{object_name}/roles | Remove Users &amp; Groups from Roles on Object Records
-[**vobjects_object_name_roles_post**](DefaultApi.md#vobjects_object_name_roles_post) | **POST** /vobjects/{object_name}/roles | Assign Users &amp; Groups to Roles on Object Records
-[**vobjects_outbound_package_v_package_id_dependencies_get**](DefaultApi.md#vobjects_outbound_package_v_package_id_dependencies_get) | **GET** /vobjects/outbound_package__v/{package_id}/dependencies | Retrieve Outbound Package Dependencies
+[**api_get**](VeevaApi.md#api_get) | **GET** /api/ | Retrieve API Versions
+[**api_mdl_components_component_type_and_record_name_files_get**](VeevaApi.md#api_mdl_components_component_type_and_record_name_files_get) | **GET** /api/mdl/components/{component_type_and_record_name}/files | Retrieve Content File
+[**api_mdl_components_component_type_and_record_name_get**](VeevaApi.md#api_mdl_components_component_type_and_record_name_get) | **GET** /api/mdl/components/{component_type_and_record_name} | Retrieve Component Record (MDL)
+[**api_mdl_execute_async_job_id_results_get**](VeevaApi.md#api_mdl_execute_async_job_id_results_get) | **GET** /api/mdl/execute_async/{job_id}/results | Retrieve Asynchronous MDL Script Results
+[**api_mdl_execute_async_post**](VeevaApi.md#api_mdl_execute_async_post) | **POST** /api/mdl/execute_async | Execute MDL Script Asynchronously
+[**api_mdl_execute_post**](VeevaApi.md#api_mdl_execute_post) | **POST** /api/mdl/execute | Execute MDL Script
+[**api_mdl_files_post**](VeevaApi.md#api_mdl_files_post) | **POST** /api/mdl/files | Upload Content File
+[**audittrail_audit_trail_type_get**](VeevaApi.md#audittrail_audit_trail_type_get) | **GET** /audittrail/{audit_trail_type} | Retrieve Audit Details
+[**auth_discovery_post**](VeevaApi.md#auth_discovery_post) | **POST** /auth/discovery | Authentication Type Discovery
+[**auth_oauth_session_oath_oidc_profile_id_post**](VeevaApi.md#auth_oauth_session_oath_oidc_profile_id_post) | **POST** /auth/oauth/session/{oath_oidc_profile_id} | OAuth 2.0 / OpenID Connect
+[**auth_post**](VeevaApi.md#auth_post) | **POST** /auth | User Name and Password
+[**code_class_name_delete**](VeevaApi.md#code_class_name_delete) | **DELETE** /code/{class_name} | Delete Single Source Code File
+[**code_class_name_disable_put**](VeevaApi.md#code_class_name_disable_put) | **PUT** /code/{class_name}/disable | Disable Vault Extension
+[**code_class_name_enable_put**](VeevaApi.md#code_class_name_enable_put) | **PUT** /code/{class_name}/enable | Enable Vault Extension
+[**code_class_name_get**](VeevaApi.md#code_class_name_get) | **GET** /code/{class_name} | Retrieve Single Source Code File
+[**code_profiler_get**](VeevaApi.md#code_profiler_get) | **GET** /code/profiler | Retrieve All Profiling Sessions
+[**code_profiler_post**](VeevaApi.md#code_profiler_post) | **POST** /code/profiler | Create Profiling Session
+[**code_profiler_session_name_actions_end_post**](VeevaApi.md#code_profiler_session_name_actions_end_post) | **POST** /code/profiler/{session_name}/actions/end | End Profiling Session
+[**code_profiler_session_name_delete**](VeevaApi.md#code_profiler_session_name_delete) | **DELETE** /code/profiler/{session_name} | Delete Profiling Session
+[**code_profiler_session_name_get**](VeevaApi.md#code_profiler_session_name_get) | **GET** /code/profiler/{session_name} | Retrieve Profiling Session
+[**code_profiler_session_name_results_get**](VeevaApi.md#code_profiler_session_name_results_get) | **GET** /code/profiler/{session_name}/results | Download Profiling Session Results
+[**code_put**](VeevaApi.md#code_put) | **PUT** /code | Add or Replace Single Source Code File
+[**composites_trees_edl_hierarchy_or_template_actions_listnodes_post**](VeevaApi.md#composites_trees_edl_hierarchy_or_template_actions_listnodes_post) | **POST** /composites/trees/{edl_hierarchy_or_template}/actions/listnodes | Retrieve Specific Root Nodes
+[**composites_trees_edl_hierarchy_or_template_get**](VeevaApi.md#composites_trees_edl_hierarchy_or_template_get) | **GET** /composites/trees/{edl_hierarchy_or_template} | Retrieve All Root Nodes
+[**composites_trees_edl_hierarchy_v_parent_node_id_children_get**](VeevaApi.md#composites_trees_edl_hierarchy_v_parent_node_id_children_get) | **GET** /composites/trees/edl_hierarchy__v/{parent_node_id}/children | Retrieve a Node&#39;s Children
+[**composites_trees_edl_hierarchy_v_parent_node_id_children_put**](VeevaApi.md#composites_trees_edl_hierarchy_v_parent_node_id_children_put) | **PUT** /composites/trees/edl_hierarchy__v/{parent_node_id}/children | Update Node Order
+[**configuration_component_type_and_record_name_get**](VeevaApi.md#configuration_component_type_and_record_name_get) | **GET** /configuration/{component_type_and_record_name} | Retrieve Component Record (XML/JSON)
+[**configuration_component_type_get**](VeevaApi.md#configuration_component_type_get) | **GET** /configuration/{component_type} | Retrieve Component Record Collection
+[**configuration_object_name_and_object_type_get**](VeevaApi.md#configuration_object_name_and_object_type_get) | **GET** /configuration/{object_name_and_object_type} | Retrieve Details from a Specific Object
+[**configuration_objecttype_get**](VeevaApi.md#configuration_objecttype_get) | **GET** /configuration/Objecttype | Retrieve Details from All Object Types
+[**configuration_role_assignment_rule_delete**](VeevaApi.md#configuration_role_assignment_rule_delete) | **DELETE** /configuration/role_assignment_rule | Delete Lifecycle Role Assignment Override Rules
+[**configuration_role_assignment_rule_get**](VeevaApi.md#configuration_role_assignment_rule_get) | **GET** /configuration/role_assignment_rule | Retrieve Lifecycle Role Assignment Rules (Default &amp; Override)
+[**configuration_role_assignment_rule_post**](VeevaApi.md#configuration_role_assignment_rule_post) | **POST** /configuration/role_assignment_rule | Create Lifecycle Role Assignment Override Rules
+[**configuration_role_assignment_rule_put**](VeevaApi.md#configuration_role_assignment_rule_put) | **PUT** /configuration/role_assignment_rule | Update Lifecycle Role Assignment Rules (Default &amp; Override)
+[**delegation_login_post**](VeevaApi.md#delegation_login_post) | **POST** /delegation/login | Initiate Delegated Session
+[**delegation_vaults_get**](VeevaApi.md#delegation_vaults_get) | **GET** /delegation/vaults | Retrieve Delegations
+[**keep_alive_post**](VeevaApi.md#keep_alive_post) | **POST** /keep-alive | Session Keep Alive
+[**limits_get**](VeevaApi.md#limits_get) | **GET** /limits | Retrieve Limits on Objects
+[**logs_api_usage_get**](VeevaApi.md#logs_api_usage_get) | **GET** /logs/api_usage | Download Daily API Usage
+[**logs_code_debug_get**](VeevaApi.md#logs_code_debug_get) | **GET** /logs/code/debug | Retrieve All Debug Logs
+[**logs_code_debug_id_actions_reset_delete**](VeevaApi.md#logs_code_debug_id_actions_reset_delete) | **DELETE** /logs/code/debug/{id}/actions/reset | Delete Debug Log
+[**logs_code_debug_id_actions_reset_post**](VeevaApi.md#logs_code_debug_id_actions_reset_post) | **POST** /logs/code/debug/{id}/actions/reset | Reset Debug Log
+[**logs_code_debug_id_files_get**](VeevaApi.md#logs_code_debug_id_files_get) | **GET** /logs/code/debug/{id}/files | Download Debug Log Files
+[**logs_code_debug_id_get**](VeevaApi.md#logs_code_debug_id_get) | **GET** /logs/code/debug/{id} | Retrieve Single Debug Log
+[**logs_code_debug_post**](VeevaApi.md#logs_code_debug_post) | **POST** /logs/code/debug | Create Debug Log
+[**logs_code_runtime_get**](VeevaApi.md#logs_code_runtime_get) | **GET** /logs/code/runtime | Download SDK Runtime Log
+[**messages_message_type_actions_import_post**](VeevaApi.md#messages_message_type_actions_import_post) | **POST** /messages/{message_type}/actions/import | Import Bulk Translation File
+[**messages_message_type_language_lang_actions_export_post**](VeevaApi.md#messages_message_type_language_lang_actions_export_post) | **POST** /messages/{message_type}/language/{lang}/actions/export | Export Bulk Translation File
+[**metadata_audittrail_audit_trail_type_get**](VeevaApi.md#metadata_audittrail_audit_trail_type_get) | **GET** /metadata/audittrail/{audit_trail_type} | Retrieve Audit Metadata
+[**metadata_audittrail_get**](VeevaApi.md#metadata_audittrail_get) | **GET** /metadata/audittrail | Retrieve Audit Types
+[**metadata_components_component_type_get**](VeevaApi.md#metadata_components_component_type_get) | **GET** /metadata/components/{component_type} | Retrieve Component Type Metadata
+[**metadata_components_get**](VeevaApi.md#metadata_components_get) | **GET** /metadata/components | Retrieve All Component Metadata
+[**metadata_objects_binders_templates_bindernodes_get**](VeevaApi.md#metadata_objects_binders_templates_bindernodes_get) | **GET** /metadata/objects/binders/templates/bindernodes | Retrieve Binder Template Node Metadata
+[**metadata_objects_binders_templates_get**](VeevaApi.md#metadata_objects_binders_templates_get) | **GET** /metadata/objects/binders/templates | Retrieve Binder Template Metadata
+[**metadata_objects_documents_annotations_placemarks_types_placemark_type_get**](VeevaApi.md#metadata_objects_documents_annotations_placemarks_types_placemark_type_get) | **GET** /metadata/objects/documents/annotations/placemarks/types/{placemark_type} | Retrieve Annotation Placemark Type Metadata
+[**metadata_objects_documents_annotations_references_types_reference_type_get**](VeevaApi.md#metadata_objects_documents_annotations_references_types_reference_type_get) | **GET** /metadata/objects/documents/annotations/references/types/{reference_type} | Retrieve Annotation Reference Type Metadata
+[**metadata_objects_documents_annotations_types_annotation_type_get**](VeevaApi.md#metadata_objects_documents_annotations_types_annotation_type_get) | **GET** /metadata/objects/documents/annotations/types/{annotation_type} | Retrieve Annotation Type Metadata
+[**metadata_objects_documents_events_event_type_types_event_subtype_get**](VeevaApi.md#metadata_objects_documents_events_event_type_types_event_subtype_get) | **GET** /metadata/objects/documents/events/{event_type}/types/{event_subtype} | Retrieve Document Event SubType Metadata
+[**metadata_objects_documents_events_get**](VeevaApi.md#metadata_objects_documents_events_get) | **GET** /metadata/objects/documents/events | Retrieve Document Event Types and Subtypes
+[**metadata_objects_documents_lock_get**](VeevaApi.md#metadata_objects_documents_lock_get) | **GET** /metadata/objects/documents/lock | Retrieve Document Lock Metadata
+[**metadata_objects_documents_properties_find_common_post**](VeevaApi.md#metadata_objects_documents_properties_find_common_post) | **POST** /metadata/objects/documents/properties/find_common | Retrieve Common Document Fields
+[**metadata_objects_documents_properties_get**](VeevaApi.md#metadata_objects_documents_properties_get) | **GET** /metadata/objects/documents/properties | Retrieve All Document Fields
+[**metadata_objects_documents_templates_get**](VeevaApi.md#metadata_objects_documents_templates_get) | **GET** /metadata/objects/documents/templates | Retrieve Document Template Metadata
+[**metadata_objects_documents_types_get**](VeevaApi.md#metadata_objects_documents_types_get) | **GET** /metadata/objects/documents/types | Retrieve All Document Types
+[**metadata_objects_documents_types_type_get**](VeevaApi.md#metadata_objects_documents_types_type_get) | **GET** /metadata/objects/documents/types/{type} | Retrieve Document Type
+[**metadata_objects_documents_types_type_relationships_get**](VeevaApi.md#metadata_objects_documents_types_type_relationships_get) | **GET** /metadata/objects/documents/types/{type}/relationships | Retrieve Document Type Relationships
+[**metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get**](VeevaApi.md#metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get) | **GET** /metadata/objects/documents/types/{type}/subtypes/{subtype}/classifications/{classification} | Retrieve Document Classification
+[**metadata_objects_documents_types_type_subtypes_subtype_get**](VeevaApi.md#metadata_objects_documents_types_type_subtypes_subtype_get) | **GET** /metadata/objects/documents/types/{type}/subtypes/{subtype} | Retrieve Document Subtype
+[**metadata_objects_groups_get**](VeevaApi.md#metadata_objects_groups_get) | **GET** /metadata/objects/groups | Retrieve Group Metadata
+[**metadata_objects_securitypolicies_get**](VeevaApi.md#metadata_objects_securitypolicies_get) | **GET** /metadata/objects/securitypolicies | Retrieve Security Policy Metadata
+[**metadata_objects_users_get**](VeevaApi.md#metadata_objects_users_get) | **GET** /metadata/objects/users | Retrieve User Metadata
+[**metadata_query_archived_documents_relationships_document_signature_sysr_get**](VeevaApi.md#metadata_query_archived_documents_relationships_document_signature_sysr_get) | **GET** /metadata/query/archived_documents/relationships/document_signature__sysr | Retrieve Archived Document Signature Metadata
+[**metadata_query_documents_relationships_document_signature_sysr_get**](VeevaApi.md#metadata_query_documents_relationships_document_signature_sysr_get) | **GET** /metadata/query/documents/relationships/document_signature__sysr | Retrieve Document Signature Metadata
+[**metadata_vobjects_get**](VeevaApi.md#metadata_vobjects_get) | **GET** /metadata/vobjects | Retrieve Object Collection
+[**metadata_vobjects_object_name_actions_canceldeployment_post**](VeevaApi.md#metadata_vobjects_object_name_actions_canceldeployment_post) | **POST** /metadata/vobjects/{object_name}/actions/canceldeployment | Cancel Raw Object Deployment
+[**metadata_vobjects_object_name_fields_object_field_name_get**](VeevaApi.md#metadata_vobjects_object_name_fields_object_field_name_get) | **GET** /metadata/vobjects/{object_name}/fields/{object_field_name} | Retrieve Object Field Metadata
+[**metadata_vobjects_object_name_get**](VeevaApi.md#metadata_vobjects_object_name_get) | **GET** /metadata/vobjects/{object_name} | Retrieve Object Metadata
+[**metadata_vobjects_object_name_page_layouts_get**](VeevaApi.md#metadata_vobjects_object_name_page_layouts_get) | **GET** /metadata/vobjects/{object_name}/page_layouts | Retrieve Page Layouts
+[**metadata_vobjects_object_name_page_layouts_layout_name_get**](VeevaApi.md#metadata_vobjects_object_name_page_layouts_layout_name_get) | **GET** /metadata/vobjects/{object_name}/page_layouts/{layout_name} | Retrieve Page Layout Metadata
+[**notifications_histories_get**](VeevaApi.md#notifications_histories_get) | **GET** /notifications/histories | Retrieve Email Notification Histories
+[**object_workflow_actions_action_get**](VeevaApi.md#object_workflow_actions_action_get) | **GET** /object/workflow/actions/{action} | Retrieve Bulk Workflow Action Details
+[**object_workflow_actions_action_post**](VeevaApi.md#object_workflow_actions_action_post) | **POST** /object/workflow/actions/{action} | Initiate Workflow Actions on Multiple Workflows
+[**object_workflow_actions_canceltasks_post**](VeevaApi.md#object_workflow_actions_canceltasks_post) | **POST** /object/workflow/actions/canceltasks | Cancel Workflow Tasks
+[**object_workflow_actions_cancelworkflows_post**](VeevaApi.md#object_workflow_actions_cancelworkflows_post) | **POST** /object/workflow/actions/cancelworkflows | Cancel Workflows
+[**object_workflow_actions_get**](VeevaApi.md#object_workflow_actions_get) | **GET** /object/workflow/actions | Retrieve Bulk Workflow Actions
+[**object_workflow_actions_reassigntasks_post**](VeevaApi.md#object_workflow_actions_reassigntasks_post) | **POST** /object/workflow/actions/reassigntasks | Reassign Workflow Tasks
+[**object_workflow_actions_replaceworkflowowner_post**](VeevaApi.md#object_workflow_actions_replaceworkflowowner_post) | **POST** /object/workflow/actions/replaceworkflowowner | Replace Workflow Owner
+[**objects_binders_actions_export_job_id_results_get**](VeevaApi.md#objects_binders_actions_export_job_id_results_get) | **GET** /objects/binders/actions/export/{job_id}/results | Retrieve Binder Export Results
+[**objects_binders_binder_id_actions_export_post**](VeevaApi.md#objects_binders_binder_id_actions_export_post) | **POST** /objects/binders/{binder_id}/actions/export | Export Binder (Latest Version)
+[**objects_binders_binder_id_actions_post**](VeevaApi.md#objects_binders_binder_id_actions_post) | **POST** /objects/binders/{binder_id}/actions | Refresh Binder Auto-Filing
+[**objects_binders_binder_id_binding_rule_put**](VeevaApi.md#objects_binders_binder_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/binding_rule | Update Binding Rule
+[**objects_binders_binder_id_delete**](VeevaApi.md#objects_binders_binder_id_delete) | **DELETE** /objects/binders/{binder_id} | Delete Binder
+[**objects_binders_binder_id_documents_node_id_binding_rule_put**](VeevaApi.md#objects_binders_binder_id_documents_node_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/documents/{node_id}/binding_rule | Update Binder Document Binding Rule
+[**objects_binders_binder_id_documents_post**](VeevaApi.md#objects_binders_binder_id_documents_post) | **POST** /objects/binders/{binder_id}/documents | Add Document to Binder
+[**objects_binders_binder_id_documents_section_id_delete**](VeevaApi.md#objects_binders_binder_id_documents_section_id_delete) | **DELETE** /objects/binders/{binder_id}/documents/{section_id} | Remove Document from Binder
+[**objects_binders_binder_id_documents_section_id_put**](VeevaApi.md#objects_binders_binder_id_documents_section_id_put) | **PUT** /objects/binders/{binder_id}/documents/{section_id} | Move Document in Binder
+[**objects_binders_binder_id_get**](VeevaApi.md#objects_binders_binder_id_get) | **GET** /objects/binders/{binder_id} | Retrieve Binder
+[**objects_binders_binder_id_post**](VeevaApi.md#objects_binders_binder_id_post) | **POST** /objects/binders/{binder_id} | Create Binder Version
+[**objects_binders_binder_id_put**](VeevaApi.md#objects_binders_binder_id_put) | **PUT** /objects/binders/{binder_id} | Update Binder
+[**objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete**](VeevaApi.md#objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete) | **DELETE** /objects/binders/{binder_id}/roles/{role_name_and_user_or_group}/{id} | Remove Users &amp; Groups from Roles on a Single Binder
+[**objects_binders_binder_id_sections_node_id_binding_rule_put**](VeevaApi.md#objects_binders_binder_id_sections_node_id_binding_rule_put) | **PUT** /objects/binders/{binder_id}/sections/{node_id}/binding_rule | Update Binder Section Binding Rule
+[**objects_binders_binder_id_sections_node_id_put**](VeevaApi.md#objects_binders_binder_id_sections_node_id_put) | **PUT** /objects/binders/{binder_id}/sections/{node_id} | Update Binder Section
+[**objects_binders_binder_id_sections_post**](VeevaApi.md#objects_binders_binder_id_sections_post) | **POST** /objects/binders/{binder_id}/sections | Create Binder Section
+[**objects_binders_binder_id_sections_section_id_delete**](VeevaApi.md#objects_binders_binder_id_sections_section_id_delete) | **DELETE** /objects/binders/{binder_id}/sections/{section_id} | Delete Binder Section
+[**objects_binders_binder_id_sections_section_id_get**](VeevaApi.md#objects_binders_binder_id_sections_section_id_get) | **GET** /objects/binders/{binder_id}/sections/{section_id} | Retrieve Binder Sections
+[**objects_binders_binder_id_versions_get**](VeevaApi.md#objects_binders_binder_id_versions_get) | **GET** /objects/binders/{binder_id}/versions | Retrieve All Binder Versions
+[**objects_binders_binder_id_versions_major_version_minor_version_actions_export_post**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_actions_export_post) | **POST** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/actions/export | Export Binder (Specific Version)
+[**objects_binders_binder_id_versions_major_version_minor_version_delete**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_delete) | **DELETE** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Delete Binder Version
+[**objects_binders_binder_id_versions_major_version_minor_version_get**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Retrieve Binder Version
+[**objects_binders_binder_id_versions_major_version_minor_version_put**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_put) | **PUT** /objects/binders/{binder_id}/versions/{major_version}/{minor_version} | Update Binder Version
+[**objects_binders_binder_id_versions_major_version_minor_version_relationships_post**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_post) | **POST** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships | Create Binder Relationship
+[**objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete) | **DELETE** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Delete Binder Relationship
+[**objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Retrieve Binder Relationship
+[**objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get**](VeevaApi.md#objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get) | **GET** /objects/binders/{binder_id}/versions/{major_version}/{minor_version}/sections/{section_id} | Retrieve Binder Version Section
+[**objects_binders_id_roles_get**](VeevaApi.md#objects_binders_id_roles_get) | **GET** /objects/binders/{id}/roles | Retrieve All Binder Roles
+[**objects_binders_id_roles_post**](VeevaApi.md#objects_binders_id_roles_post) | **POST** /objects/binders/{id}/roles | Assign Users &amp; Groups to Roles on a Single Binder
+[**objects_binders_id_roles_role_name_get**](VeevaApi.md#objects_binders_id_roles_role_name_get) | **GET** /objects/binders/{id}/roles/{role_name} | Retrieve Document Role
+[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get**](VeevaApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get) | **GET** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions | Retrieve Binder User Actions
+[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get**](VeevaApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get) | **GET** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v}/entry_requirements | Retrieve Binder Entry Criteria
+[**objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put**](VeevaApi.md#objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put) | **PUT** /objects/binders/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v} | Initiate Binder User Action
+[**objects_binders_lifecycle_actions_post**](VeevaApi.md#objects_binders_lifecycle_actions_post) | **POST** /objects/binders/lifecycle_actions | Retrieve User Actions on Multiple Binders
+[**objects_binders_lifecycle_actions_user_action_name_put**](VeevaApi.md#objects_binders_lifecycle_actions_user_action_name_put) | **PUT** /objects/binders/lifecycle_actions/{user_action_name} | Initiate Bulk Binder User Actions
+[**objects_binders_post**](VeevaApi.md#objects_binders_post) | **POST** /objects/binders | Create Binder
+[**objects_binders_templates_get**](VeevaApi.md#objects_binders_templates_get) | **GET** /objects/binders/templates | Retrieve Binder Template Collection
+[**objects_binders_templates_post**](VeevaApi.md#objects_binders_templates_post) | **POST** /objects/binders/templates | Create Binder Template
+[**objects_binders_templates_put**](VeevaApi.md#objects_binders_templates_put) | **PUT** /objects/binders/templates | Update Binder Template
+[**objects_binders_templates_template_name_bindernodes_get**](VeevaApi.md#objects_binders_templates_template_name_bindernodes_get) | **GET** /objects/binders/templates/{template_name}/bindernodes | Retrieve Binder Template Node Attributes
+[**objects_binders_templates_template_name_bindernodes_post**](VeevaApi.md#objects_binders_templates_template_name_bindernodes_post) | **POST** /objects/binders/templates/{template_name}/bindernodes | Create Binder Template Node
+[**objects_binders_templates_template_name_bindernodes_put**](VeevaApi.md#objects_binders_templates_template_name_bindernodes_put) | **PUT** /objects/binders/templates/{template_name}/bindernodes | Replace Binder Template Nodes
+[**objects_binders_templates_template_name_delete**](VeevaApi.md#objects_binders_templates_template_name_delete) | **DELETE** /objects/binders/templates/{template_name} | Delete Binder Template
+[**objects_binders_templates_template_name_get**](VeevaApi.md#objects_binders_templates_template_name_get) | **GET** /objects/binders/templates/{template_name} | Retrieve Binder Template Attributes
+[**objects_deletions_documents_get**](VeevaApi.md#objects_deletions_documents_get) | **GET** /objects/deletions/documents | Retrieve Deleted Document IDs
+[**objects_deletions_vobjects_object_name_get**](VeevaApi.md#objects_deletions_vobjects_object_name_get) | **GET** /objects/deletions/vobjects/{object_name} | Retrieve Deleted Object Record ID
+[**objects_documents_actions_get**](VeevaApi.md#objects_documents_actions_get) | **GET** /objects/documents/actions | Retrieve All Document Workflows
+[**objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get**](VeevaApi.md#objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get) | **GET** /objects/documents/actions/{lifecycle_and_state_and_action}/{job_id}/results | Download Controlled Copy Job Results
+[**objects_documents_actions_workflow_name_get**](VeevaApi.md#objects_documents_actions_workflow_name_get) | **GET** /objects/documents/actions/{workflow_name} | Retrieve Document Workflow Details
+[**objects_documents_actions_workflow_name_post**](VeevaApi.md#objects_documents_actions_workflow_name_post) | **POST** /objects/documents/actions/{workflow_name} | Initiate Document Workflow
+[**objects_documents_annotations_batch_delete**](VeevaApi.md#objects_documents_annotations_batch_delete) | **DELETE** /objects/documents/annotations/batch | Delete Annotations
+[**objects_documents_annotations_batch_post**](VeevaApi.md#objects_documents_annotations_batch_post) | **POST** /objects/documents/annotations/batch | Create Multiple Annotations
+[**objects_documents_annotations_batch_put**](VeevaApi.md#objects_documents_annotations_batch_put) | **PUT** /objects/documents/annotations/batch | Update Annotations
+[**objects_documents_annotations_replies_batch_post**](VeevaApi.md#objects_documents_annotations_replies_batch_post) | **POST** /objects/documents/annotations/replies/batch | Add Annotation Replies
+[**objects_documents_attachments_batch_delete**](VeevaApi.md#objects_documents_attachments_batch_delete) | **DELETE** /objects/documents/attachments/batch | Delete Multiple Document Attachments
+[**objects_documents_attachments_batch_post**](VeevaApi.md#objects_documents_attachments_batch_post) | **POST** /objects/documents/attachments/batch | Create Multiple Document Attachments
+[**objects_documents_attachments_batch_put**](VeevaApi.md#objects_documents_attachments_batch_put) | **PUT** /objects/documents/attachments/batch | Update Multiple Document Attachment Descriptions
+[**objects_documents_batch_actions_fileextract_job_id_results_get**](VeevaApi.md#objects_documents_batch_actions_fileextract_job_id_results_get) | **GET** /objects/documents/batch/actions/fileextract/{job_id}/results | Retrieve Document Export Results
+[**objects_documents_batch_actions_fileextract_post**](VeevaApi.md#objects_documents_batch_actions_fileextract_post) | **POST** /objects/documents/batch/actions/fileextract | Export Documents
+[**objects_documents_batch_actions_reclassify_put**](VeevaApi.md#objects_documents_batch_actions_reclassify_put) | **PUT** /objects/documents/batch/actions/reclassify | Reclassify Multiple Documents
+[**objects_documents_batch_actions_rerender_post**](VeevaApi.md#objects_documents_batch_actions_rerender_post) | **POST** /objects/documents/batch/actions/rerender | Update Multiple Document Renditions
+[**objects_documents_batch_delete**](VeevaApi.md#objects_documents_batch_delete) | **DELETE** /objects/documents/batch | Delete Multiple Documents
+[**objects_documents_batch_lock_delete**](VeevaApi.md#objects_documents_batch_lock_delete) | **DELETE** /objects/documents/batch/lock | Undo Collaborative Authoring Checkout
+[**objects_documents_batch_post**](VeevaApi.md#objects_documents_batch_post) | **POST** /objects/documents/batch | Create Multiple Documents
+[**objects_documents_batch_put**](VeevaApi.md#objects_documents_batch_put) | **PUT** /objects/documents/batch | Update Multiple Documents
+[**objects_documents_doc_id_anchors_get**](VeevaApi.md#objects_documents_doc_id_anchors_get) | **GET** /objects/documents/{doc_id}/anchors | Retrieve Anchor IDs
+[**objects_documents_doc_id_annotations_file_get**](VeevaApi.md#objects_documents_doc_id_annotations_file_get) | **GET** /objects/documents/{doc_id}/annotations/file | Export Document Annotations to PDF
+[**objects_documents_doc_id_annotations_file_post**](VeevaApi.md#objects_documents_doc_id_annotations_file_post) | **POST** /objects/documents/{doc_id}/annotations/file | Import Document Annotations from PDF
+[**objects_documents_doc_id_attachments_attachment_id_delete**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_delete) | **DELETE** /objects/documents/{doc_id}/attachments/{attachment_id} | Delete Single Document Attachment
+[**objects_documents_doc_id_attachments_attachment_id_file_get**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_file_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/file | Download Document Attachment
+[**objects_documents_doc_id_attachments_attachment_id_get**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id} | Retrieve Document Attachment Metadata
+[**objects_documents_doc_id_attachments_attachment_id_put**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_put) | **PUT** /objects/documents/{doc_id}/attachments/{attachment_id} | Update Document Attachment Description
+[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete) | **DELETE** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Delete Single Document Attachment Version
+[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Document Attachment Version
+[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Document Attachment Version Metadata
+[**objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post) | **POST** /objects/documents/{doc_id}/attachments/{attachment_id}/versions/{attachment_version} | Restore Document Attachment Version
+[**objects_documents_doc_id_attachments_attachment_id_versions_get**](VeevaApi.md#objects_documents_doc_id_attachments_attachment_id_versions_get) | **GET** /objects/documents/{doc_id}/attachments/{attachment_id}/versions | Retrieve Document Attachment Versions
+[**objects_documents_doc_id_attachments_file_get**](VeevaApi.md#objects_documents_doc_id_attachments_file_get) | **GET** /objects/documents/{doc_id}/attachments/file | Download All Document Attachments
+[**objects_documents_doc_id_attachments_get**](VeevaApi.md#objects_documents_doc_id_attachments_get) | **GET** /objects/documents/{doc_id}/attachments | Retrieve Document Attachments
+[**objects_documents_doc_id_attachments_post**](VeevaApi.md#objects_documents_doc_id_attachments_post) | **POST** /objects/documents/{doc_id}/attachments | Create Document Attachment
+[**objects_documents_doc_id_audittrail_get**](VeevaApi.md#objects_documents_doc_id_audittrail_get) | **GET** /objects/documents/{doc_id}/audittrail | Retrieve Complete Audit History for a Single Document
+[**objects_documents_doc_id_delete**](VeevaApi.md#objects_documents_doc_id_delete) | **DELETE** /objects/documents/{doc_id} | Delete Single Document
+[**objects_documents_doc_id_events_get**](VeevaApi.md#objects_documents_doc_id_events_get) | **GET** /objects/documents/{doc_id}/events | Retrieve Document Events
+[**objects_documents_doc_id_file_get**](VeevaApi.md#objects_documents_doc_id_file_get) | **GET** /objects/documents/{doc_id}/file | Download Document File
+[**objects_documents_doc_id_get**](VeevaApi.md#objects_documents_doc_id_get) | **GET** /objects/documents/{doc_id} | Retrieve Document
+[**objects_documents_doc_id_lock_delete**](VeevaApi.md#objects_documents_doc_id_lock_delete) | **DELETE** /objects/documents/{doc_id}/lock | Delete Document Lock
+[**objects_documents_doc_id_lock_get**](VeevaApi.md#objects_documents_doc_id_lock_get) | **GET** /objects/documents/{doc_id}/lock | Retrieve Document Lock
+[**objects_documents_doc_id_lock_post**](VeevaApi.md#objects_documents_doc_id_lock_post) | **POST** /objects/documents/{doc_id}/lock | Create Document Lock
+[**objects_documents_doc_id_major_version_minor_version_attachments_file_get**](VeevaApi.md#objects_documents_doc_id_major_version_minor_version_attachments_file_get) | **GET** /objects/documents/{doc_id}/{major_version}/{minor_version}/attachments/file | Download All Document Version Attachments
+[**objects_documents_doc_id_post**](VeevaApi.md#objects_documents_doc_id_post) | **POST** /objects/documents/{doc_id} | Create Single Document Version
+[**objects_documents_doc_id_put**](VeevaApi.md#objects_documents_doc_id_put) | **PUT** /objects/documents/{doc_id} | Update Single Document
+[**objects_documents_doc_id_renditions_get**](VeevaApi.md#objects_documents_doc_id_renditions_get) | **GET** /objects/documents/{doc_id}/renditions | Retrieve Document Renditions
+[**objects_documents_doc_id_renditions_rendition_type_delete**](VeevaApi.md#objects_documents_doc_id_renditions_rendition_type_delete) | **DELETE** /objects/documents/{doc_id}/renditions/{rendition_type} | Delete Single Document Rendition
+[**objects_documents_doc_id_renditions_rendition_type_get**](VeevaApi.md#objects_documents_doc_id_renditions_rendition_type_get) | **GET** /objects/documents/{doc_id}/renditions/{rendition_type} | Download Document Rendition File
+[**objects_documents_doc_id_renditions_rendition_type_post**](VeevaApi.md#objects_documents_doc_id_renditions_rendition_type_post) | **POST** /objects/documents/{doc_id}/renditions/{rendition_type} | Add Single Document Rendition
+[**objects_documents_doc_id_renditions_rendition_type_put**](VeevaApi.md#objects_documents_doc_id_renditions_rendition_type_put) | **PUT** /objects/documents/{doc_id}/renditions/{rendition_type} | Replace Document Rendition
+[**objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete**](VeevaApi.md#objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete) | **DELETE** /objects/documents/{doc_id}/roles/{role_name_and_user_or_group}/{id} | Remove Users &amp; Groups from Roles on a Single Document
+[**objects_documents_doc_id_version_major_version_minor_version_attachments_get**](VeevaApi.md#objects_documents_doc_id_version_major_version_minor_version_attachments_get) | **GET** /objects/documents/{doc_id}/version/{major_version}/{minor_version}/attachments | Retrieve Document Version Attachments
+[**objects_documents_doc_id_versions_get**](VeevaApi.md#objects_documents_doc_id_versions_get) | **GET** /objects/documents/{doc_id}/versions | Retrieve Document Versions
+[**objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/{annotation_id} | Read Annotations by ID
+[**objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/{annotation_id}/replies | Read Replies of Parent Annotation
+[**objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/file | Export Document Version Annotations to PDF
+[**objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations/file | Import Document Version Annotations from PDF
+[**objects_documents_doc_id_versions_major_version_minor_version_annotations_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_annotations_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/annotations | Read Annotations by Document Version and Type
+[**objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Document Version Attachment Version
+[**objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Document Version Attachment Versions
+[**objects_documents_doc_id_versions_major_version_minor_version_delete**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Delete Single Document Version
+[**objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/doc-export-annotations-to-csv | Retrieve Document Version Notes as CSV
+[**objects_documents_doc_id_versions_major_version_minor_version_events_post**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_events_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/events | Create Document Event
+[**objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/export-video-annotations | Retrieve Video Annotations
+[**objects_documents_doc_id_versions_major_version_minor_version_file_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_file_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/file | Download Document Version File
+[**objects_documents_doc_id_versions_major_version_minor_version_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Retrieve Document Version
+[**objects_documents_doc_id_versions_major_version_minor_version_put**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_put) | **PUT** /objects/documents/{doc_id}/versions/{major_version}/{minor_version} | Update Document Version
+[**objects_documents_doc_id_versions_major_version_minor_version_relationships_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships | Retrieve Document Relationships
+[**objects_documents_doc_id_versions_major_version_minor_version_relationships_post**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships | Create Single Document Relationship
+[**objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Delete Single Document Relationship
+[**objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/relationships/{relationship_id} | Retrieve Document Relationship
+[**objects_documents_doc_id_versions_major_version_minor_version_renditions_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions | Retrieve Document Version Renditions
+[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete) | **DELETE** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Delete Document Version Rendition
+[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Download Document Version Rendition File
+[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post) | **POST** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Upload Document Version Rendition
+[**objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put) | **PUT** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/renditions/{rendition_type} | Replace Document Version Rendition
+[**objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get**](VeevaApi.md#objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get) | **GET** /objects/documents/{doc_id}/versions/{major_version}/{minor_version}/thumbnail | Download Document Version Thumbnail File
+[**objects_documents_get**](VeevaApi.md#objects_documents_get) | **GET** /objects/documents | Retrieve All Documents
+[**objects_documents_id_roles_get**](VeevaApi.md#objects_documents_id_roles_get) | **GET** /objects/documents/{id}/roles | Retrieve All Document Roles
+[**objects_documents_id_roles_post**](VeevaApi.md#objects_documents_id_roles_post) | **POST** /objects/documents/{id}/roles | Assign Users &amp; Groups to Roles on a Single Document
+[**objects_documents_id_roles_role_name_get**](VeevaApi.md#objects_documents_id_roles_role_name_get) | **GET** /objects/documents/{id}/roles/{role_name} | Retrieve Document Role
+[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get**](VeevaApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get) | **GET** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions | Retrieve Document User Actions
+[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get**](VeevaApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get) | **GET** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v}/entry_requirements | Retrieve Document Entry Criteria
+[**objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put**](VeevaApi.md#objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put) | **PUT** /objects/documents/{id}/versions/{major_version}/{minor_version}/lifecycle_actions/{name__v} | Initiate Document User Action
+[**objects_documents_lifecycle_actions_post**](VeevaApi.md#objects_documents_lifecycle_actions_post) | **POST** /objects/documents/lifecycle_actions | Retrieve User Actions on Multiple Documents
+[**objects_documents_lifecycle_actions_user_action_name_put**](VeevaApi.md#objects_documents_lifecycle_actions_user_action_name_put) | **PUT** /objects/documents/lifecycle_actions/{user_action_name} | Initiate Bulk Document User Actions
+[**objects_documents_post**](VeevaApi.md#objects_documents_post) | **POST** /objects/documents | Create Single Document
+[**objects_documents_relationships_batch_delete**](VeevaApi.md#objects_documents_relationships_batch_delete) | **DELETE** /objects/documents/relationships/batch | Delete Multiple Document Relationships
+[**objects_documents_relationships_batch_post**](VeevaApi.md#objects_documents_relationships_batch_post) | **POST** /objects/documents/relationships/batch | Create Multiple Document Relationships
+[**objects_documents_renditions_batch_delete**](VeevaApi.md#objects_documents_renditions_batch_delete) | **DELETE** /objects/documents/renditions/batch | Delete Multiple Document Renditions
+[**objects_documents_renditions_batch_post**](VeevaApi.md#objects_documents_renditions_batch_post) | **POST** /objects/documents/renditions/batch | Add Multiple Document Renditions
+[**objects_documents_roles_batch_delete**](VeevaApi.md#objects_documents_roles_batch_delete) | **DELETE** /objects/documents/roles/batch | Remove Users and Groups from Roles on Multiple Documents &amp; Binders
+[**objects_documents_roles_batch_post**](VeevaApi.md#objects_documents_roles_batch_post) | **POST** /objects/documents/roles/batch | Assign Users &amp; Groups to Roles on Multiple Documents &amp; Binders
+[**objects_documents_templates_get**](VeevaApi.md#objects_documents_templates_get) | **GET** /objects/documents/templates | Retrieve Document Template Collection
+[**objects_documents_templates_post**](VeevaApi.md#objects_documents_templates_post) | **POST** /objects/documents/templates | Create Single Document Template
+[**objects_documents_templates_put**](VeevaApi.md#objects_documents_templates_put) | **PUT** /objects/documents/templates | Update Multiple Document Templates
+[**objects_documents_templates_template_name_delete**](VeevaApi.md#objects_documents_templates_template_name_delete) | **DELETE** /objects/documents/templates/{template_name} | Delete Basic Document Template
+[**objects_documents_templates_template_name_file_get**](VeevaApi.md#objects_documents_templates_template_name_file_get) | **GET** /objects/documents/templates/{template_name}/file | Download Document Template File
+[**objects_documents_templates_template_name_get**](VeevaApi.md#objects_documents_templates_template_name_get) | **GET** /objects/documents/templates/{template_name} | Retrieve Document Template Attributes
+[**objects_documents_templates_template_name_put**](VeevaApi.md#objects_documents_templates_template_name_put) | **PUT** /objects/documents/templates/{template_name} | Update Single Document Template
+[**objects_documents_tokens_post**](VeevaApi.md#objects_documents_tokens_post) | **POST** /objects/documents/tokens | Document Tokens
+[**objects_documents_versions_batch_actions_fileextract_post**](VeevaApi.md#objects_documents_versions_batch_actions_fileextract_post) | **POST** /objects/documents/versions/batch/actions/fileextract | Export Document Versions
+[**objects_documents_versions_batch_delete**](VeevaApi.md#objects_documents_versions_batch_delete) | **DELETE** /objects/documents/versions/batch | Delete Multiple Document Versions
+[**objects_documents_versions_batch_post**](VeevaApi.md#objects_documents_versions_batch_post) | **POST** /objects/documents/versions/batch | Create Multiple Document Versions
+[**objects_domain_get**](VeevaApi.md#objects_domain_get) | **GET** /objects/domain | Retrieve Domain Information
+[**objects_domains_get**](VeevaApi.md#objects_domains_get) | **GET** /objects/domains | Retrieve Domains
+[**objects_edl_matched_documents_batch_actions_add_post**](VeevaApi.md#objects_edl_matched_documents_batch_actions_add_post) | **POST** /objects/edl_matched_documents/batch/actions/add | Add EDL Matched Documents
+[**objects_edl_matched_documents_batch_actions_remove_post**](VeevaApi.md#objects_edl_matched_documents_batch_actions_remove_post) | **POST** /objects/edl_matched_documents/batch/actions/remove | Remove EDL Matched Documents
+[**objects_groups_auto_get**](VeevaApi.md#objects_groups_auto_get) | **GET** /objects/groups/auto | Retrieve Auto Managed Groups
+[**objects_groups_get**](VeevaApi.md#objects_groups_get) | **GET** /objects/groups | Retrieve All Groups
+[**objects_groups_group_id_delete**](VeevaApi.md#objects_groups_group_id_delete) | **DELETE** /objects/groups/{group_id} | Delete Group
+[**objects_groups_group_id_get**](VeevaApi.md#objects_groups_group_id_get) | **GET** /objects/groups/{group_id} | Retrieve Group
+[**objects_groups_group_id_put**](VeevaApi.md#objects_groups_group_id_put) | **PUT** /objects/groups/{group_id} | Update Group
+[**objects_groups_post**](VeevaApi.md#objects_groups_post) | **POST** /objects/groups | Create Group
+[**objects_licenses_get**](VeevaApi.md#objects_licenses_get) | **GET** /objects/licenses | Retrieve Application License Usage
+[**objects_objectworkflows_actions_get**](VeevaApi.md#objects_objectworkflows_actions_get) | **GET** /objects/objectworkflows/actions | Retrieve All Multi-Record Workflows
+[**objects_objectworkflows_actions_workflow_name_get**](VeevaApi.md#objects_objectworkflows_actions_workflow_name_get) | **GET** /objects/objectworkflows/actions/{workflow_name} | Retrieve Multi-Record Workflow Details
+[**objects_objectworkflows_actions_workflow_name_post**](VeevaApi.md#objects_objectworkflows_actions_workflow_name_post) | **POST** /objects/objectworkflows/actions/{workflow_name} | Initiate Multi-Record Workflow
+[**objects_objectworkflows_get**](VeevaApi.md#objects_objectworkflows_get) | **GET** /objects/objectworkflows | Retrieve Workflows
+[**objects_objectworkflows_tasks_get**](VeevaApi.md#objects_objectworkflows_tasks_get) | **GET** /objects/objectworkflows/tasks | Retrieve Workflow Tasks
+[**objects_objectworkflows_tasks_task_id_actions_accept_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_accept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/accept | Accept Single Record Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_cancel_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_cancel_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/cancel | Cancel Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_complete_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_complete_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/complete | Complete Single Record Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_get**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_get) | **GET** /objects/objectworkflows/tasks/{task_id}/actions | Retrieve Workflow Task Actions
+[**objects_objectworkflows_tasks_task_id_actions_mdwaccept_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_mdwaccept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwaccept | Accept Multi-item Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwcomplete | Complete Multi-item Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwmanagecontent | Manage Multi-Item Workflow Content
+[**objects_objectworkflows_tasks_task_id_actions_mdwreassign_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_mdwreassign_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/mdwreassign | Reassign Multi-item Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_reassign_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_reassign_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/reassign | Reassign Single Record Workflow Task
+[**objects_objectworkflows_tasks_task_id_actions_task_action_get**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_task_action_get) | **GET** /objects/objectworkflows/tasks/{task_id}/actions/{task_action} | Retrieve Workflow Task Action Details
+[**objects_objectworkflows_tasks_task_id_actions_undoaccept_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_undoaccept_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/undoaccept | Undo Workflow Task Acceptance
+[**objects_objectworkflows_tasks_task_id_actions_updateduedate_post**](VeevaApi.md#objects_objectworkflows_tasks_task_id_actions_updateduedate_post) | **POST** /objects/objectworkflows/tasks/{task_id}/actions/updateduedate | Update Workflow Task Due Date
+[**objects_objectworkflows_tasks_task_id_get**](VeevaApi.md#objects_objectworkflows_tasks_task_id_get) | **GET** /objects/objectworkflows/tasks/{task_id} | Retrieve Workflow Task Details
+[**objects_objectworkflows_workflow_id_actions_get**](VeevaApi.md#objects_objectworkflows_workflow_id_actions_get) | **GET** /objects/objectworkflows/{workflow_id}/actions | Retrieve Workflow Actions
+[**objects_objectworkflows_workflow_id_actions_workflow_action_get**](VeevaApi.md#objects_objectworkflows_workflow_id_actions_workflow_action_get) | **GET** /objects/objectworkflows/{workflow_id}/actions/{workflow_action} | Retrieve Workflow Action Details
+[**objects_objectworkflows_workflow_id_actions_workflow_action_post**](VeevaApi.md#objects_objectworkflows_workflow_id_actions_workflow_action_post) | **POST** /objects/objectworkflows/{workflow_id}/actions/{workflow_action} | Initiate Workflow Action
+[**objects_objectworkflows_workflow_id_get**](VeevaApi.md#objects_objectworkflows_workflow_id_get) | **GET** /objects/objectworkflows/{workflow_id} | Retrieve Workflow Details
+[**objects_picklists_get**](VeevaApi.md#objects_picklists_get) | **GET** /objects/picklists | Retrieve All Picklists
+[**objects_picklists_picklist_name_get**](VeevaApi.md#objects_picklists_picklist_name_get) | **GET** /objects/picklists/{picklist_name} | Retrieve Picklist Values
+[**objects_picklists_picklist_name_picklist_value_name_delete**](VeevaApi.md#objects_picklists_picklist_name_picklist_value_name_delete) | **DELETE** /objects/picklists/{picklist_name}/{picklist_value_name} | Inactivate Picklist Value
+[**objects_picklists_picklist_name_picklist_value_name_put**](VeevaApi.md#objects_picklists_picklist_name_picklist_value_name_put) | **PUT** /objects/picklists/{picklist_name}/{picklist_value_name} | Update Picklist Value
+[**objects_picklists_picklist_name_post**](VeevaApi.md#objects_picklists_picklist_name_post) | **POST** /objects/picklists/{picklist_name} | Create Picklist Values
+[**objects_picklists_picklist_name_put**](VeevaApi.md#objects_picklists_picklist_name_put) | **PUT** /objects/picklists/{picklist_name} | Update Picklist Value Label
+[**objects_sandbox_actions_buildproduction_post**](VeevaApi.md#objects_sandbox_actions_buildproduction_post) | **POST** /objects/sandbox/actions/buildproduction | Build Production Vault
+[**objects_sandbox_actions_promoteproduction_post**](VeevaApi.md#objects_sandbox_actions_promoteproduction_post) | **POST** /objects/sandbox/actions/promoteproduction | Promote to Production
+[**objects_sandbox_actions_recheckusage_post**](VeevaApi.md#objects_sandbox_actions_recheckusage_post) | **POST** /objects/sandbox/actions/recheckusage | Recheck Sandbox Usage Limit
+[**objects_sandbox_batch_changesize_post**](VeevaApi.md#objects_sandbox_batch_changesize_post) | **POST** /objects/sandbox/batch/changesize | Change Sandbox Size
+[**objects_sandbox_entitlements_set_post**](VeevaApi.md#objects_sandbox_entitlements_set_post) | **POST** /objects/sandbox/entitlements/set | Set Sandbox Entitlements
+[**objects_sandbox_get**](VeevaApi.md#objects_sandbox_get) | **GET** /objects/sandbox | Retrieve Sandboxes
+[**objects_sandbox_name_delete**](VeevaApi.md#objects_sandbox_name_delete) | **DELETE** /objects/sandbox/{name} | Delete Sandbox
+[**objects_sandbox_post**](VeevaApi.md#objects_sandbox_post) | **POST** /objects/sandbox | Create or Refresh Sandbox
+[**objects_sandbox_snapshot_api_name_actions_update_post**](VeevaApi.md#objects_sandbox_snapshot_api_name_actions_update_post) | **POST** /objects/sandbox/snapshot/{api_name}/actions/update | Update Sandbox Snapshot
+[**objects_sandbox_snapshot_api_name_actions_upgrade_post**](VeevaApi.md#objects_sandbox_snapshot_api_name_actions_upgrade_post) | **POST** /objects/sandbox/snapshot/{api_name}/actions/upgrade | Upgrade Sandbox Snapshot
+[**objects_sandbox_snapshot_api_name_delete**](VeevaApi.md#objects_sandbox_snapshot_api_name_delete) | **DELETE** /objects/sandbox/snapshot/{api_name} | Delete Sandbox Snapshot
+[**objects_sandbox_snapshot_get**](VeevaApi.md#objects_sandbox_snapshot_get) | **GET** /objects/sandbox/snapshot | Retrieve Sandbox Snapshots
+[**objects_sandbox_snapshot_post**](VeevaApi.md#objects_sandbox_snapshot_post) | **POST** /objects/sandbox/snapshot | Create Sandbox Snapshot
+[**objects_sandbox_vault_id_actions_refresh_post**](VeevaApi.md#objects_sandbox_vault_id_actions_refresh_post) | **POST** /objects/sandbox/{vault_id}/actions/refresh | Refresh Sandbox from Snapshot
+[**objects_sandbox_vault_id_get**](VeevaApi.md#objects_sandbox_vault_id_get) | **GET** /objects/sandbox/{vault_id} | Retrieve Sandbox Details by ID
+[**objects_securitypolicies_get**](VeevaApi.md#objects_securitypolicies_get) | **GET** /objects/securitypolicies | Retrieve All Security Policies
+[**objects_securitypolicies_security_policy_name_get**](VeevaApi.md#objects_securitypolicies_security_policy_name_get) | **GET** /objects/securitypolicies/{security_policy_name} | Retrieve Security Policy
+[**objects_users_get**](VeevaApi.md#objects_users_get) | **GET** /objects/users/ | Retrieve All Users
+[**objects_users_id_get**](VeevaApi.md#objects_users_id_get) | **GET** /objects/users/{id} | Retrieve User
+[**objects_users_id_permissions_get**](VeevaApi.md#objects_users_id_permissions_get) | **GET** /objects/users/{id}/permissions | Retrieve User Permissions
+[**objects_users_id_put**](VeevaApi.md#objects_users_id_put) | **PUT** /objects/users/{id} | Update Single User
+[**objects_users_me_get**](VeevaApi.md#objects_users_me_get) | **GET** /objects/users/me | Validate Session User
+[**objects_users_me_password_post**](VeevaApi.md#objects_users_me_password_post) | **POST** /objects/users/me/password | Change My Password
+[**objects_users_me_permissions_get**](VeevaApi.md#objects_users_me_permissions_get) | **GET** /objects/users/me/permissions | Retrieve My User Permissions
+[**objects_users_me_put**](VeevaApi.md#objects_users_me_put) | **PUT** /objects/users/me | Update My User
+[**objects_users_post**](VeevaApi.md#objects_users_post) | **POST** /objects/users | Create Single User
+[**objects_users_put**](VeevaApi.md#objects_users_put) | **PUT** /objects/users | Update Multiple Users
+[**objects_users_user_id_delete**](VeevaApi.md#objects_users_user_id_delete) | **DELETE** /objects/users/{user_id} | Disable User
+[**objects_users_user_id_vault_membership_vault_id_put**](VeevaApi.md#objects_users_user_id_vault_membership_vault_id_put) | **PUT** /objects/users/{user_id}/vault_membership/{vault_id} | Update Vault Membership
+[**objects_vault_actions_compare_post**](VeevaApi.md#objects_vault_actions_compare_post) | **POST** /objects/vault/actions/compare | Vault Compare
+[**objects_vault_actions_configreport_post**](VeevaApi.md#objects_vault_actions_configreport_post) | **POST** /objects/vault/actions/configreport | Vault Configuration Report
+[**query_components_post**](VeevaApi.md#query_components_post) | **POST** /query/components | Component Definition Query
+[**query_next_page_post**](VeevaApi.md#query_next_page_post) | **POST** /query/{next_page} | Next Page URL
+[**query_post**](VeevaApi.md#query_post) | **POST** /query | Submitting a Query
+[**query_previous_page_post**](VeevaApi.md#query_previous_page_post) | **POST** /query/{previous_page} | Previous Page URL
+[**scim_v2_me_get**](VeevaApi.md#scim_v2_me_get) | **GET** /scim/v2/Me | Retrieve Current User with SCIM
+[**scim_v2_me_put**](VeevaApi.md#scim_v2_me_put) | **PUT** /scim/v2/Me | Update Current User with SCIM
+[**scim_v2_resource_types_get**](VeevaApi.md#scim_v2_resource_types_get) | **GET** /scim/v2/ResourceTypes | Retrieve All SCIM Resource Types
+[**scim_v2_resource_types_type_get**](VeevaApi.md#scim_v2_resource_types_type_get) | **GET** /scim/v2/ResourceTypes/{type} | Retrieve Single SCIM Resource Type
+[**scim_v2_schemas_get**](VeevaApi.md#scim_v2_schemas_get) | **GET** /scim/v2/Schemas | Retrieve All SCIM Schema Information
+[**scim_v2_schemas_id_get**](VeevaApi.md#scim_v2_schemas_id_get) | **GET** /scim/v2/Schemas/{id} | Retrieve Single SCIM Schema Information
+[**scim_v2_service_provider_config_get**](VeevaApi.md#scim_v2_service_provider_config_get) | **GET** /scim/v2/ServiceProviderConfig | Retrieve SCIM Provider
+[**scim_v2_type_get**](VeevaApi.md#scim_v2_type_get) | **GET** /scim/v2/{type} | Retrieve SCIM Resources
+[**scim_v2_type_id_get**](VeevaApi.md#scim_v2_type_id_get) | **GET** /scim/v2/{type}/{id} | Retrieve Single SCIM Resource
+[**scim_v2_users_get**](VeevaApi.md#scim_v2_users_get) | **GET** /scim/v2/Users | Retrieve All Users with SCIM
+[**scim_v2_users_id_get**](VeevaApi.md#scim_v2_users_id_get) | **GET** /scim/v2/Users/{id} | Retrieve Single User with SCIM
+[**scim_v2_users_id_put**](VeevaApi.md#scim_v2_users_id_put) | **PUT** /scim/v2/Users/{id} | Update User with SCIM
+[**scim_v2_users_post**](VeevaApi.md#scim_v2_users_post) | **POST** /scim/v2/Users | Create User with SCIM
+[**services_certificate_cert_id_get**](VeevaApi.md#services_certificate_cert_id_get) | **GET** /services/certificate/{cert_id} | Retrieve Signing Certificate
+[**services_configuration_mode_actions_disable_post**](VeevaApi.md#services_configuration_mode_actions_disable_post) | **POST** /services/configuration_mode/actions/disable | Disable Configuration Mode
+[**services_configuration_mode_actions_enable_post**](VeevaApi.md#services_configuration_mode_actions_enable_post) | **POST** /services/configuration_mode/actions/enable | Enable Configuration Mode
+[**services_directdata_files_get**](VeevaApi.md#services_directdata_files_get) | **GET** /services/directdata/files | Retrieve Available Direct Data Files
+[**services_directdata_files_name_get**](VeevaApi.md#services_directdata_files_name_get) | **GET** /services/directdata/files/{name} | Download Direct Data File
+[**services_file_staging_items_content_item_get**](VeevaApi.md#services_file_staging_items_content_item_get) | **GET** /services/file_staging/items/content/{item} | Download Item Content
+[**services_file_staging_items_item_delete**](VeevaApi.md#services_file_staging_items_item_delete) | **DELETE** /services/file_staging/items/{item} | Delete File or Folder
+[**services_file_staging_items_item_get**](VeevaApi.md#services_file_staging_items_item_get) | **GET** /services/file_staging/items/{item} | List Items at a Path
+[**services_file_staging_items_item_put**](VeevaApi.md#services_file_staging_items_item_put) | **PUT** /services/file_staging/items/{item} | Update Folder or File
+[**services_file_staging_items_post**](VeevaApi.md#services_file_staging_items_post) | **POST** /services/file_staging/items | Create Folder or File
+[**services_file_staging_upload_get**](VeevaApi.md#services_file_staging_upload_get) | **GET** /services/file_staging/upload/ | List Upload Sessions
+[**services_file_staging_upload_post**](VeevaApi.md#services_file_staging_upload_post) | **POST** /services/file_staging/upload | Create Resumable Upload Session
+[**services_file_staging_upload_upload_session_id_delete**](VeevaApi.md#services_file_staging_upload_upload_session_id_delete) | **DELETE** /services/file_staging/upload/{upload_session_id} | Abort Upload Session
+[**services_file_staging_upload_upload_session_id_get**](VeevaApi.md#services_file_staging_upload_upload_session_id_get) | **GET** /services/file_staging/upload/{upload_session_id} | Get Upload Session Details
+[**services_file_staging_upload_upload_session_id_parts_get**](VeevaApi.md#services_file_staging_upload_upload_session_id_parts_get) | **GET** /services/file_staging/upload/{upload_session_id}/parts | List File Parts Uploaded to Session
+[**services_file_staging_upload_upload_session_id_post**](VeevaApi.md#services_file_staging_upload_upload_session_id_post) | **POST** /services/file_staging/upload/{upload_session_id} | Commit Upload Session
+[**services_file_staging_upload_upload_session_id_put**](VeevaApi.md#services_file_staging_upload_upload_session_id_put) | **PUT** /services/file_staging/upload/{upload_session_id} | Upload to a Session
+[**services_jobs_histories_get**](VeevaApi.md#services_jobs_histories_get) | **GET** /services/jobs/histories | Retrieve Job Histories
+[**services_jobs_job_id_errors_get**](VeevaApi.md#services_jobs_job_id_errors_get) | **GET** /services/jobs/{job_id}/errors | Retrieve Import Bulk Translation File Job Errors
+[**services_jobs_job_id_get**](VeevaApi.md#services_jobs_job_id_get) | **GET** /services/jobs/{job_id} | Retrieve Job Status
+[**services_jobs_job_id_summary_get**](VeevaApi.md#services_jobs_job_id_summary_get) | **GET** /services/jobs/{job_id}/summary | Retrieve Import Bulk Translation File Job Summary
+[**services_jobs_job_id_tasks_get**](VeevaApi.md#services_jobs_job_id_tasks_get) | **GET** /services/jobs/{job_id}/tasks | Retrieve SDK Job Tasks
+[**services_jobs_monitors_get**](VeevaApi.md#services_jobs_monitors_get) | **GET** /services/jobs/monitors | Retrieve Job Monitors
+[**services_jobs_start_now_job_id_post**](VeevaApi.md#services_jobs_start_now_job_id_post) | **POST** /services/jobs/start_now/{job_id} | Start Job
+[**services_loader_extract_post**](VeevaApi.md#services_loader_extract_post) | **POST** /services/loader/extract | Extract Data Files
+[**services_loader_job_id_tasks_task_id_failurelog_get**](VeevaApi.md#services_loader_job_id_tasks_task_id_failurelog_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/failurelog | Retrieve Load Failure Log Results
+[**services_loader_job_id_tasks_task_id_results_get**](VeevaApi.md#services_loader_job_id_tasks_task_id_results_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/results | Retrieve Loader Extract Results
+[**services_loader_job_id_tasks_task_id_results_renditions_get**](VeevaApi.md#services_loader_job_id_tasks_task_id_results_renditions_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/results/renditions | Retrieve Loader Extract Renditions Results
+[**services_loader_job_id_tasks_task_id_successlog_get**](VeevaApi.md#services_loader_job_id_tasks_task_id_successlog_get) | **GET** /services/loader/{job_id}/tasks/{task_id}/successlog | Retrieve Load Success Log Results
+[**services_loader_load_post**](VeevaApi.md#services_loader_load_post) | **POST** /services/loader/load | Load Data Objects
+[**services_package_actions_validate_post**](VeevaApi.md#services_package_actions_validate_post) | **POST** /services/package/actions/validate | Validate Package
+[**services_package_post**](VeevaApi.md#services_package_post) | **POST** /services/package | Export Package
+[**services_package_put**](VeevaApi.md#services_package_put) | **PUT** /services/package | Import Package
+[**services_queues_get**](VeevaApi.md#services_queues_get) | **GET** /services/queues | Retrieve All Queues
+[**services_queues_queue_name_actions_disable_delivery_put**](VeevaApi.md#services_queues_queue_name_actions_disable_delivery_put) | **PUT** /services/queues/{queue_name}/actions/disable_delivery | Disable Delivery
+[**services_queues_queue_name_actions_enable_delivery_put**](VeevaApi.md#services_queues_queue_name_actions_enable_delivery_put) | **PUT** /services/queues/{queue_name}/actions/enable_delivery | Enable Delivery
+[**services_queues_queue_name_actions_reset_put**](VeevaApi.md#services_queues_queue_name_actions_reset_put) | **PUT** /services/queues/{queue_name}/actions/reset | Reset Queue
+[**services_queues_queue_name_get**](VeevaApi.md#services_queues_queue_name_get) | **GET** /services/queues/{queue_name} | Retrieve Queue Status
+[**services_vobject_vault_package_v_package_id_actions_validate_post**](VeevaApi.md#services_vobject_vault_package_v_package_id_actions_validate_post) | **POST** /services/vobject/vault_package__v/{package_id}/actions/validate | Validate Imported Package
+[**session_delete**](VeevaApi.md#session_delete) | **DELETE** /session | End Session
+[**uicode_distributions_distribution_name_code_get**](VeevaApi.md#uicode_distributions_distribution_name_code_get) | **GET** /uicode/distributions/{distribution_name}/code | Download Single Client Code Distribution
+[**uicode_distributions_distribution_name_delete**](VeevaApi.md#uicode_distributions_distribution_name_delete) | **DELETE** /uicode/distributions/{distribution_name} | Delete Single Client Code Distribution
+[**uicode_distributions_distribution_name_get**](VeevaApi.md#uicode_distributions_distribution_name_get) | **GET** /uicode/distributions/{distribution_name} | Retrieve Single Client Code Distribution Metadata
+[**uicode_distributions_get**](VeevaApi.md#uicode_distributions_get) | **GET** /uicode/distributions | Retrieve All Client Code Distribution Metadata
+[**uicode_distributions_post**](VeevaApi.md#uicode_distributions_post) | **POST** /uicode/distributions | Add or Replace Single Client Code Distribution
+[**vobject_vault_package_v_package_id_actions_deploy_post**](VeevaApi.md#vobject_vault_package_v_package_id_actions_deploy_post) | **POST** /vobject/vault_package__v/{package_id}/actions/deploy | Deploy Package
+[**vobject_vault_package_v_package_id_actions_deploy_results_get**](VeevaApi.md#vobject_vault_package_v_package_id_actions_deploy_results_get) | **GET** /vobject/vault_package__v/{package_id}/actions/deploy/results | Retrieve Package Deploy Results
+[**vobjects_cascadedelete_results_object_name_job_status_job_id_get**](VeevaApi.md#vobjects_cascadedelete_results_object_name_job_status_job_id_get) | **GET** /vobjects/cascadedelete/results/{object_name}/{job_status}/{job_id} | Retrieve Results of Cascade Delete Job
+[**vobjects_deepcopy_results_object_name_job_status_job_id_get**](VeevaApi.md#vobjects_deepcopy_results_object_name_job_status_job_id_get) | **GET** /vobjects/deepcopy/results/{object_name}/{job_status}/{job_id} | Retrieve Results of Deep Copy Job
+[**vobjects_edl_item_v_actions_createplaceholder_post**](VeevaApi.md#vobjects_edl_item_v_actions_createplaceholder_post) | **POST** /vobjects/edl_item__v/actions/createplaceholder | Create a Placeholder from an EDL Item
+[**vobjects_merges_job_id_log_get**](VeevaApi.md#vobjects_merges_job_id_log_get) | **GET** /vobjects/merges/{job_id}/log | Download Merge Records Job Log
+[**vobjects_merges_job_id_results_get**](VeevaApi.md#vobjects_merges_job_id_results_get) | **GET** /vobjects/merges/{job_id}/results | Retrieve Record Merge Results
+[**vobjects_merges_job_id_status_get**](VeevaApi.md#vobjects_merges_job_id_status_get) | **GET** /vobjects/merges/{job_id}/status | Retrieve Record Merge Status
+[**vobjects_object_name_actions_action_name_post**](VeevaApi.md#vobjects_object_name_actions_action_name_post) | **POST** /vobjects/{object_name}/actions/{action_name} | Initiate Object Action on Multiple Records
+[**vobjects_object_name_actions_changetype_post**](VeevaApi.md#vobjects_object_name_actions_changetype_post) | **POST** /vobjects/{object_name}/actions/changetype | Change Object Type
+[**vobjects_object_name_actions_merge_post**](VeevaApi.md#vobjects_object_name_actions_merge_post) | **POST** /vobjects/{object_name}/actions/merge | Initiate Record Merge
+[**vobjects_object_name_actions_recalculaterollups_get**](VeevaApi.md#vobjects_object_name_actions_recalculaterollups_get) | **GET** /vobjects/{object_name}/actions/recalculaterollups | Retrieve Roll-up Field Recalculation Status
+[**vobjects_object_name_actions_recalculaterollups_post**](VeevaApi.md#vobjects_object_name_actions_recalculaterollups_post) | **POST** /vobjects/{object_name}/actions/recalculaterollups | Recalculate Roll-up Fields
+[**vobjects_object_name_actions_updatecorporatecurrency_put**](VeevaApi.md#vobjects_object_name_actions_updatecorporatecurrency_put) | **PUT** /vobjects/{object_name}/actions/updatecorporatecurrency | Update Corporate Currency Fields
+[**vobjects_object_name_attachments_batch_delete**](VeevaApi.md#vobjects_object_name_attachments_batch_delete) | **DELETE** /vobjects/{object_name}/attachments/batch | Delete Multiple Object Record Attachments
+[**vobjects_object_name_attachments_batch_post**](VeevaApi.md#vobjects_object_name_attachments_batch_post) | **POST** /vobjects/{object_name}/attachments/batch | Create Multiple Object Record Attachments
+[**vobjects_object_name_attachments_batch_put**](VeevaApi.md#vobjects_object_name_attachments_batch_put) | **PUT** /vobjects/{object_name}/attachments/batch | Update Multiple Object Record Attachment Descriptions
+[**vobjects_object_name_delete**](VeevaApi.md#vobjects_object_name_delete) | **DELETE** /vobjects/{object_name} | Delete Object Records
+[**vobjects_object_name_id_roles_role_name_get**](VeevaApi.md#vobjects_object_name_id_roles_role_name_get) | **GET** /vobjects/{object_name}/{id}/roles/{role_name} | Retrieve Object Record Roles
+[**vobjects_object_name_object_record_id_actions_action_name_get**](VeevaApi.md#vobjects_object_name_object_record_id_actions_action_name_get) | **GET** /vobjects/{object_name}/{object_record_id}/actions/{action_name} | Retrieve Object User Actions Details
+[**vobjects_object_name_object_record_id_actions_action_name_post**](VeevaApi.md#vobjects_object_name_object_record_id_actions_action_name_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/{action_name} | Initiate Object Action on a Single Record
+[**vobjects_object_name_object_record_id_actions_cascadedelete_post**](VeevaApi.md#vobjects_object_name_object_record_id_actions_cascadedelete_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/cascadedelete | Cascade Delete Object Record
+[**vobjects_object_name_object_record_id_actions_deepcopy_post**](VeevaApi.md#vobjects_object_name_object_record_id_actions_deepcopy_post) | **POST** /vobjects/{object_name}/{object_record_id}/actions/deepcopy | Deep Copy Object Record
+[**vobjects_object_name_object_record_id_actions_get**](VeevaApi.md#vobjects_object_name_object_record_id_actions_get) | **GET** /vobjects/{object_name}/{object_record_id}/actions | Retrieve Object Record User Actions
+[**vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachment_fields/{attachment_field_name}/file | Download Attachment Field File
+[**vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post**](VeevaApi.md#vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachment_fields/{attachment_field_name}/file | Update Attachment Field File
+[**vobjects_object_name_object_record_id_attachment_fields_file_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachment_fields_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachment_fields/file | Download All Attachment Field Files
+[**vobjects_object_name_object_record_id_attachments_attachment_id_delete**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_delete) | **DELETE** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Delete Object Record Attachment
+[**vobjects_object_name_object_record_id_attachments_attachment_id_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Retrieve Object Record Attachment Metadata
+[**vobjects_object_name_object_record_id_attachments_attachment_id_put**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_put) | **PUT** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id} | Update Object Record Attachment Description
+[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete) | **DELETE** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Delete Object Record Attachment Version
+[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version}/file | Download Object Record Attachment File
+[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Retrieve Object Record Attachment Version Metadata
+[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions/{attachment_version} | Restore Object Record Attachment Version
+[**vobjects_object_name_object_record_id_attachments_attachment_id_versions_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_attachment_id_versions_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/{attachment_id}/versions | Retrieve Object Record Attachment Versions
+[**vobjects_object_name_object_record_id_attachments_file_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_file_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments/file | Download All Object Record Attachment Files
+[**vobjects_object_name_object_record_id_attachments_get**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_get) | **GET** /vobjects/{object_name}/{object_record_id}/attachments | Retrieve Object Record Attachments
+[**vobjects_object_name_object_record_id_attachments_post**](VeevaApi.md#vobjects_object_name_object_record_id_attachments_post) | **POST** /vobjects/{object_name}/{object_record_id}/attachments | Create Object Record Attachment
+[**vobjects_object_name_object_record_id_audittrail_get**](VeevaApi.md#vobjects_object_name_object_record_id_audittrail_get) | **GET** /vobjects/{object_name}/{object_record_id}/audittrail | Retrieve Complete Audit History for a Single Object Record
+[**vobjects_object_name_object_record_id_get**](VeevaApi.md#vobjects_object_name_object_record_id_get) | **GET** /vobjects/{object_name}/{object_record_id} | Retrieve Object Record
+[**vobjects_object_name_post**](VeevaApi.md#vobjects_object_name_post) | **POST** /vobjects/{object_name} | Create &amp; Upsert Object Records
+[**vobjects_object_name_put**](VeevaApi.md#vobjects_object_name_put) | **PUT** /vobjects/{object_name} | Update Object Records
+[**vobjects_object_name_roles_delete**](VeevaApi.md#vobjects_object_name_roles_delete) | **DELETE** /vobjects/{object_name}/roles | Remove Users &amp; Groups from Roles on Object Records
+[**vobjects_object_name_roles_post**](VeevaApi.md#vobjects_object_name_roles_post) | **POST** /vobjects/{object_name}/roles | Assign Users &amp; Groups to Roles on Object Records
+[**vobjects_outbound_package_v_package_id_dependencies_get**](VeevaApi.md#vobjects_outbound_package_v_package_id_dependencies_get) | **GET** /vobjects/outbound_package__v/{package_id}/dependencies | Retrieve Outbound Package Dependencies
 
 
 # **api_get**
@@ -432,21 +432,21 @@ Retrieve API Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -455,7 +455,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve API Versions
         api_instance.api_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_get: %s\n" % e)
+        print("Exception when calling VeevaApi->api_get: %s\n" % e)
 ```
 
 
@@ -500,21 +500,21 @@ Retrieve Content File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     component_type_and_record_name = 'component_type_and_record_name_example' # str | The component type of the record followed by the name of the record from which to retrieve the content file. The format is `{Componenttype}.{record_name}`. For example, `Formattedoutput.my_formatted_output__c`.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -524,7 +524,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Content File
         api_instance.api_mdl_components_component_type_and_record_name_files_get(component_type_and_record_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_components_component_type_and_record_name_files_get: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_components_component_type_and_record_name_files_get: %s\n" % e)
 ```
 
 
@@ -570,21 +570,21 @@ Retrieve Component Record (MDL)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     component_type_and_record_name = 'component_type_and_record_name_example' # str | The component type name (`Picklist`, `Docfield`, `Doctype`, etc.) followed by the name of the record from which to retrieve metadata. The format is `{Componenttype}.{record_name}`. For example, `Picklist.color__c`. Find this with the [Retrieve Component Record Collection](https://developer.veevavault.com/api/24.3#Retrieve_Component_Record_Collection) endpoint.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -594,7 +594,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Component Record (MDL)
         api_instance.api_mdl_components_component_type_and_record_name_get(component_type_and_record_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_components_component_type_and_record_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_components_component_type_and_record_name_get: %s\n" % e)
 ```
 
 
@@ -640,21 +640,21 @@ Retrieve Asynchronous MDL Script Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -664,7 +664,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Asynchronous MDL Script Results
         api_instance.api_mdl_execute_async_job_id_results_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_execute_async_job_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_execute_async_job_id_results_get: %s\n" % e)
 ```
 
 
@@ -710,21 +710,21 @@ Execute MDL Script Asynchronously
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -733,7 +733,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Execute MDL Script Asynchronously
         api_instance.api_mdl_execute_async_post(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_execute_async_post: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_execute_async_post: %s\n" % e)
 ```
 
 
@@ -778,21 +778,21 @@ Execute MDL Script
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -801,7 +801,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Execute MDL Script
         api_instance.api_mdl_execute_post(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_execute_post: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_execute_post: %s\n" % e)
 ```
 
 
@@ -846,21 +846,21 @@ Upload Content File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
@@ -870,7 +870,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Upload Content File
         api_instance.api_mdl_files_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->api_mdl_files_post: %s\n" % e)
+        print("Exception when calling VeevaApi->api_mdl_files_post: %s\n" % e)
 ```
 
 
@@ -916,21 +916,21 @@ Retrieve Audit Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     audit_trail_type = 'audit_trail_type_example' # str | The name of the specified audit type (document_audit_trail, object_audit_trail, etc). Use the Retrieve Audit Types API to retrieve types available in your Vault. Requests for login_audit_trail only accept one request per user at a time.
     start_date = 'start_date_example' # str | Specify a start date to retrieve audit information. This date cannot be more than 30 days ago. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2016 would use 2016-01-15T07:00:00Z. If omitted, defaults to the last 30 days. (optional)
     end_date = 'end_date_example' # str | Specify an end date to retrieve audit information. This date cannot be more than 30 days ago. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2016 would use 2016-01-15T07:00:00Z. If omitted, defaults to the last 30 days. (optional)
@@ -948,7 +948,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Audit Details
         api_instance.audittrail_audit_trail_type_get(audit_trail_type, start_date=start_date, end_date=end_date, all_dates=all_dates, format_result=format_result, limit=limit, offset=offset, objects=objects, events=events, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->audittrail_audit_trail_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->audittrail_audit_trail_type_get: %s\n" % e)
 ```
 
 
@@ -1002,21 +1002,21 @@ Authentication Type Discovery
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
 
@@ -1024,7 +1024,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Authentication Type Discovery
         api_instance.auth_discovery_post(accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->auth_discovery_post: %s\n" % e)
+        print("Exception when calling VeevaApi->auth_discovery_post: %s\n" % e)
 ```
 
 
@@ -1068,21 +1068,21 @@ OAuth 2.0 / OpenID Connect
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     oath_oidc_profile_id = '{{oath_oidc_profile_id}}' # str | 
     authorization = 'Bearer {{access_token}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1092,7 +1092,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # OAuth 2.0 / OpenID Connect
         api_instance.auth_oauth_session_oath_oidc_profile_id_post(oath_oidc_profile_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->auth_oauth_session_oath_oidc_profile_id_post: %s\n" % e)
+        print("Exception when calling VeevaApi->auth_oauth_session_oath_oidc_profile_id_post: %s\n" % e)
 ```
 
 
@@ -1138,21 +1138,21 @@ User Name and Password
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -1161,7 +1161,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # User Name and Password
         api_instance.auth_post(content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->auth_post: %s\n" % e)
+        print("Exception when calling VeevaApi->auth_post: %s\n" % e)
 ```
 
 
@@ -1206,21 +1206,21 @@ Delete Single Source Code File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     class_name = 'class_name_example' # str | The fully qualified class name of your file.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1230,7 +1230,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Source Code File
         api_instance.code_class_name_delete(class_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_class_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->code_class_name_delete: %s\n" % e)
 ```
 
 
@@ -1276,21 +1276,21 @@ Disable Vault Extension
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     class_name = 'class_name_example' # str | The fully qualified class name of your file.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1301,7 +1301,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Disable Vault Extension
         api_instance.code_class_name_disable_put(class_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_class_name_disable_put: %s\n" % e)
+        print("Exception when calling VeevaApi->code_class_name_disable_put: %s\n" % e)
 ```
 
 
@@ -1348,21 +1348,21 @@ Enable Vault Extension
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     class_name = 'class_name_example' # str | The fully qualified class name of your file.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1373,7 +1373,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Enable Vault Extension
         api_instance.code_class_name_enable_put(class_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_class_name_enable_put: %s\n" % e)
+        print("Exception when calling VeevaApi->code_class_name_enable_put: %s\n" % e)
 ```
 
 
@@ -1420,21 +1420,21 @@ Retrieve Single Source Code File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     class_name = 'class_name_example' # str | The fully qualified class name of your file.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1444,7 +1444,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single Source Code File
         api_instance.code_class_name_get(class_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_class_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->code_class_name_get: %s\n" % e)
 ```
 
 
@@ -1490,21 +1490,21 @@ Retrieve All Profiling Sessions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -1513,7 +1513,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Profiling Sessions
         api_instance.code_profiler_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_get: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_get: %s\n" % e)
 ```
 
 
@@ -1558,21 +1558,21 @@ Create Profiling Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1582,7 +1582,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Profiling Session
         api_instance.code_profiler_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_post: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_post: %s\n" % e)
 ```
 
 
@@ -1628,21 +1628,21 @@ End Profiling Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     session_name = 'session_name_example' # str | The name of the session, for example,  baseline__c.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1652,7 +1652,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # End Profiling Session
         api_instance.code_profiler_session_name_actions_end_post(session_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_session_name_actions_end_post: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_session_name_actions_end_post: %s\n" % e)
 ```
 
 
@@ -1698,21 +1698,21 @@ Delete Profiling Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     session_name = 'session_name_example' # str | The name of the session, for example,  baseline__c.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1722,7 +1722,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Profiling Session
         api_instance.code_profiler_session_name_delete(session_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_session_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_session_name_delete: %s\n" % e)
 ```
 
 
@@ -1768,21 +1768,21 @@ Retrieve Profiling Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     session_name = 'session_name_example' # str | The name of the session, for example,  baseline__c.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1792,7 +1792,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Profiling Session
         api_instance.code_profiler_session_name_get(session_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_session_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_session_name_get: %s\n" % e)
 ```
 
 
@@ -1838,21 +1838,21 @@ Download Profiling Session Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     session_name = 'session_name_example' # str | The name of the session, for example,  baseline__c.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -1862,7 +1862,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Profiling Session Results
         api_instance.code_profiler_session_name_results_get(session_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_profiler_session_name_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->code_profiler_session_name_results_get: %s\n" % e)
 ```
 
 
@@ -1908,21 +1908,21 @@ Add or Replace Single Source Code File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
@@ -1932,7 +1932,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add or Replace Single Source Code File
         api_instance.code_put(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->code_put: %s\n" % e)
+        print("Exception when calling VeevaApi->code_put: %s\n" % e)
 ```
 
 
@@ -1978,21 +1978,21 @@ Retrieve Specific Root Nodes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     edl_hierarchy_or_template = 'edl_hierarchy_or_template_example' # str | Choose to retrieve either edl_hierarchy__v or edl_template__v
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -2003,7 +2003,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Specific Root Nodes
         api_instance.composites_trees_edl_hierarchy_or_template_actions_listnodes_post(edl_hierarchy_or_template, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->composites_trees_edl_hierarchy_or_template_actions_listnodes_post: %s\n" % e)
+        print("Exception when calling VeevaApi->composites_trees_edl_hierarchy_or_template_actions_listnodes_post: %s\n" % e)
 ```
 
 
@@ -2050,21 +2050,21 @@ Retrieve All Root Nodes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     edl_hierarchy_or_template = 'edl_hierarchy_or_template_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -2075,7 +2075,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Root Nodes
         api_instance.composites_trees_edl_hierarchy_or_template_get(edl_hierarchy_or_template, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->composites_trees_edl_hierarchy_or_template_get: %s\n" % e)
+        print("Exception when calling VeevaApi->composites_trees_edl_hierarchy_or_template_get: %s\n" % e)
 ```
 
 
@@ -2122,21 +2122,21 @@ Retrieve a Node's Children
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     parent_node_id = 'parent_node_id_example' # str | The ID of a parent node in the hierarchy.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -2147,7 +2147,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve a Node's Children
         api_instance.composites_trees_edl_hierarchy_v_parent_node_id_children_get(parent_node_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->composites_trees_edl_hierarchy_v_parent_node_id_children_get: %s\n" % e)
+        print("Exception when calling VeevaApi->composites_trees_edl_hierarchy_v_parent_node_id_children_get: %s\n" % e)
 ```
 
 
@@ -2194,21 +2194,21 @@ Update Node Order
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     parent_node_id = 'parent_node_id_example' # str | The ID of a parent node in the hierarchy.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -2219,7 +2219,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Node Order
         api_instance.composites_trees_edl_hierarchy_v_parent_node_id_children_put(parent_node_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->composites_trees_edl_hierarchy_v_parent_node_id_children_put: %s\n" % e)
+        print("Exception when calling VeevaApi->composites_trees_edl_hierarchy_v_parent_node_id_children_put: %s\n" % e)
 ```
 
 
@@ -2266,21 +2266,21 @@ Retrieve Component Record (XML/JSON)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     component_type_and_record_name = 'component_type_and_record_name_example' # str | The component type name (`Picklist`, `Docfield`, `Doctype`, etc.) followed by the name of the record from which to retrieve metadata. The format is `{Componenttype}.{record_name}`. For example, `Picklist.color__c`. Find this with the [Retrieve Component Record Collection](https://developer.veevavault.com/api/24.3#Retrieve_Component_Record_Collection) endpoint.
     loc = 'loc_example' # str | When localized (translated) strings are available, retrieve them by setting loc to true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -2291,7 +2291,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Component Record (XML/JSON)
         api_instance.configuration_component_type_and_record_name_get(component_type_and_record_name, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_component_type_and_record_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_component_type_and_record_name_get: %s\n" % e)
 ```
 
 
@@ -2338,21 +2338,21 @@ Retrieve Component Record Collection
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     component_type = 'component_type_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -2362,7 +2362,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Component Record Collection
         api_instance.configuration_component_type_get(component_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_component_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_component_type_get: %s\n" % e)
 ```
 
 
@@ -2408,21 +2408,21 @@ Retrieve Details from a Specific Object
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name_and_object_type = 'object_name_and_object_type_example' # str | The object name followed by the object type in the format `Objecttype.{object_name}.{object_type}`. For example, `Objecttype.product__v.base__v`.
     loc = 'loc_example' # str | When localized (translated) strings are available, retrieve them by setting loc to true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -2433,7 +2433,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Details from a Specific Object
         api_instance.configuration_object_name_and_object_type_get(object_name_and_object_type, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_object_name_and_object_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_object_name_and_object_type_get: %s\n" % e)
 ```
 
 
@@ -2480,21 +2480,21 @@ Retrieve Details from All Object Types
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -2503,7 +2503,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Details from All Object Types
         api_instance.configuration_objecttype_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_objecttype_get: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_objecttype_get: %s\n" % e)
 ```
 
 
@@ -2548,21 +2548,21 @@ Delete Lifecycle Role Assignment Override Rules
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -2571,7 +2571,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Lifecycle Role Assignment Override Rules
         api_instance.configuration_role_assignment_rule_delete(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_role_assignment_rule_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_role_assignment_rule_delete: %s\n" % e)
 ```
 
 
@@ -2616,21 +2616,21 @@ Retrieve Lifecycle Role Assignment Rules (Default & Override)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     lifecycle__v = 'lifecycle__v_example' # str | Include the name of the lifecycle from which to retrieve information. For example: lifecycle_v=general_lifecycle__c (optional)
     role__v = 'role__v_example' # str | Include the name of the role from which to retrieve information. For example: role__v=editor__c (optional)
     product__v = 'product__v_example' # str | Include the ID/name of a specific product to see product-based override rules to default users/allowed users for the lifecycle role. For example: product__v=0PR0011001 or product__v.name__v=CholeCap (optional)
@@ -2645,7 +2645,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Lifecycle Role Assignment Rules (Default & Override)
         api_instance.configuration_role_assignment_rule_get(lifecycle__v=lifecycle__v, role__v=role__v, product__v=product__v, country__v=country__v, study__v=study__v, study_country__v=study_country__v, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_role_assignment_rule_get: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_role_assignment_rule_get: %s\n" % e)
 ```
 
 
@@ -2696,21 +2696,21 @@ Create Lifecycle Role Assignment Override Rules
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -2720,7 +2720,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Lifecycle Role Assignment Override Rules
         api_instance.configuration_role_assignment_rule_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_role_assignment_rule_post: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_role_assignment_rule_post: %s\n" % e)
 ```
 
 
@@ -2766,21 +2766,21 @@ Update Lifecycle Role Assignment Rules (Default & Override)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -2790,7 +2790,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Lifecycle Role Assignment Rules (Default & Override)
         api_instance.configuration_role_assignment_rule_put(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->configuration_role_assignment_rule_put: %s\n" % e)
+        print("Exception when calling VeevaApi->configuration_role_assignment_rule_put: %s\n" % e)
 ```
 
 
@@ -2836,21 +2836,21 @@ Initiate Delegated Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str | The sessionId of the currently authenticated user who will initiate the delegated session. Cannot be a delegated_sessionid. (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -2859,7 +2859,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Delegated Session
         api_instance.delegation_login_post(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->delegation_login_post: %s\n" % e)
+        print("Exception when calling VeevaApi->delegation_login_post: %s\n" % e)
 ```
 
 
@@ -2904,21 +2904,21 @@ Retrieve Delegations
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -2927,7 +2927,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Delegations
         api_instance.delegation_vaults_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->delegation_vaults_get: %s\n" % e)
+        print("Exception when calling VeevaApi->delegation_vaults_get: %s\n" % e)
 ```
 
 
@@ -2972,21 +2972,21 @@ Session Keep Alive
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -2995,7 +2995,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Session Keep Alive
         api_instance.keep_alive_post(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->keep_alive_post: %s\n" % e)
+        print("Exception when calling VeevaApi->keep_alive_post: %s\n" % e)
 ```
 
 
@@ -3040,21 +3040,21 @@ Retrieve Limits on Objects
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -3063,7 +3063,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Limits on Objects
         api_instance.limits_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->limits_get: %s\n" % e)
+        print("Exception when calling VeevaApi->limits_get: %s\n" % e)
 ```
 
 
@@ -3108,21 +3108,21 @@ Download Daily API Usage
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     var_date = 'var_date_example' # str | The day to retrieve the API Usage log. Date is in UTC and follows the format YYYY-MM-DD. Date cannot be more than 30 days in the past. (optional)
     log_format = 'log_format_example' # str | Optional: Specify the format to download. Possible values are csv or logfile. If omitted, defaults to csv. Note that this call always downloads a ZIP file. This parameter only changes the format of the file contained within the ZIP.  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -3133,7 +3133,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Daily API Usage
         api_instance.logs_api_usage_get(var_date=var_date, log_format=log_format, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_api_usage_get: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_api_usage_get: %s\n" % e)
 ```
 
 
@@ -3180,21 +3180,21 @@ Retrieve All Debug Logs
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     user_id = 'user_id_example' # str | Filter results to retrieve the debug log for this user ID only. If omitted, this request retrieves debug logs for all users in the Vault. (optional)
     include_inactive = true # bool | Set to `true` to include debug log sessions with a status of `inactive__sys` in the response. If omitted, defaults to `false` and inactive sessions are not included in the response. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -3205,7 +3205,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Debug Logs
         api_instance.logs_code_debug_get(user_id=user_id, include_inactive=include_inactive, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_get: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_get: %s\n" % e)
 ```
 
 
@@ -3252,21 +3252,21 @@ Delete Debug Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of the debug log to delete.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3276,7 +3276,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Debug Log
         api_instance.logs_code_debug_id_actions_reset_delete(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_id_actions_reset_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_id_actions_reset_delete: %s\n" % e)
 ```
 
 
@@ -3322,21 +3322,21 @@ Reset Debug Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of the debug log to delete.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3346,7 +3346,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reset Debug Log
         api_instance.logs_code_debug_id_actions_reset_post(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_id_actions_reset_post: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_id_actions_reset_post: %s\n" % e)
 ```
 
 
@@ -3392,21 +3392,21 @@ Download Debug Log Files
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of the debug log to download.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3416,7 +3416,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Debug Log Files
         api_instance.logs_code_debug_id_files_get(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_id_files_get: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_id_files_get: %s\n" % e)
 ```
 
 
@@ -3462,21 +3462,21 @@ Retrieve Single Debug Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of the debug log to retrieve.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3486,7 +3486,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single Debug Log
         api_instance.logs_code_debug_id_get(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_id_get: %s\n" % e)
 ```
 
 
@@ -3532,21 +3532,21 @@ Create Debug Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
@@ -3556,7 +3556,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Debug Log
         api_instance.logs_code_debug_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_debug_post: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_debug_post: %s\n" % e)
 ```
 
 
@@ -3602,21 +3602,21 @@ Download SDK Runtime Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     var_date = 'YYYY-MM-DD' # str |  (optional)
     log_format = 'log_format_example' # str | Optional: Specify the format to download. Possible values are csv or logfile. If omitted, defaults to csv. Note that this call always downloads a ZIP file. This parameter only changes the format of the file contained within the ZIP.  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -3627,7 +3627,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download SDK Runtime Log
         api_instance.logs_code_runtime_get(var_date=var_date, log_format=log_format, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->logs_code_runtime_get: %s\n" % e)
+        print("Exception when calling VeevaApi->logs_code_runtime_get: %s\n" % e)
 ```
 
 
@@ -3674,21 +3674,21 @@ Import Bulk Translation File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     message_type = 'message_type_example' # str | The message type name: field_labels__sys, system_messages__sys, notification_template_messages__sys, or user_account_messages__sys.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3698,7 +3698,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Bulk Translation File
         api_instance.messages_message_type_actions_import_post(message_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->messages_message_type_actions_import_post: %s\n" % e)
+        print("Exception when calling VeevaApi->messages_message_type_actions_import_post: %s\n" % e)
 ```
 
 
@@ -3744,21 +3744,21 @@ Export Bulk Translation File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     message_type = 'message_type_example' # str | The message type name: field_labels__sys, system_messages__sys, notification_template_messages__sys, or user_account_messages__sys.
     lang = 'lang_example' # str | A valid language code value, for example, en. Retrieve available values from the Admin Key (admin_key__sys) field on the Language (language__sys) object. Active and Inactive languages are both valid. 
     authorization = '{{sessionId}}' # str |  (optional)
@@ -3769,7 +3769,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Bulk Translation File
         api_instance.messages_message_type_language_lang_actions_export_post(message_type, lang, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->messages_message_type_language_lang_actions_export_post: %s\n" % e)
+        print("Exception when calling VeevaApi->messages_message_type_language_lang_actions_export_post: %s\n" % e)
 ```
 
 
@@ -3816,21 +3816,21 @@ Retrieve Audit Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     audit_trail_type = 'audit_trail_type_example' # str | The name of the specified audit type (document_audit_trail, object_audit_trail, etc).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3840,7 +3840,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Audit Metadata
         api_instance.metadata_audittrail_audit_trail_type_get(audit_trail_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_audittrail_audit_trail_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_audittrail_audit_trail_type_get: %s\n" % e)
 ```
 
 
@@ -3886,21 +3886,21 @@ Retrieve Audit Types
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -3909,7 +3909,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Audit Types
         api_instance.metadata_audittrail_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_audittrail_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_audittrail_get: %s\n" % e)
 ```
 
 
@@ -3954,21 +3954,21 @@ Retrieve Component Type Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     component_type = 'component_type_example' # str | The component type name (Picklist, Docfield, Doctype, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -3978,7 +3978,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Component Type Metadata
         api_instance.metadata_components_component_type_get(component_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_components_component_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_components_component_type_get: %s\n" % e)
 ```
 
 
@@ -4024,21 +4024,21 @@ Retrieve All Component Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4047,7 +4047,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Component Metadata
         api_instance.metadata_components_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_components_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_components_get: %s\n" % e)
 ```
 
 
@@ -4092,21 +4092,21 @@ Retrieve Binder Template Node Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4115,7 +4115,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Template Node Metadata
         api_instance.metadata_objects_binders_templates_bindernodes_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_binders_templates_bindernodes_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_binders_templates_bindernodes_get: %s\n" % e)
 ```
 
 
@@ -4160,21 +4160,21 @@ Retrieve Binder Template Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4183,7 +4183,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Template Metadata
         api_instance.metadata_objects_binders_templates_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_binders_templates_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_binders_templates_get: %s\n" % e)
 ```
 
 
@@ -4228,21 +4228,21 @@ Retrieve Annotation Placemark Type Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     placemark_type = 'placemark_type_example' # str | The name of the placemark type. For example, sticky__sys.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -4252,7 +4252,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Annotation Placemark Type Metadata
         api_instance.metadata_objects_documents_annotations_placemarks_types_placemark_type_get(placemark_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_annotations_placemarks_types_placemark_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_annotations_placemarks_types_placemark_type_get: %s\n" % e)
 ```
 
 
@@ -4298,21 +4298,21 @@ Retrieve Annotation Reference Type Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     reference_type = 'reference_type_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -4322,7 +4322,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Annotation Reference Type Metadata
         api_instance.metadata_objects_documents_annotations_references_types_reference_type_get(reference_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_annotations_references_types_reference_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_annotations_references_types_reference_type_get: %s\n" % e)
 ```
 
 
@@ -4368,21 +4368,21 @@ Retrieve Annotation Type Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     annotation_type = 'annotation_type_example' # str | The name of the annotation type. Valid annotation types include: `note__sys` `line__sys` `document_link__sys` `permalink_link__sys` `anchor__sys` `reply__sys` `external_link__sys`  The following annotation types are only valid in Medical and PromoMats Vaults:  `suggested_link__sys` `approved_link__sys` `auto_link__sys` `keyword_link__sys`
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -4392,7 +4392,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Annotation Type Metadata
         api_instance.metadata_objects_documents_annotations_types_annotation_type_get(annotation_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_annotations_types_annotation_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_annotations_types_annotation_type_get: %s\n" % e)
 ```
 
 
@@ -4438,21 +4438,21 @@ Retrieve Document Event SubType Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     event_type = 'event_type_example' # str | The event type. For example, distribution__v.
     event_subtype = 'event_subtype_example' # str | The event subtype. For example, approved_email__v.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -4463,7 +4463,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Event SubType Metadata
         api_instance.metadata_objects_documents_events_event_type_types_event_subtype_get(event_type, event_subtype, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_events_event_type_types_event_subtype_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_events_event_type_types_event_subtype_get: %s\n" % e)
 ```
 
 
@@ -4510,21 +4510,21 @@ Retrieve Document Event Types and Subtypes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4533,7 +4533,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Event Types and Subtypes
         api_instance.metadata_objects_documents_events_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_events_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_events_get: %s\n" % e)
 ```
 
 
@@ -4578,21 +4578,21 @@ Retrieve Document Lock Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4601,7 +4601,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Lock Metadata
         api_instance.metadata_objects_documents_lock_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_lock_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_lock_get: %s\n" % e)
 ```
 
 
@@ -4646,21 +4646,21 @@ Retrieve Common Document Fields
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -4670,7 +4670,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Common Document Fields
         api_instance.metadata_objects_documents_properties_find_common_post(content_type=content_type, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_properties_find_common_post: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_properties_find_common_post: %s\n" % e)
 ```
 
 
@@ -4716,21 +4716,21 @@ Retrieve All Document Fields
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4739,7 +4739,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Document Fields
         api_instance.metadata_objects_documents_properties_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_properties_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_properties_get: %s\n" % e)
 ```
 
 
@@ -4784,21 +4784,21 @@ Retrieve Document Template Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4807,7 +4807,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Template Metadata
         api_instance.metadata_objects_documents_templates_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_templates_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_templates_get: %s\n" % e)
 ```
 
 
@@ -4852,21 +4852,21 @@ Retrieve All Document Types
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -4875,7 +4875,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Document Types
         api_instance.metadata_objects_documents_types_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_types_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_types_get: %s\n" % e)
 ```
 
 
@@ -4920,21 +4920,21 @@ Retrieve Document Type
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The document type. See Retrieve Document Types.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -4944,7 +4944,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Type
         api_instance.metadata_objects_documents_types_type_get(type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_types_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_types_type_get: %s\n" % e)
 ```
 
 
@@ -4990,21 +4990,21 @@ Retrieve Document Type Relationships
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The document type. See Retrieve Document Types.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -5014,7 +5014,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Type Relationships
         api_instance.metadata_objects_documents_types_type_relationships_get(type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_types_type_relationships_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_types_type_relationships_get: %s\n" % e)
 ```
 
 
@@ -5060,21 +5060,21 @@ Retrieve Document Classification
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The document type. See Retrieve Document Types.
     subtype = 'subtype_example' # str | The document subtype. See Retrieve Document Types.
     classification = 'classification_example' # str | The document classification. See Retrieve Document Types.
@@ -5086,7 +5086,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Classification
         api_instance.metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get(type, subtype, classification, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_types_type_subtypes_subtype_classifications_classification_get: %s\n" % e)
 ```
 
 
@@ -5134,21 +5134,21 @@ Retrieve Document Subtype
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The document type. See Retrieve Document Types.
     subtype = 'subtype_example' # str | The document subtype. See Retrieve Document Types.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -5159,7 +5159,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Subtype
         api_instance.metadata_objects_documents_types_type_subtypes_subtype_get(type, subtype, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_documents_types_type_subtypes_subtype_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_documents_types_type_subtypes_subtype_get: %s\n" % e)
 ```
 
 
@@ -5206,21 +5206,21 @@ Retrieve Group Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -5229,7 +5229,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Group Metadata
         api_instance.metadata_objects_groups_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_groups_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_groups_get: %s\n" % e)
 ```
 
 
@@ -5274,21 +5274,21 @@ Retrieve Security Policy Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -5297,7 +5297,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Security Policy Metadata
         api_instance.metadata_objects_securitypolicies_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_securitypolicies_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_securitypolicies_get: %s\n" % e)
 ```
 
 
@@ -5342,21 +5342,21 @@ Retrieve User Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -5365,7 +5365,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve User Metadata
         api_instance.metadata_objects_users_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_objects_users_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_objects_users_get: %s\n" % e)
 ```
 
 
@@ -5410,21 +5410,21 @@ Retrieve Archived Document Signature Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -5433,7 +5433,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Archived Document Signature Metadata
         api_instance.metadata_query_archived_documents_relationships_document_signature_sysr_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_query_archived_documents_relationships_document_signature_sysr_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_query_archived_documents_relationships_document_signature_sysr_get: %s\n" % e)
 ```
 
 
@@ -5478,21 +5478,21 @@ Retrieve Document Signature Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -5501,7 +5501,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Signature Metadata
         api_instance.metadata_query_documents_relationships_document_signature_sysr_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_query_documents_relationships_document_signature_sysr_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_query_documents_relationships_document_signature_sysr_get: %s\n" % e)
 ```
 
 
@@ -5546,21 +5546,21 @@ Retrieve Object Collection
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     loc = true # bool | To retrieve localized (translated) strings, include the parameter loc=true. See the next request below for details. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -5570,7 +5570,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Collection
         api_instance.metadata_vobjects_get(loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_get: %s\n" % e)
 ```
 
 
@@ -5616,21 +5616,21 @@ Cancel Raw Object Deployment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -5640,7 +5640,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Cancel Raw Object Deployment
         api_instance.metadata_vobjects_object_name_actions_canceldeployment_post(object_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_object_name_actions_canceldeployment_post: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_object_name_actions_canceldeployment_post: %s\n" % e)
 ```
 
 
@@ -5686,21 +5686,21 @@ Retrieve Object Field Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_field_name = 'object_field_name_example' # str | The object field name value (id, name__v, external_id__v, etc.).
     loc = true # bool | To retrieve localized (translated) strings, include the parameter loc=true. See the next request below for details. (optional)
@@ -5712,7 +5712,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Field Metadata
         api_instance.metadata_vobjects_object_name_fields_object_field_name_get(object_name, object_field_name, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_object_name_fields_object_field_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_object_name_fields_object_field_name_get: %s\n" % e)
 ```
 
 
@@ -5760,21 +5760,21 @@ Retrieve Object Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     loc = true # bool | To retrieve localized (translated) strings, include the parameter loc=true. See the next request below for details. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -5785,7 +5785,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Metadata
         api_instance.metadata_vobjects_object_name_get(object_name, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_object_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_object_name_get: %s\n" % e)
 ```
 
 
@@ -5832,21 +5832,21 @@ Retrieve Page Layouts
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -5856,7 +5856,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Page Layouts
         api_instance.metadata_vobjects_object_name_page_layouts_get(object_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_object_name_page_layouts_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_object_name_page_layouts_get: %s\n" % e)
 ```
 
 
@@ -5902,21 +5902,21 @@ Retrieve Page Layout Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object from which to retrieve page layout metadata.
     layout_name = 'layout_name_example' # str | The name of the page layout from which to retrieve metadata.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -5927,7 +5927,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Page Layout Metadata
         api_instance.metadata_vobjects_object_name_page_layouts_layout_name_get(object_name, layout_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->metadata_vobjects_object_name_page_layouts_layout_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->metadata_vobjects_object_name_page_layouts_layout_name_get: %s\n" % e)
 ```
 
 
@@ -5974,21 +5974,21 @@ Retrieve Email Notification Histories
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     start_date = 'YYYY-MM-DD' # str | Specify a start date to retrieve notification history. This date cannot be more than 2 years ago. Dates must be in YYYY-MM-DD or YYYY-MM-DDTHH:mm:ssZ format. If time is omitted (THH:mm:ssZ), defaults to the start of the day. If start_date is omitted entirely, defaults to the start of the previous day. If you’ve specified a start_date, you must also specify an end_date. (optional)
     end_date = 'YYYY-MM-DD' # str | Specify an end date to retrieve notification history. This date cannot be more than 30 days away from the specified start_date. Dates must be in YYYY-MM-DD or YYYY-MM-DDTHH:mm:ssZ format. If time is omitted (THH:mm:ssZ), defaults to the time of the API request. If you’ve specified an end_date, you must also specify a start_date. (optional)
     all_dates = true # bool | Set to true to request notification history for all dates. This is the same as requesting a full CSV export from the Vault UI. When requesting a full notification history, you must leave start_date and end_date blank and set format_result to csv. You can request an export of notification history for all_dates once every 24 hours. (optional)
@@ -6003,7 +6003,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Email Notification Histories
         api_instance.notifications_histories_get(start_date=start_date, end_date=end_date, all_dates=all_dates, format_result=format_result, limit=limit, offset=offset, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->notifications_histories_get: %s\n" % e)
+        print("Exception when calling VeevaApi->notifications_histories_get: %s\n" % e)
 ```
 
 
@@ -6054,21 +6054,21 @@ Retrieve Bulk Workflow Action Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     action = 'action_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -6078,7 +6078,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Bulk Workflow Action Details
         api_instance.object_workflow_actions_action_get(action, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_action_get: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_action_get: %s\n" % e)
 ```
 
 
@@ -6124,21 +6124,21 @@ Initiate Workflow Actions on Multiple Workflows
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     action = 'action_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -6149,7 +6149,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Workflow Actions on Multiple Workflows
         api_instance.object_workflow_actions_action_post(action, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_action_post: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_action_post: %s\n" % e)
 ```
 
 
@@ -6196,21 +6196,21 @@ Cancel Workflow Tasks
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -6220,7 +6220,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Cancel Workflow Tasks
         api_instance.object_workflow_actions_canceltasks_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_canceltasks_post: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_canceltasks_post: %s\n" % e)
 ```
 
 
@@ -6266,21 +6266,21 @@ Cancel Workflows
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -6290,7 +6290,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Cancel Workflows
         api_instance.object_workflow_actions_cancelworkflows_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_cancelworkflows_post: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_cancelworkflows_post: %s\n" % e)
 ```
 
 
@@ -6336,21 +6336,21 @@ Retrieve Bulk Workflow Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -6359,7 +6359,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Bulk Workflow Actions
         api_instance.object_workflow_actions_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_get: %s\n" % e)
 ```
 
 
@@ -6404,21 +6404,21 @@ Reassign Workflow Tasks
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -6428,7 +6428,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reassign Workflow Tasks
         api_instance.object_workflow_actions_reassigntasks_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_reassigntasks_post: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_reassigntasks_post: %s\n" % e)
 ```
 
 
@@ -6474,21 +6474,21 @@ Replace Workflow Owner
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -6498,7 +6498,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Replace Workflow Owner
         api_instance.object_workflow_actions_replaceworkflowowner_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->object_workflow_actions_replaceworkflowowner_post: %s\n" % e)
+        print("Exception when calling VeevaApi->object_workflow_actions_replaceworkflowowner_post: %s\n" % e)
 ```
 
 
@@ -6544,21 +6544,21 @@ Retrieve Binder Export Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested export job. This is returned with the export binder requests above.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -6568,7 +6568,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Export Results
         api_instance.objects_binders_actions_export_job_id_results_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_actions_export_job_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_actions_export_job_id_results_get: %s\n" % e)
 ```
 
 
@@ -6614,21 +6614,21 @@ Export Binder (Latest Version)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     source = true # bool | to include source content or not (optional)
     renditiontype = 'viewable_rendition__v' # str | to include viewable renditions (optional)
@@ -6644,7 +6644,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Binder (Latest Version)
         api_instance.objects_binders_binder_id_actions_export_post(binder_id, source=source, renditiontype=renditiontype, docversion=docversion, attachments=attachments, export=export, docfield=docfield, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_actions_export_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_actions_export_post: %s\n" % e)
 ```
 
 
@@ -6696,21 +6696,21 @@ Refresh Binder Auto-Filing
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -6721,7 +6721,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Refresh Binder Auto-Filing
         api_instance.objects_binders_binder_id_actions_post(binder_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_actions_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_actions_post: %s\n" % e)
 ```
 
 
@@ -6768,21 +6768,21 @@ Update Binding Rule
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -6793,7 +6793,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binding Rule
         api_instance.objects_binders_binder_id_binding_rule_put(binder_id, content_type=content_type, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_binding_rule_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_binding_rule_put: %s\n" % e)
 ```
 
 
@@ -6840,21 +6840,21 @@ Delete Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -6864,7 +6864,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Binder
         api_instance.objects_binders_binder_id_delete(binder_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_delete: %s\n" % e)
 ```
 
 
@@ -6910,21 +6910,21 @@ Update Binder Document Binding Rule
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     node_id = 'node_id_example' # str | The binder node id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -6936,7 +6936,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder Document Binding Rule
         api_instance.objects_binders_binder_id_documents_node_id_binding_rule_put(binder_id, node_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_documents_node_id_binding_rule_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_documents_node_id_binding_rule_put: %s\n" % e)
 ```
 
 
@@ -6984,21 +6984,21 @@ Add Document to Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -7009,7 +7009,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add Document to Binder
         api_instance.objects_binders_binder_id_documents_post(binder_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_documents_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_documents_post: %s\n" % e)
 ```
 
 
@@ -7056,21 +7056,21 @@ Remove Document from Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     section_id = 'section_id_example' # str | The binder node id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7081,7 +7081,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove Document from Binder
         api_instance.objects_binders_binder_id_documents_section_id_delete(binder_id, section_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_documents_section_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_documents_section_id_delete: %s\n" % e)
 ```
 
 
@@ -7128,21 +7128,21 @@ Move Document in Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     section_id = 'section_id_example' # str | The binder node id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7154,7 +7154,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Move Document in Binder
         api_instance.objects_binders_binder_id_documents_section_id_put(binder_id, section_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_documents_section_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_documents_section_id_put: %s\n" % e)
 ```
 
 
@@ -7202,21 +7202,21 @@ Retrieve Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     depth = 'depth_example' # str | To retrieve all information in all levels of the binder, set this to all. By default, only one level is returned. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7227,7 +7227,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder
         api_instance.objects_binders_binder_id_get(binder_id, depth=depth, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_get: %s\n" % e)
 ```
 
 
@@ -7274,21 +7274,21 @@ Create Binder Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -7298,7 +7298,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder Version
         api_instance.objects_binders_binder_id_post(binder_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_post: %s\n" % e)
 ```
 
 
@@ -7344,21 +7344,21 @@ Update Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -7369,7 +7369,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder
         api_instance.objects_binders_binder_id_put(binder_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_put: %s\n" % e)
 ```
 
 
@@ -7416,21 +7416,21 @@ Remove Users & Groups from Roles on a Single Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The id value of the binder from which to remove roles.
     role_name_and_user_or_group = 'role_name_and_user_or_group_example' # str | The name of the role from which to remove the user or group followed by either `user` or `group`. The format is `{role_name}.{user_or_group}`. For example, `consumer__v.user`.
     id = 'id_example' # str | The id value of the user or group to remove from the role.
@@ -7442,7 +7442,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove Users & Groups from Roles on a Single Binder
         api_instance.objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete(binder_id, role_name_and_user_or_group, id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_roles_role_name_and_user_or_group_id_delete: %s\n" % e)
 ```
 
 
@@ -7490,21 +7490,21 @@ Update Binder Section Binding Rule
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     node_id = 'node_id_example' # str | The binder node id field value.
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -7516,7 +7516,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder Section Binding Rule
         api_instance.objects_binders_binder_id_sections_node_id_binding_rule_put(binder_id, node_id, content_type=content_type, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_sections_node_id_binding_rule_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_sections_node_id_binding_rule_put: %s\n" % e)
 ```
 
 
@@ -7564,21 +7564,21 @@ Update Binder Section
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     node_id = 'node_id_example' # str | The binder node id of the section.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7590,7 +7590,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder Section
         api_instance.objects_binders_binder_id_sections_node_id_put(binder_id, node_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_sections_node_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_sections_node_id_put: %s\n" % e)
 ```
 
 
@@ -7638,21 +7638,21 @@ Create Binder Section
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -7663,7 +7663,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder Section
         api_instance.objects_binders_binder_id_sections_post(binder_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_sections_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_sections_post: %s\n" % e)
 ```
 
 
@@ -7710,21 +7710,21 @@ Delete Binder Section
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     section_id = 'section_id_example' # str | The binder node id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7736,7 +7736,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Binder Section
         api_instance.objects_binders_binder_id_sections_section_id_delete(binder_id, section_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_sections_section_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_sections_section_id_delete: %s\n" % e)
 ```
 
 
@@ -7784,21 +7784,21 @@ Retrieve Binder Sections
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     section_id = 'section_id_example' # str | The binder node id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -7809,7 +7809,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Sections
         api_instance.objects_binders_binder_id_sections_section_id_get(binder_id, section_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_sections_section_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_sections_section_id_get: %s\n" % e)
 ```
 
 
@@ -7856,21 +7856,21 @@ Retrieve All Binder Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -7880,7 +7880,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Binder Versions
         api_instance.objects_binders_binder_id_versions_get(binder_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_get: %s\n" % e)
 ```
 
 
@@ -7926,21 +7926,21 @@ Export Binder (Specific Version)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -7958,7 +7958,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Binder (Specific Version)
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_actions_export_post(binder_id, major_version, minor_version, source=source, renditiontype=renditiontype, docversion=docversion, attachments=attachments, export=export, docfield=docfield, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_actions_export_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_actions_export_post: %s\n" % e)
 ```
 
 
@@ -8012,21 +8012,21 @@ Delete Binder Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8038,7 +8038,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Binder Version
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_delete(binder_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_delete: %s\n" % e)
 ```
 
 
@@ -8086,21 +8086,21 @@ Retrieve Binder Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8112,7 +8112,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Version
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_get(binder_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_get: %s\n" % e)
 ```
 
 
@@ -8160,21 +8160,21 @@ Update Binder Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8187,7 +8187,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder Version
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_put(binder_id, major_version, minor_version, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_put: %s\n" % e)
 ```
 
 
@@ -8236,21 +8236,21 @@ Create Binder Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8263,7 +8263,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder Relationship
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_relationships_post(binder_id, major_version, minor_version, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_post: %s\n" % e)
 ```
 
 
@@ -8312,21 +8312,21 @@ Delete Binder Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8339,7 +8339,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Binder Relationship
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete(binder_id, major_version, minor_version, relationship_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_delete: %s\n" % e)
 ```
 
 
@@ -8388,21 +8388,21 @@ Retrieve Binder Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8415,7 +8415,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Relationship
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get(binder_id, major_version, minor_version, relationship_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_relationships_relationship_id_get: %s\n" % e)
 ```
 
 
@@ -8464,21 +8464,21 @@ Retrieve Binder Version Section
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     binder_id = 'binder_id_example' # str | The binder id field value.
     major_version = 'major_version_example' # str | The binder major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The binder minor_version_number__v field value.
@@ -8491,7 +8491,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Version Section
         api_instance.objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get(binder_id, major_version, minor_version, section_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_binder_id_versions_major_version_minor_version_sections_section_id_get: %s\n" % e)
 ```
 
 
@@ -8540,21 +8540,21 @@ Retrieve All Binder Roles
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -8564,7 +8564,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Binder Roles
         api_instance.objects_binders_id_roles_get(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_roles_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_roles_get: %s\n" % e)
 ```
 
 
@@ -8610,21 +8610,21 @@ Assign Users & Groups to Roles on a Single Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -8635,7 +8635,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Assign Users & Groups to Roles on a Single Binder
         api_instance.objects_binders_id_roles_post(id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_roles_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_roles_post: %s\n" % e)
 ```
 
 
@@ -8682,21 +8682,21 @@ Retrieve Document Role
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The binder `id`.
     role_name = 'role_name_example' # str | The name of the role to retrieve. For example, `owner__v`.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -8707,7 +8707,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Role
         api_instance.objects_binders_id_roles_role_name_get(id, role_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_roles_role_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_roles_role_name_get: %s\n" % e)
 ```
 
 
@@ -8754,21 +8754,21 @@ Retrieve Binder User Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The binder id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the binder.
     minor_version = 'minor_version_example' # str | The minor version number of the binder.
@@ -8780,7 +8780,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder User Actions
         api_instance.objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get(id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_get: %s\n" % e)
 ```
 
 
@@ -8828,21 +8828,21 @@ Retrieve Binder Entry Criteria
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The binder id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the binder.
     minor_version = 'minor_version_example' # str | The minor version number of the binder.
@@ -8855,7 +8855,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Entry Criteria
         api_instance.objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get(id, major_version, minor_version, name__v, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get: %s\n" % e)
 ```
 
 
@@ -8904,21 +8904,21 @@ Initiate Binder User Action
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The binder id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the binder.
     minor_version = 'minor_version_example' # str | The minor version number of the binder.
@@ -8932,7 +8932,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Binder User Action
         api_instance.objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put(id, major_version, minor_version, name__v, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_id_versions_major_version_minor_version_lifecycle_actions_name_v_put: %s\n" % e)
 ```
 
 
@@ -8982,21 +8982,21 @@ Retrieve User Actions on Multiple Binders
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -9006,7 +9006,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve User Actions on Multiple Binders
         api_instance.objects_binders_lifecycle_actions_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_lifecycle_actions_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_lifecycle_actions_post: %s\n" % e)
 ```
 
 
@@ -9052,21 +9052,21 @@ Initiate Bulk Binder User Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     user_action_name = 'user_action_name_example' # str | The user action name__v field value. Find this value with the Retrieve User Actions on Multiple Binders endpoint.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -9077,7 +9077,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Bulk Binder User Actions
         api_instance.objects_binders_lifecycle_actions_user_action_name_put(user_action_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_lifecycle_actions_user_action_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_lifecycle_actions_user_action_name_put: %s\n" % e)
 ```
 
 
@@ -9124,21 +9124,21 @@ Create Binder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     var_async = true # bool | When creating a binder, the binder metadata is indexed synchronously by default. To process the indexing asynchronously, include a query parameter async set to true (objects/binders?async=true). This helps speed up the response time from Vault when processing large amounts of data.  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -9149,7 +9149,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder
         api_instance.objects_binders_post(var_async=var_async, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_post: %s\n" % e)
 ```
 
 
@@ -9196,21 +9196,21 @@ Retrieve Binder Template Collection
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -9219,7 +9219,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Template Collection
         api_instance.objects_binders_templates_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_get: %s\n" % e)
 ```
 
 
@@ -9264,21 +9264,21 @@ Create Binder Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -9288,7 +9288,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder Template
         api_instance.objects_binders_templates_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_post: %s\n" % e)
 ```
 
 
@@ -9334,21 +9334,21 @@ Update Binder Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -9358,7 +9358,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Binder Template
         api_instance.objects_binders_templates_put(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_put: %s\n" % e)
 ```
 
 
@@ -9404,21 +9404,21 @@ Retrieve Binder Template Node Attributes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The binder template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9428,7 +9428,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Template Node Attributes
         api_instance.objects_binders_templates_template_name_bindernodes_get(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_template_name_bindernodes_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_template_name_bindernodes_get: %s\n" % e)
 ```
 
 
@@ -9474,21 +9474,21 @@ Create Binder Template Node
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The binder template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9499,7 +9499,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Binder Template Node
         api_instance.objects_binders_templates_template_name_bindernodes_post(template_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_template_name_bindernodes_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_template_name_bindernodes_post: %s\n" % e)
 ```
 
 
@@ -9546,21 +9546,21 @@ Replace Binder Template Nodes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The binder template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9571,7 +9571,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Replace Binder Template Nodes
         api_instance.objects_binders_templates_template_name_bindernodes_put(template_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_template_name_bindernodes_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_template_name_bindernodes_put: %s\n" % e)
 ```
 
 
@@ -9618,21 +9618,21 @@ Delete Binder Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The binder template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9642,7 +9642,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Binder Template
         api_instance.objects_binders_templates_template_name_delete(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_template_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_template_name_delete: %s\n" % e)
 ```
 
 
@@ -9688,21 +9688,21 @@ Retrieve Binder Template Attributes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The binder template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9712,7 +9712,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Binder Template Attributes
         api_instance.objects_binders_templates_template_name_get(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_binders_templates_template_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_binders_templates_template_name_get: %s\n" % e)
 ```
 
 
@@ -9758,21 +9758,21 @@ Retrieve Deleted Document IDs
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     start_date = 'start_date_example' # str | Specify a date (no more than 30 days past) after which Vault will look for deleted documents. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2016 would use 2016-01-15T07:00:00Z (optional)
     end_date = 'end_date_example' # str | Specify a date (no more than 30 days past) before which Vault will look for deleted documents. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2016 would use 2016-01-15T07:00:00Z  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -9784,7 +9784,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Deleted Document IDs
         api_instance.objects_deletions_documents_get(start_date=start_date, end_date=end_date, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_deletions_documents_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_deletions_documents_get: %s\n" % e)
 ```
 
 
@@ -9832,21 +9832,21 @@ Retrieve Deleted Object Record ID
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9856,7 +9856,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Deleted Object Record ID
         api_instance.objects_deletions_vobjects_object_name_get(object_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_deletions_vobjects_object_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_deletions_vobjects_object_name_get: %s\n" % e)
 ```
 
 
@@ -9902,21 +9902,21 @@ Retrieve All Document Workflows
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     loc = true # bool | When localized (translated) strings are available, retrieve them by setting loc to true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -9926,7 +9926,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Document Workflows
         api_instance.objects_documents_actions_get(loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_actions_get: %s\n" % e)
 ```
 
 
@@ -9972,21 +9972,21 @@ Download Controlled Copy Job Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     lifecycle_and_state_and_action = 'lifecycle_and_state_and_action_example' # str | The `name__v` values for the lifecycle, state, and action in the format `{lifecycle_name}.{state_name}.{action_name}`. To get this value, [Retrieve the Job Status](https://developer.veevavault.com/api/24.3#RetrieveJobStatus) and find the `href` under the `artifacts` link.
     job_id = 'job_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
@@ -9997,7 +9997,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Controlled Copy Job Results
         api_instance.objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get(lifecycle_and_state_and_action, job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_actions_lifecycle_and_state_and_action_job_id_results_get: %s\n" % e)
 ```
 
 
@@ -10044,21 +10044,21 @@ Retrieve Document Workflow Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_name = 'workflow_name_example' # str | The document workflow name value.
     loc = true # bool | When localized (translated) strings are available, retrieve them by setting loc to true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -10069,7 +10069,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Workflow Details
         api_instance.objects_documents_actions_workflow_name_get(workflow_name, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_actions_workflow_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_actions_workflow_name_get: %s\n" % e)
 ```
 
 
@@ -10116,21 +10116,21 @@ Initiate Document Workflow
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_name = 'workflow_name_example' # str | The document workflow name value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -10141,7 +10141,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Document Workflow
         api_instance.objects_documents_actions_workflow_name_post(workflow_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_actions_workflow_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_actions_workflow_name_post: %s\n" % e)
 ```
 
 
@@ -10188,21 +10188,21 @@ Delete Annotations
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -10212,7 +10212,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Annotations
         api_instance.objects_documents_annotations_batch_delete(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_annotations_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_annotations_batch_delete: %s\n" % e)
 ```
 
 
@@ -10258,21 +10258,21 @@ Create Multiple Annotations
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str | 
     content_type = 'application/json' # str | 
     accept = 'application/json' # str | 
@@ -10282,7 +10282,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Annotations
         api_instance.objects_documents_annotations_batch_post(authorization, content_type, accept, x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_annotations_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_annotations_batch_post: %s\n" % e)
 ```
 
 
@@ -10328,21 +10328,21 @@ Update Annotations
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -10352,7 +10352,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Annotations
         api_instance.objects_documents_annotations_batch_put(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_annotations_batch_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_annotations_batch_put: %s\n" % e)
 ```
 
 
@@ -10398,21 +10398,21 @@ Add Annotation Replies
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -10422,7 +10422,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add Annotation Replies
         api_instance.objects_documents_annotations_replies_batch_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_annotations_replies_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_annotations_replies_batch_post: %s\n" % e)
 ```
 
 
@@ -10468,21 +10468,21 @@ Delete Multiple Document Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -10492,7 +10492,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Document Attachments
         api_instance.objects_documents_attachments_batch_delete(accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_attachments_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_attachments_batch_delete: %s\n" % e)
 ```
 
 
@@ -10538,21 +10538,21 @@ Create Multiple Document Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -10562,7 +10562,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Document Attachments
         api_instance.objects_documents_attachments_batch_post(accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_attachments_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_attachments_batch_post: %s\n" % e)
 ```
 
 
@@ -10608,21 +10608,21 @@ Update Multiple Document Attachment Descriptions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -10632,7 +10632,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Document Attachment Descriptions
         api_instance.objects_documents_attachments_batch_put(accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_attachments_batch_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_attachments_batch_put: %s\n" % e)
 ```
 
 
@@ -10678,21 +10678,21 @@ Retrieve Document Export Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested export job. This is returned with the export document requests.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -10702,7 +10702,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Export Results
         api_instance.objects_documents_batch_actions_fileextract_job_id_results_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_actions_fileextract_job_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_actions_fileextract_job_id_results_get: %s\n" % e)
 ```
 
 
@@ -10748,21 +10748,21 @@ Export Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     source = true # bool | Optional: To exclude source files, include a query parameter source=false. If omitted, defaults to true. (optional)
     renditions = false # bool | Optional: To include renditions, include a query parameter renditions=true. If omitted, defaults to false. (optional)
     allversions = true # bool | Optional: To include all versions or latest version, include a query parameter allversions=true. If omitted, defaults to false. (optional)
@@ -10775,7 +10775,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Documents
         api_instance.objects_documents_batch_actions_fileextract_post(source=source, renditions=renditions, allversions=allversions, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_actions_fileextract_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_actions_fileextract_post: %s\n" % e)
 ```
 
 
@@ -10824,21 +10824,21 @@ Reclassify Multiple Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
     accept = 'text/csv' # str |  (optional)
@@ -10849,7 +10849,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reclassify Multiple Documents
         api_instance.objects_documents_batch_actions_reclassify_put(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_actions_reclassify_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_actions_reclassify_put: %s\n" % e)
 ```
 
 
@@ -10896,21 +10896,21 @@ Update Multiple Document Renditions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -10920,7 +10920,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Document Renditions
         api_instance.objects_documents_batch_actions_rerender_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_actions_rerender_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_actions_rerender_post: %s\n" % e)
 ```
 
 
@@ -10966,21 +10966,21 @@ Delete Multiple Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id_param = 'id_param_example' # str | If you’re identifying documents in your input by their external ID (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -10991,7 +10991,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Documents
         api_instance.objects_documents_batch_delete(id_param=id_param, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_delete: %s\n" % e)
 ```
 
 
@@ -11038,21 +11038,21 @@ Undo Collaborative Authoring Checkout
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -11062,7 +11062,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Undo Collaborative Authoring Checkout
         api_instance.objects_documents_batch_lock_delete(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_lock_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_lock_delete: %s\n" % e)
 ```
 
 
@@ -11108,21 +11108,21 @@ Create Multiple Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -11133,7 +11133,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Documents
         api_instance.objects_documents_batch_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_post: %s\n" % e)
 ```
 
 
@@ -11180,21 +11180,21 @@ Update Multiple Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -11205,7 +11205,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Documents
         api_instance.objects_documents_batch_put(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_batch_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_batch_put: %s\n" % e)
 ```
 
 
@@ -11252,21 +11252,21 @@ Retrieve Anchor IDs
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -11276,7 +11276,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Anchor IDs
         api_instance.objects_documents_doc_id_anchors_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_anchors_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_anchors_get: %s\n" % e)
 ```
 
 
@@ -11322,21 +11322,21 @@ Export Document Annotations to PDF
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -11346,7 +11346,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Document Annotations to PDF
         api_instance.objects_documents_doc_id_annotations_file_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_annotations_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_annotations_file_get: %s\n" % e)
 ```
 
 
@@ -11392,21 +11392,21 @@ Import Document Annotations from PDF
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -11417,7 +11417,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Document Annotations from PDF
         api_instance.objects_documents_doc_id_annotations_file_post(doc_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_annotations_file_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_annotations_file_post: %s\n" % e)
 ```
 
 
@@ -11464,21 +11464,21 @@ Delete Single Document Attachment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     accept = 'application/json' # str |  (optional)
@@ -11489,7 +11489,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document Attachment
         api_instance.objects_documents_doc_id_attachments_attachment_id_delete(doc_id, attachment_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_delete: %s\n" % e)
 ```
 
 
@@ -11536,21 +11536,21 @@ Download Document Attachment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     accept = 'application/json' # str |  (optional)
@@ -11561,7 +11561,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Attachment
         api_instance.objects_documents_doc_id_attachments_attachment_id_file_get(doc_id, attachment_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_file_get: %s\n" % e)
 ```
 
 
@@ -11608,21 +11608,21 @@ Retrieve Document Attachment Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     accept = 'application/json' # str |  (optional)
@@ -11633,7 +11633,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Attachment Metadata
         api_instance.objects_documents_doc_id_attachments_attachment_id_get(doc_id, attachment_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_get: %s\n" % e)
 ```
 
 
@@ -11680,21 +11680,21 @@ Update Document Attachment Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     accept = 'application/json' # str |  (optional)
@@ -11706,7 +11706,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Document Attachment Description
         api_instance.objects_documents_doc_id_attachments_attachment_id_put(doc_id, attachment_id, accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_put: %s\n" % e)
 ```
 
 
@@ -11754,21 +11754,21 @@ Delete Single Document Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     attachment_version = 'attachment_version_example' # str | The attachment version__v field value.
@@ -11780,7 +11780,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document Attachment Version
         api_instance.objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete(doc_id, attachment_id, attachment_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_delete: %s\n" % e)
 ```
 
 
@@ -11828,21 +11828,21 @@ Download Document Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     attachment_version = 'attachment_version_example' # str | The attachment version__v field value.
@@ -11854,7 +11854,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Attachment Version
         api_instance.objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get(doc_id, attachment_id, attachment_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
 ```
 
 
@@ -11902,21 +11902,21 @@ Retrieve Document Attachment Version Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     attachment_version = 'attachment_version_example' # str | The attachment version__v field value.
@@ -11928,7 +11928,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Attachment Version Metadata
         api_instance.objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get(doc_id, attachment_id, attachment_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
 ```
 
 
@@ -11976,21 +11976,21 @@ Restore Document Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     attachment_version = 'attachment_version_example' # str | The attachment version__v field value.
@@ -12003,7 +12003,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Restore Document Attachment Version
         api_instance.objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post(doc_id, attachment_id, attachment_version, restore=restore, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_versions_attachment_version_post: %s\n" % e)
 ```
 
 
@@ -12052,21 +12052,21 @@ Retrieve Document Attachment Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
     accept = 'application/json' # str |  (optional)
@@ -12077,7 +12077,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Attachment Versions
         api_instance.objects_documents_doc_id_attachments_attachment_id_versions_get(doc_id, attachment_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_attachment_id_versions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_attachment_id_versions_get: %s\n" % e)
 ```
 
 
@@ -12124,21 +12124,21 @@ Download All Document Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -12148,7 +12148,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download All Document Attachments
         api_instance.objects_documents_doc_id_attachments_file_get(doc_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_file_get: %s\n" % e)
 ```
 
 
@@ -12194,21 +12194,21 @@ Retrieve Document Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -12218,7 +12218,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Attachments
         api_instance.objects_documents_doc_id_attachments_get(doc_id, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_get: %s\n" % e)
 ```
 
 
@@ -12264,21 +12264,21 @@ Create Document Attachment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -12289,7 +12289,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Document Attachment
         api_instance.objects_documents_doc_id_attachments_post(doc_id, accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_attachments_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_attachments_post: %s\n" % e)
 ```
 
 
@@ -12336,21 +12336,21 @@ Retrieve Complete Audit History for a Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document ID for which to retrieve audit history.
     start_date = 'start_date_example' # str | Specify a start date to retrieve audit history. This date cannot be more than 30 days ago. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2018 would use 2018-01-15T07:00:00Z. If omitted, defaults to the vault’s creation date.  (optional)
     end_date = 'end_date_example' # str | Specify an end date to retrieve audit history. This date cannot be more than 30 days ago. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2018 would use 2018-01-15T07:00:00Z. If omitted, defaults to today’s date.  (optional)
@@ -12366,7 +12366,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Complete Audit History for a Single Document
         api_instance.objects_documents_doc_id_audittrail_get(doc_id, start_date=start_date, end_date=end_date, format_result=format_result, limit=limit, offset=offset, events=events, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_audittrail_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_audittrail_get: %s\n" % e)
 ```
 
 
@@ -12418,21 +12418,21 @@ Delete Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12442,7 +12442,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document
         api_instance.objects_documents_doc_id_delete(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_delete: %s\n" % e)
 ```
 
 
@@ -12488,21 +12488,21 @@ Retrieve Document Events
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12512,7 +12512,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Events
         api_instance.objects_documents_doc_id_events_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_events_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_events_get: %s\n" % e)
 ```
 
 
@@ -12558,21 +12558,21 @@ Download Document File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     lock_document = false # bool | Set to true to Check Out this document before retrieval. If omitted, defaults to false. (optional)
     accept = 'application/json' # str |  (optional)
@@ -12583,7 +12583,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document File
         api_instance.objects_documents_doc_id_file_get(doc_id, lock_document=lock_document, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_file_get: %s\n" % e)
 ```
 
 
@@ -12630,21 +12630,21 @@ Retrieve Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12654,7 +12654,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document
         api_instance.objects_documents_doc_id_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_get: %s\n" % e)
 ```
 
 
@@ -12700,21 +12700,21 @@ Delete Document Lock
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12724,7 +12724,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Document Lock
         api_instance.objects_documents_doc_id_lock_delete(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_lock_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_lock_delete: %s\n" % e)
 ```
 
 
@@ -12770,21 +12770,21 @@ Retrieve Document Lock
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12794,7 +12794,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Lock
         api_instance.objects_documents_doc_id_lock_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_lock_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_lock_get: %s\n" % e)
 ```
 
 
@@ -12840,21 +12840,21 @@ Create Document Lock
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -12864,7 +12864,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Document Lock
         api_instance.objects_documents_doc_id_lock_post(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_lock_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_lock_post: %s\n" % e)
 ```
 
 
@@ -12910,21 +12910,21 @@ Download All Document Version Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -12936,7 +12936,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download All Document Version Attachments
         api_instance.objects_documents_doc_id_major_version_minor_version_attachments_file_get(doc_id, major_version, minor_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_major_version_minor_version_attachments_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_major_version_minor_version_attachments_file_get: %s\n" % e)
 ```
 
 
@@ -12984,21 +12984,21 @@ Create Single Document Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     suppress_rendition = 'suppress_rendition_example' # str | Set to true to suppress automatic generation of the viewable rendition. If omitted, defaults to false (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -13010,7 +13010,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Single Document Version
         api_instance.objects_documents_doc_id_post(doc_id, suppress_rendition=suppress_rendition, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_post: %s\n" % e)
 ```
 
 
@@ -13058,21 +13058,21 @@ Update Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -13084,7 +13084,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Single Document
         api_instance.objects_documents_doc_id_put(doc_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_put: %s\n" % e)
 ```
 
 
@@ -13132,21 +13132,21 @@ Retrieve Document Renditions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -13156,7 +13156,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Renditions
         api_instance.objects_documents_doc_id_renditions_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_renditions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_renditions_get: %s\n" % e)
 ```
 
 
@@ -13202,21 +13202,21 @@ Delete Single Document Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     rendition_type = 'rendition_type_example' # str | The document rendition type.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -13227,7 +13227,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document Rendition
         api_instance.objects_documents_doc_id_renditions_rendition_type_delete(doc_id, rendition_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_renditions_rendition_type_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_renditions_rendition_type_delete: %s\n" % e)
 ```
 
 
@@ -13274,21 +13274,21 @@ Download Document Rendition File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     rendition_type = 'rendition_type_example' # str | The document rendition type.
     steady_state = 'steady_state_example' # str | Set to true to download a rendition (file) from the latest steady state version (1.0, 2.0, etc.) of a document.  (optional)
@@ -13300,7 +13300,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Rendition File
         api_instance.objects_documents_doc_id_renditions_rendition_type_get(doc_id, rendition_type, steady_state=steady_state, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_renditions_rendition_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_renditions_rendition_type_get: %s\n" % e)
 ```
 
 
@@ -13348,21 +13348,21 @@ Add Single Document Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     rendition_type = 'rendition_type_example' # str | The document rendition type.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -13374,7 +13374,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add Single Document Rendition
         api_instance.objects_documents_doc_id_renditions_rendition_type_post(doc_id, rendition_type, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_renditions_rendition_type_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_renditions_rendition_type_post: %s\n" % e)
 ```
 
 
@@ -13422,21 +13422,21 @@ Replace Document Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     rendition_type = 'rendition_type_example' # str | The document rendition type.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -13448,7 +13448,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Replace Document Rendition
         api_instance.objects_documents_doc_id_renditions_rendition_type_put(doc_id, rendition_type, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_renditions_rendition_type_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_renditions_rendition_type_put: %s\n" % e)
 ```
 
 
@@ -13496,21 +13496,21 @@ Remove Users & Groups from Roles on a Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The id value of the document from which to remove roles.
     role_name_and_user_or_group = 'role_name_and_user_or_group_example' # str | The name of the role from which to remove the user or group followed by either `user` or `group`. The format is `{role_name}.{user_or_group}`. For example, `consumer__v.user`.
     id = 'id_example' # str | The id value of the user or group to remove from the role.
@@ -13522,7 +13522,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove Users & Groups from Roles on a Single Document
         api_instance.objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete(doc_id, role_name_and_user_or_group, id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_roles_role_name_and_user_or_group_id_delete: %s\n" % e)
 ```
 
 
@@ -13570,21 +13570,21 @@ Retrieve Document Version Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -13596,7 +13596,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Version Attachments
         api_instance.objects_documents_doc_id_version_major_version_minor_version_attachments_get(doc_id, major_version, minor_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_version_major_version_minor_version_attachments_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_version_major_version_minor_version_attachments_get: %s\n" % e)
 ```
 
 
@@ -13644,21 +13644,21 @@ Retrieve Document Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -13668,7 +13668,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Versions
         api_instance.objects_documents_doc_id_versions_get(doc_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_get: %s\n" % e)
 ```
 
 
@@ -13714,21 +13714,21 @@ Read Annotations by ID
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -13741,7 +13741,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Read Annotations by ID
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get(doc_id, major_version, minor_version, annotation_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_get: %s\n" % e)
 ```
 
 
@@ -13790,21 +13790,21 @@ Read Replies of Parent Annotation
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -13817,7 +13817,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Read Replies of Parent Annotation
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get(doc_id, major_version, minor_version, annotation_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_annotation_id_replies_get: %s\n" % e)
 ```
 
 
@@ -13866,21 +13866,21 @@ Export Document Version Annotations to PDF
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -13892,7 +13892,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Document Version Annotations to PDF
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_file_get: %s\n" % e)
 ```
 
 
@@ -13940,21 +13940,21 @@ Import Document Version Annotations from PDF
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -13967,7 +13967,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Document Version Annotations from PDF
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post(doc_id, major_version, minor_version, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_file_post: %s\n" % e)
 ```
 
 
@@ -14016,21 +14016,21 @@ Read Annotations by Document Version and Type
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14046,7 +14046,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Read Annotations by Document Version and Type
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_annotations_get(doc_id, major_version, minor_version, limit=limit, offset=offset, annotation_types=annotation_types, pagination_id=pagination_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_annotations_get: %s\n" % e)
 ```
 
 
@@ -14098,21 +14098,21 @@ Download Document Version Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14126,7 +14126,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Version Attachment Version
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get(doc_id, major_version, minor_version, attachment_id, attachment_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
 ```
 
 
@@ -14176,21 +14176,21 @@ Retrieve Document Version Attachment Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14204,7 +14204,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Version Attachment Versions
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get(doc_id, major_version, minor_version, attachment_id, attachment_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
 ```
 
 
@@ -14254,21 +14254,21 @@ Delete Single Document Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14280,7 +14280,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document Version
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_delete(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_delete: %s\n" % e)
 ```
 
 
@@ -14328,21 +14328,21 @@ Retrieve Document Version Notes as CSV
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14354,7 +14354,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Version Notes as CSV
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_doc_export_annotations_to_csv_get: %s\n" % e)
 ```
 
 
@@ -14402,21 +14402,21 @@ Create Document Event
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14429,7 +14429,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Document Event
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_events_post(doc_id, major_version, minor_version, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_events_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_events_post: %s\n" % e)
 ```
 
 
@@ -14478,21 +14478,21 @@ Retrieve Video Annotations
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The video document id field value.
     major_version = 'major_version_example' # str | The video document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The video document minor_version_number__v field value.
@@ -14504,7 +14504,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Video Annotations
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_export_video_annotations_get: %s\n" % e)
 ```
 
 
@@ -14552,21 +14552,21 @@ Download Document Version File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14578,7 +14578,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Version File
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_file_get(doc_id, major_version, minor_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_file_get: %s\n" % e)
 ```
 
 
@@ -14626,21 +14626,21 @@ Retrieve Document Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14652,7 +14652,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Version
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_get: %s\n" % e)
 ```
 
 
@@ -14700,21 +14700,21 @@ Update Document Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14728,7 +14728,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Document Version
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_put(doc_id, major_version, minor_version, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_put: %s\n" % e)
 ```
 
 
@@ -14778,21 +14778,21 @@ Retrieve Document Relationships
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14804,7 +14804,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Relationships
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_relationships_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_get: %s\n" % e)
 ```
 
 
@@ -14852,21 +14852,21 @@ Create Single Document Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14879,7 +14879,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Single Document Relationship
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_relationships_post(doc_id, major_version, minor_version, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_post: %s\n" % e)
 ```
 
 
@@ -14928,21 +14928,21 @@ Delete Single Document Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -14955,7 +14955,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Document Relationship
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete(doc_id, major_version, minor_version, relationship_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_delete: %s\n" % e)
 ```
 
 
@@ -15004,21 +15004,21 @@ Retrieve Document Relationship
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15031,7 +15031,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Relationship
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get(doc_id, major_version, minor_version, relationship_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_relationships_relationship_id_get: %s\n" % e)
 ```
 
 
@@ -15080,21 +15080,21 @@ Retrieve Document Version Renditions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15106,7 +15106,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Version Renditions
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_renditions_get(doc_id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_get: %s\n" % e)
 ```
 
 
@@ -15154,21 +15154,21 @@ Delete Document Version Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15181,7 +15181,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Document Version Rendition
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete(doc_id, major_version, minor_version, rendition_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_delete: %s\n" % e)
 ```
 
 
@@ -15230,21 +15230,21 @@ Download Document Version Rendition File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15257,7 +15257,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Version Rendition File
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get(doc_id, major_version, minor_version, rendition_type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_get: %s\n" % e)
 ```
 
 
@@ -15306,21 +15306,21 @@ Upload Document Version Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15334,7 +15334,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Upload Document Version Rendition
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post(doc_id, major_version, minor_version, rendition_type, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_post: %s\n" % e)
 ```
 
 
@@ -15384,21 +15384,21 @@ Replace Document Version Rendition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15412,7 +15412,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Replace Document Version Rendition
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put(doc_id, major_version, minor_version, rendition_type, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_renditions_rendition_type_put: %s\n" % e)
 ```
 
 
@@ -15462,21 +15462,21 @@ Download Document Version Thumbnail File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     doc_id = 'doc_id_example' # str | The document id field value.
     major_version = 'major_version_example' # str | The document major_version_number__v field value.
     minor_version = 'minor_version_example' # str | The document minor_version_number__v field value.
@@ -15488,7 +15488,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Version Thumbnail File
         api_instance.objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get(doc_id, major_version, minor_version, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_doc_id_versions_major_version_minor_version_thumbnail_get: %s\n" % e)
 ```
 
 
@@ -15536,21 +15536,21 @@ Retrieve All Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     named_filter = 'My Documents' # str | Retrieves only documents which you have created. (optional)
     scope = 'contents' # str | Searches only within the document content. (optional)
     versionscope = 'all' # str | Retrieves all document versions, rather than only the latest version. (optional)
@@ -15566,7 +15566,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Documents
         api_instance.objects_documents_get(named_filter=named_filter, scope=scope, versionscope=versionscope, search=search, limit=limit, sort=sort, start=start, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_get: %s\n" % e)
 ```
 
 
@@ -15618,21 +15618,21 @@ Retrieve All Document Roles
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -15642,7 +15642,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Document Roles
         api_instance.objects_documents_id_roles_get(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_roles_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_roles_get: %s\n" % e)
 ```
 
 
@@ -15688,21 +15688,21 @@ Assign Users & Groups to Roles on a Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -15713,7 +15713,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Assign Users & Groups to Roles on a Single Document
         api_instance.objects_documents_id_roles_post(id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_roles_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_roles_post: %s\n" % e)
 ```
 
 
@@ -15760,21 +15760,21 @@ Retrieve Document Role
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The document `id`.
     role_name = 'role_name_example' # str | The name of the role to retrieve. For example, `owner__v`.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -15785,7 +15785,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Role
         api_instance.objects_documents_id_roles_role_name_get(id, role_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_roles_role_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_roles_role_name_get: %s\n" % e)
 ```
 
 
@@ -15832,21 +15832,21 @@ Retrieve Document User Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The document id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the document.
     minor_version = 'minor_version_example' # str | The minor version number of the document.
@@ -15858,7 +15858,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document User Actions
         api_instance.objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get(id, major_version, minor_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_get: %s\n" % e)
 ```
 
 
@@ -15906,21 +15906,21 @@ Retrieve Document Entry Criteria
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The document id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the document.
     minor_version = 'minor_version_example' # str | The minor version number of the document.
@@ -15933,7 +15933,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Entry Criteria
         api_instance.objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get(id, major_version, minor_version, name__v, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_entry_requirements_get: %s\n" % e)
 ```
 
 
@@ -15982,21 +15982,21 @@ Initiate Document User Action
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The document id field value from which to retrieve available user actions.
     major_version = 'major_version_example' # str | The major version number of the document.
     minor_version = 'minor_version_example' # str | The minor version number of the document.
@@ -16010,7 +16010,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Document User Action
         api_instance.objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put(id, major_version, minor_version, name__v, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_id_versions_major_version_minor_version_lifecycle_actions_name_v_put: %s\n" % e)
 ```
 
 
@@ -16060,21 +16060,21 @@ Retrieve User Actions on Multiple Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -16084,7 +16084,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve User Actions on Multiple Documents
         api_instance.objects_documents_lifecycle_actions_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_lifecycle_actions_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_lifecycle_actions_post: %s\n" % e)
 ```
 
 
@@ -16130,21 +16130,21 @@ Initiate Bulk Document User Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     user_action_name = 'user_action_name_example' # str | The user action name__v field value. Find this value with the Retrieve User Actions on Multiple Documents endpoint.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -16155,7 +16155,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Bulk Document User Actions
         api_instance.objects_documents_lifecycle_actions_user_action_name_put(user_action_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_lifecycle_actions_user_action_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_lifecycle_actions_user_action_name_put: %s\n" % e)
 ```
 
 
@@ -16202,21 +16202,21 @@ Create Single Document
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_migration_mode = true # bool | When set to true,  you can use the status__v field to create documents in any lifecycle state. Additionally, you can manually set the name, document number, and version number. Vault also bypasses entry criteria, entry actions, and event actions. You must have the Document Migration permission to use this header. Learn more about <a href=\"https://platform.veevavault.help/en/gr/54028\">Document Migration Mode in Vault Help.</a> (optional)
@@ -16226,7 +16226,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Single Document
         api_instance.objects_documents_post(authorization=authorization, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_post: %s\n" % e)
 ```
 
 
@@ -16272,21 +16272,21 @@ Delete Multiple Document Relationships
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -16296,7 +16296,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Document Relationships
         api_instance.objects_documents_relationships_batch_delete(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_relationships_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_relationships_batch_delete: %s\n" % e)
 ```
 
 
@@ -16342,21 +16342,21 @@ Create Multiple Document Relationships
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -16366,7 +16366,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Document Relationships
         api_instance.objects_documents_relationships_batch_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_relationships_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_relationships_batch_post: %s\n" % e)
 ```
 
 
@@ -16412,21 +16412,21 @@ Delete Multiple Document Renditions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -16436,7 +16436,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Document Renditions
         api_instance.objects_documents_renditions_batch_delete(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_renditions_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_renditions_batch_delete: %s\n" % e)
 ```
 
 
@@ -16482,21 +16482,21 @@ Add Multiple Document Renditions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id_param = 'id_param_example' # str | If you’re identifying documents in your input by their external ID (optional)
     large_size_asset = 'large_size_asset_example' # str | If set to true, indicates that the renditions to add are of the Large Size Asset (large_size_asset__v) rendition type. Vault applies Document Migration Mode limitations to renditions created with the request, but Document Migration permission is not required and your vault need not be in Migration Mode to use the parameter. Note that the request results in an error if the CSV contains any rendition type other than large_size_asset__v. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -16509,7 +16509,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add Multiple Document Renditions
         api_instance.objects_documents_renditions_batch_post(id_param=id_param, large_size_asset=large_size_asset, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_renditions_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_renditions_batch_post: %s\n" % e)
 ```
 
 
@@ -16558,21 +16558,21 @@ Remove Users and Groups from Roles on Multiple Documents & Binders
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -16582,7 +16582,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove Users and Groups from Roles on Multiple Documents & Binders
         api_instance.objects_documents_roles_batch_delete(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_roles_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_roles_batch_delete: %s\n" % e)
 ```
 
 
@@ -16628,21 +16628,21 @@ Assign Users & Groups to Roles on Multiple Documents & Binders
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -16652,7 +16652,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Assign Users & Groups to Roles on Multiple Documents & Binders
         api_instance.objects_documents_roles_batch_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_roles_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_roles_batch_post: %s\n" % e)
 ```
 
 
@@ -16698,21 +16698,21 @@ Retrieve Document Template Collection
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -16721,7 +16721,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Template Collection
         api_instance.objects_documents_templates_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_get: %s\n" % e)
 ```
 
 
@@ -16766,21 +16766,21 @@ Create Single Document Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -16790,7 +16790,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Single Document Template
         api_instance.objects_documents_templates_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_post: %s\n" % e)
 ```
 
 
@@ -16836,21 +16836,21 @@ Update Multiple Document Templates
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -16860,7 +16860,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Document Templates
         api_instance.objects_documents_templates_put(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_put: %s\n" % e)
 ```
 
 
@@ -16906,21 +16906,21 @@ Delete Basic Document Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The document template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -16930,7 +16930,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Basic Document Template
         api_instance.objects_documents_templates_template_name_delete(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_template_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_template_name_delete: %s\n" % e)
 ```
 
 
@@ -16976,21 +16976,21 @@ Download Document Template File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The document template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17000,7 +17000,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Document Template File
         api_instance.objects_documents_templates_template_name_file_get(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_template_name_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_template_name_file_get: %s\n" % e)
 ```
 
 
@@ -17046,21 +17046,21 @@ Retrieve Document Template Attributes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The document template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17070,7 +17070,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Document Template Attributes
         api_instance.objects_documents_templates_template_name_get(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_template_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_template_name_get: %s\n" % e)
 ```
 
 
@@ -17116,21 +17116,21 @@ Update Single Document Template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     template_name = 'template_name_example' # str | The document template name__v field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17140,7 +17140,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Single Document Template
         api_instance.objects_documents_templates_template_name_put(template_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_templates_template_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_templates_template_name_put: %s\n" % e)
 ```
 
 
@@ -17186,21 +17186,21 @@ Document Tokens
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17210,7 +17210,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Document Tokens
         api_instance.objects_documents_tokens_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_tokens_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_tokens_post: %s\n" % e)
 ```
 
 
@@ -17256,21 +17256,21 @@ Export Document Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     source = true # bool | Optional: To exclude source files, include a query parameter source=false. If omitted, defaults to true. (optional)
     renditions = false # bool | Optional: To include renditions, include a query parameter renditions=true. If omitted, defaults to false. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -17282,7 +17282,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Document Versions
         api_instance.objects_documents_versions_batch_actions_fileextract_post(source=source, renditions=renditions, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_versions_batch_actions_fileextract_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_versions_batch_actions_fileextract_post: %s\n" % e)
 ```
 
 
@@ -17330,21 +17330,21 @@ Delete Multiple Document Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id_param = 'id_param_example' # str | If you’re identifying documents in your input by their external ID (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -17355,7 +17355,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Document Versions
         api_instance.objects_documents_versions_batch_delete(id_param=id_param, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_versions_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_versions_batch_delete: %s\n" % e)
 ```
 
 
@@ -17402,21 +17402,21 @@ Create Multiple Document Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id_param = 'external_id__v' # str | If you’re identifying documents in your input by their external ID (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17428,7 +17428,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Document Versions
         api_instance.objects_documents_versions_batch_post(id_param=id_param, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_documents_versions_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_documents_versions_batch_post: %s\n" % e)
 ```
 
 
@@ -17476,21 +17476,21 @@ Retrieve Domain Information
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     include_application = true # bool | To include Vault application type information in the response, set include_application to true. If omitted, defaults to false and application information is not included. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17501,7 +17501,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Domain Information
         api_instance.objects_domain_get(include_application=include_application, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_domain_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_domain_get: %s\n" % e)
 ```
 
 
@@ -17548,21 +17548,21 @@ Retrieve Domains
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -17572,7 +17572,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Domains
         api_instance.objects_domains_get(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_domains_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_domains_get: %s\n" % e)
 ```
 
 
@@ -17618,21 +17618,21 @@ Add EDL Matched Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17642,7 +17642,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add EDL Matched Documents
         api_instance.objects_edl_matched_documents_batch_actions_add_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_edl_matched_documents_batch_actions_add_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_edl_matched_documents_batch_actions_add_post: %s\n" % e)
 ```
 
 
@@ -17688,21 +17688,21 @@ Remove EDL Matched Documents
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17712,7 +17712,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove EDL Matched Documents
         api_instance.objects_edl_matched_documents_batch_actions_remove_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_edl_matched_documents_batch_actions_remove_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_edl_matched_documents_batch_actions_remove_post: %s\n" % e)
 ```
 
 
@@ -17758,21 +17758,21 @@ Retrieve Auto Managed Groups
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     limit = 'limit_example' # str | Paginate the results by specifying the maximum number of records per page in the response. This can be any value between 1 and 1000. If omitted, defaults to 1000.  (optional)
     offset = 'offset_example' # str | Paginate the results displayed per page by specifying the amount of offset from the entry returned. For example, if you are viewing the first 50 results (page 1) and want to see the next page, set this to offset=51. If omitted, defaults to 0. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -17783,7 +17783,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Auto Managed Groups
         api_instance.objects_groups_auto_get(limit=limit, offset=offset, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_auto_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_auto_get: %s\n" % e)
 ```
 
 
@@ -17830,21 +17830,21 @@ Retrieve All Groups
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     include_implied = 'include_implied_example' # str | When true, the response includes the implied_members__v field. These users are automatically added to the group when their security_profiles__v are added to the group. If omitted, the response includes only the members__v field. These users are individually added to a group by an Admin. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17854,7 +17854,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Groups
         api_instance.objects_groups_get(include_implied=include_implied, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_get: %s\n" % e)
 ```
 
 
@@ -17900,21 +17900,21 @@ Delete Group
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     group_id = 'group_id_example' # str | The group id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -17924,7 +17924,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Group
         api_instance.objects_groups_group_id_delete(group_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_group_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_group_id_delete: %s\n" % e)
 ```
 
 
@@ -17970,21 +17970,21 @@ Retrieve Group
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     group_id = 'group_id_example' # str | The group id field value.
     include_implied = true # bool | When true, the response includes the implied_members__v field. These users are automatically added to the group when their security_profiles__v are added to the group. When not used, the response includes only the members__v field. These users are individually added to a group by Admin. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -17995,7 +17995,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Group
         api_instance.objects_groups_group_id_get(group_id, include_implied=include_implied, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_group_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_group_id_get: %s\n" % e)
 ```
 
 
@@ -18042,21 +18042,21 @@ Update Group
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     group_id = 'group_id_example' # str | The group id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18067,7 +18067,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Group
         api_instance.objects_groups_group_id_put(group_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_group_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_group_id_put: %s\n" % e)
 ```
 
 
@@ -18114,21 +18114,21 @@ Create Group
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -18138,7 +18138,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Group 
         api_instance.objects_groups_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_groups_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_groups_post: %s\n" % e)
 ```
 
 
@@ -18184,21 +18184,21 @@ Retrieve Application License Usage
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -18207,7 +18207,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Application License Usage
         api_instance.objects_licenses_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_licenses_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_licenses_get: %s\n" % e)
 ```
 
 
@@ -18252,21 +18252,21 @@ Retrieve All Multi-Record Workflows
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -18275,7 +18275,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Multi-Record Workflows
         api_instance.objects_objectworkflows_actions_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_actions_get: %s\n" % e)
 ```
 
 
@@ -18320,21 +18320,21 @@ Retrieve Multi-Record Workflow Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_name = 'workflow_name_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -18343,7 +18343,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Multi-Record Workflow Details
         api_instance.objects_objectworkflows_actions_workflow_name_get(workflow_name, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_actions_workflow_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_actions_workflow_name_get: %s\n" % e)
 ```
 
 
@@ -18388,21 +18388,21 @@ Initiate Multi-Record Workflow
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_name = 'workflow_name_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -18413,7 +18413,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Multi-Record Workflow
         api_instance.objects_objectworkflows_actions_workflow_name_post(workflow_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_actions_workflow_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_actions_workflow_name_post: %s\n" % e)
 ```
 
 
@@ -18460,21 +18460,21 @@ Retrieve Workflows
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object__v = 'object__v_example' # str | To retrieve all workflows configured on an object, include the Vault object name__v and object record id field values as ?object__v={name__v}&record_id__v={id}. These two parameters are required when the participant parameter is not used.  (optional)
     record_id__v = 'record_id__v_example' # str | To retrieve all workflows configured on an object, include the Vault object name__v and object record id field values as ?object__v={name__v}&record_id__v={id}. These two parameters are required when the participant parameter is not used.  (optional)
     participant = 'participant_example' # str | To retrieve all workflows available to a particular user, include the user id field value as ?participant={id}. To retrieve your own workflows, set this value to ?participant=me. This parameter is required when the object__v and record_id__v parameters are not used.  (optional)
@@ -18490,7 +18490,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflows
         api_instance.objects_objectworkflows_get(object__v=object__v, record_id__v=record_id__v, participant=participant, status__v=status__v, offset=offset, page_size=page_size, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_get: %s\n" % e)
 ```
 
 
@@ -18542,21 +18542,21 @@ Retrieve Workflow Tasks
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object__v = 'object__v_example' # str | To retrieve all workflow tasks configured on an object, include the Vault object name__v and object record id field values as ?object__v={name__v}&record_id__v={id}. These two parameters are required when the assignee__v parameter is not used. (optional)
     record_id__v = 'record_id__v_example' # str | To retrieve all workflow tasks configured on an object, include the Vault object name__v and object record id field values as ?object__v={name__v}&record_id__v={id}. These two parameters are required when the assignee__v parameter is not used. (optional)
     assignee__v = 'assignee__v_example' # str | To retrieve all workflow tasks available to a particular user, include the user id field value as ?assignee__v={id}. To retrieve your own workflow tasks, set this value to ?assignee__v=me. This parameter is required when the object__v and record_id__v parameters are not used.  (optional)
@@ -18572,7 +18572,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Tasks
         api_instance.objects_objectworkflows_tasks_get(object__v=object__v, record_id__v=record_id__v, assignee__v=assignee__v, status__v=status__v, offset=offset, page_size=page_size, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_get: %s\n" % e)
 ```
 
 
@@ -18624,21 +18624,21 @@ Accept Single Record Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18649,7 +18649,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Accept Single Record Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_accept_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_accept_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_accept_post: %s\n" % e)
 ```
 
 
@@ -18696,21 +18696,21 @@ Cancel Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18721,7 +18721,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Cancel Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_cancel_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_cancel_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_cancel_post: %s\n" % e)
 ```
 
 
@@ -18768,21 +18768,21 @@ Complete Single Record Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18793,7 +18793,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Complete Single Record Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_complete_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_complete_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_complete_post: %s\n" % e)
 ```
 
 
@@ -18840,21 +18840,21 @@ Retrieve Workflow Task Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18864,7 +18864,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Task Actions
         api_instance.objects_objectworkflows_tasks_task_id_actions_get(task_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_get: %s\n" % e)
 ```
 
 
@@ -18910,21 +18910,21 @@ Accept Multi-item Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -18935,7 +18935,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Accept Multi-item Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_mdwaccept_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_mdwaccept_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_mdwaccept_post: %s\n" % e)
 ```
 
 
@@ -18982,21 +18982,21 @@ Complete Multi-item Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19007,7 +19007,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Complete Multi-item Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_mdwcomplete_post: %s\n" % e)
 ```
 
 
@@ -19054,21 +19054,21 @@ Manage Multi-Item Workflow Content
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19079,7 +19079,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Manage Multi-Item Workflow Content
         api_instance.objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_mdwmanagecontent_post: %s\n" % e)
 ```
 
 
@@ -19126,21 +19126,21 @@ Reassign Multi-item Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The id of the task to reassign.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19151,7 +19151,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reassign Multi-item Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_mdwreassign_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_mdwreassign_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_mdwreassign_post: %s\n" % e)
 ```
 
 
@@ -19198,21 +19198,21 @@ Reassign Single Record Workflow Task
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The id of the task to reassign.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19223,7 +19223,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reassign Single Record Workflow Task
         api_instance.objects_objectworkflows_tasks_task_id_actions_reassign_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_reassign_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_reassign_post: %s\n" % e)
 ```
 
 
@@ -19270,21 +19270,21 @@ Retrieve Workflow Task Action Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     task_action = 'task_action_example' # str | The name of the task action retrieved from Retrieve Workflow Task Actions.
     loc = 'loc_example' # str | When localized (translated) strings are available, retrieve them by including loc=true.  (optional)
@@ -19296,7 +19296,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Task Action Details
         api_instance.objects_objectworkflows_tasks_task_id_actions_task_action_get(task_id, task_action, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_task_action_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_task_action_get: %s\n" % e)
 ```
 
 
@@ -19344,21 +19344,21 @@ Undo Workflow Task Acceptance
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19369,7 +19369,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Undo Workflow Task Acceptance
         api_instance.objects_objectworkflows_tasks_task_id_actions_undoaccept_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_undoaccept_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_undoaccept_post: %s\n" % e)
 ```
 
 
@@ -19416,21 +19416,21 @@ Update Workflow Task Due Date
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The id of the task.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19441,7 +19441,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Workflow Task Due Date
         api_instance.objects_objectworkflows_tasks_task_id_actions_updateduedate_post(task_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_actions_updateduedate_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_actions_updateduedate_post: %s\n" % e)
 ```
 
 
@@ -19488,21 +19488,21 @@ Retrieve Workflow Task Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     task_id = 'task_id_example' # str | The task id field value.
     loc = true # bool | When localized (translated) strings are available, retrieve them by including loc=true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -19513,7 +19513,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Task Details
         api_instance.objects_objectworkflows_tasks_task_id_get(task_id, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_tasks_task_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_tasks_task_id_get: %s\n" % e)
 ```
 
 
@@ -19560,21 +19560,21 @@ Retrieve Workflow Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_id = 'workflow_id_example' # str | The workflow id field value.
     loc = 'loc_example' # str | When localized (translated) strings are available, retrieve them by including loc=true.  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -19585,7 +19585,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Actions
         api_instance.objects_objectworkflows_workflow_id_actions_get(workflow_id, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_workflow_id_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_workflow_id_actions_get: %s\n" % e)
 ```
 
 
@@ -19632,21 +19632,21 @@ Retrieve Workflow Action Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_id = 'workflow_id_example' # str | The workflow id field value.
     workflow_action = 'workflow_action_example' # str | The workflow action name retrieved from Retrieve Workflow Actions.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -19657,7 +19657,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Action Details
         api_instance.objects_objectworkflows_workflow_id_actions_workflow_action_get(workflow_id, workflow_action, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_workflow_id_actions_workflow_action_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_workflow_id_actions_workflow_action_get: %s\n" % e)
 ```
 
 
@@ -19704,21 +19704,21 @@ Initiate Workflow Action
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_id = 'workflow_id_example' # str | The workflow id field value.
     workflow_action = 'workflow_action_example' # str | The workflow action name retrieved from Retrieve Workflow Actions.
     documents__sys = 'documents__sys_example' # str | Include the id or ids as a comma-separated list of the document(s) to be removed from a document workflow when using the removecontent action. If your workflow_action is remove_content, include the id of the document to remove the workflow. To remove multiple documents, use a comma-separated list of ids. (optional)
@@ -19731,7 +19731,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Workflow Action
         api_instance.objects_objectworkflows_workflow_id_actions_workflow_action_post(workflow_id, workflow_action, documents__sys=documents__sys, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_workflow_id_actions_workflow_action_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_workflow_id_actions_workflow_action_post: %s\n" % e)
 ```
 
 
@@ -19780,21 +19780,21 @@ Retrieve Workflow Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     workflow_id = 'workflow_id_example' # str | The workflow id field value.
     loc = true # bool | When localized (translated) strings are available, retrieve them by including loc=true. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -19805,7 +19805,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Workflow Details
         api_instance.objects_objectworkflows_workflow_id_get(workflow_id, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_objectworkflows_workflow_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_objectworkflows_workflow_id_get: %s\n" % e)
 ```
 
 
@@ -19852,21 +19852,21 @@ Retrieve All Picklists
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -19875,7 +19875,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Picklists
         api_instance.objects_picklists_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_get: %s\n" % e)
 ```
 
 
@@ -19920,21 +19920,21 @@ Retrieve Picklist Values
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     picklist_name = 'picklist_name_example' # str | The picklist name field value (license_type__v, product_family__c, region__c, etc.)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -19944,7 +19944,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Picklist Values
         api_instance.objects_picklists_picklist_name_get(picklist_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_picklist_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_picklist_name_get: %s\n" % e)
 ```
 
 
@@ -19990,21 +19990,21 @@ Inactivate Picklist Value
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     picklist_name = 'picklist_name_example' # str | The picklist name field value (license_type__v, product_family__c, region__c, etc.)
     picklist_value_name = 'picklist_value_name_example' # str | The picklist value name field value (north_america__c, south_america__c, etc.)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -20015,7 +20015,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Inactivate Picklist Value
         api_instance.objects_picklists_picklist_name_picklist_value_name_delete(picklist_name, picklist_value_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_picklist_name_picklist_value_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_picklist_name_picklist_value_name_delete: %s\n" % e)
 ```
 
 
@@ -20062,21 +20062,21 @@ Update Picklist Value
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     picklist_name = 'picklist_name_example' # str | The picklist name field value (license_type__v, product_family__c, region__c, etc.)
     picklist_value_name = 'picklist_value_name_example' # str | The picklist value name field value (north_america__c, south_america__c, etc.)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -20088,7 +20088,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Picklist Value
         api_instance.objects_picklists_picklist_name_picklist_value_name_put(picklist_name, picklist_value_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_picklist_name_picklist_value_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_picklist_name_picklist_value_name_put: %s\n" % e)
 ```
 
 
@@ -20136,21 +20136,21 @@ Create Picklist Values
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     picklist_name = 'picklist_name_example' # str | The picklist name field value (license_type__v, product_family__c, region__c, etc.)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -20161,7 +20161,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Picklist Values
         api_instance.objects_picklists_picklist_name_post(picklist_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_picklist_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_picklist_name_post: %s\n" % e)
 ```
 
 
@@ -20208,21 +20208,21 @@ Update Picklist Value Label
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     picklist_name = 'picklist_name_example' # str | The picklist name field value (license_type__v, product_family__c, region__c, etc.)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -20233,7 +20233,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Picklist Value Label
         api_instance.objects_picklists_picklist_name_put(picklist_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_picklists_picklist_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_picklists_picklist_name_put: %s\n" % e)
 ```
 
 
@@ -20280,21 +20280,21 @@ Build Production Vault
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -20304,7 +20304,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Build Production Vault
         api_instance.objects_sandbox_actions_buildproduction_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_actions_buildproduction_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_actions_buildproduction_post: %s\n" % e)
 ```
 
 
@@ -20350,21 +20350,21 @@ Promote to Production
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -20374,7 +20374,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Promote to Production
         api_instance.objects_sandbox_actions_promoteproduction_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_actions_promoteproduction_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_actions_promoteproduction_post: %s\n" % e)
 ```
 
 
@@ -20420,21 +20420,21 @@ Recheck Sandbox Usage Limit
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -20444,7 +20444,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Recheck Sandbox Usage Limit
         api_instance.objects_sandbox_actions_recheckusage_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_actions_recheckusage_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_actions_recheckusage_post: %s\n" % e)
 ```
 
 
@@ -20490,21 +20490,21 @@ Change Sandbox Size
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -20514,7 +20514,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Change Sandbox Size
         api_instance.objects_sandbox_batch_changesize_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_batch_changesize_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_batch_changesize_post: %s\n" % e)
 ```
 
 
@@ -20560,21 +20560,21 @@ Set Sandbox Entitlements
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -20584,7 +20584,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Set Sandbox Entitlements
         api_instance.objects_sandbox_entitlements_set_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_entitlements_set_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_entitlements_set_post: %s\n" % e)
 ```
 
 
@@ -20630,21 +20630,21 @@ Retrieve Sandboxes
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -20653,7 +20653,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Sandboxes
         api_instance.objects_sandbox_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_get: %s\n" % e)
 ```
 
 
@@ -20698,21 +20698,21 @@ Delete Sandbox
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     name = 'name_example' # str | The name of the sandbox vault to delete. This is the name which appears on the My Vaults page.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -20722,7 +20722,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Sandbox
         api_instance.objects_sandbox_name_delete(name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_name_delete: %s\n" % e)
 ```
 
 
@@ -20768,21 +20768,21 @@ Create or Refresh Sandbox
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -20792,7 +20792,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create or Refresh Sandbox
         api_instance.objects_sandbox_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_post: %s\n" % e)
 ```
 
 
@@ -20838,21 +20838,21 @@ Update Sandbox Snapshot
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     api_name = 'api_name_example' # str | The Vault ID of the sandbox. Obtain this from the Retrieve Sandbox Snapshots request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -20862,7 +20862,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Sandbox Snapshot
         api_instance.objects_sandbox_snapshot_api_name_actions_update_post(api_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_snapshot_api_name_actions_update_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_snapshot_api_name_actions_update_post: %s\n" % e)
 ```
 
 
@@ -20908,21 +20908,21 @@ Upgrade Sandbox Snapshot
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     api_name = 'api_name_example' # str | The Vault ID of the sandbox. Obtain this from the Retrieve Sandbox Snapshots request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -20932,7 +20932,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Upgrade Sandbox Snapshot
         api_instance.objects_sandbox_snapshot_api_name_actions_upgrade_post(api_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_snapshot_api_name_actions_upgrade_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_snapshot_api_name_actions_upgrade_post: %s\n" % e)
 ```
 
 
@@ -20978,21 +20978,21 @@ Delete Sandbox Snapshot
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     api_name = 'api_name_example' # str | The Vault ID of the sandbox. Obtain this from the Retrieve Sandbox Snapshots request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21002,7 +21002,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Sandbox Snapshot
         api_instance.objects_sandbox_snapshot_api_name_delete(api_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_snapshot_api_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_snapshot_api_name_delete: %s\n" % e)
 ```
 
 
@@ -21048,21 +21048,21 @@ Retrieve Sandbox Snapshots
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -21071,7 +21071,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Sandbox Snapshots
         api_instance.objects_sandbox_snapshot_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_snapshot_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_snapshot_get: %s\n" % e)
 ```
 
 
@@ -21116,21 +21116,21 @@ Create Sandbox Snapshot
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -21140,7 +21140,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Sandbox Snapshot
         api_instance.objects_sandbox_snapshot_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_snapshot_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_snapshot_post: %s\n" % e)
 ```
 
 
@@ -21186,21 +21186,21 @@ Refresh Sandbox from Snapshot
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     vault_id = 'vault_id_example' # str | The Vault ID of the sandbox to be refreshed.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21211,7 +21211,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Refresh Sandbox from Snapshot
         api_instance.objects_sandbox_vault_id_actions_refresh_post(vault_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_vault_id_actions_refresh_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_vault_id_actions_refresh_post: %s\n" % e)
 ```
 
 
@@ -21258,21 +21258,21 @@ Retrieve Sandbox Details by ID
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     vault_id = 'vault_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21282,7 +21282,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Sandbox Details by ID
         api_instance.objects_sandbox_vault_id_get(vault_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_sandbox_vault_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_sandbox_vault_id_get: %s\n" % e)
 ```
 
 
@@ -21328,21 +21328,21 @@ Retrieve All Security Policies
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -21351,7 +21351,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Security Policies
         api_instance.objects_securitypolicies_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_securitypolicies_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_securitypolicies_get: %s\n" % e)
 ```
 
 
@@ -21396,21 +21396,21 @@ Retrieve Security Policy
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     security_policy_name = 'security_policy_name_example' # str | Security policy name__v field value (retrieved from previous request). This is typically a numeric value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21420,7 +21420,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Security Policy
         api_instance.objects_securitypolicies_security_policy_name_get(security_policy_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_securitypolicies_security_policy_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_securitypolicies_security_policy_name_get: %s\n" % e)
 ```
 
 
@@ -21466,21 +21466,21 @@ Retrieve All Users
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     vaults = 'all' # str | Retrieve all users assigned to all Vaults in your domain. (optional)
     exclude_vault_membership = 'exclude_vault_membership_example' # str | Optional: Set to false to include vault_membership fields. If true or omitted, vault_membership fields are not included in the response. (optional)
     exclude_app_licensing = 'exclude_app_licensing_example' # str | Optional: Set to false to include app_licensing fields. If true or omitted, app_licensing fields are not included in the response. (optional)
@@ -21492,7 +21492,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Users
         api_instance.objects_users_get(vaults=vaults, exclude_vault_membership=exclude_vault_membership, exclude_app_licensing=exclude_app_licensing, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_get: %s\n" % e)
 ```
 
 
@@ -21540,21 +21540,21 @@ Retrieve User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The user id field value. Use the value me to get information for the currently authenticated user.
     exclude_vault_membership = 'exclude_vault_membership_example' # str | Optional: Set to true to omit vault_membership fields. If you don’t need these fields, this may increase performance. If omitted, vault_membership fields are included in the response. (optional)
     exclude_app_licensing = 'exclude_app_licensing_example' # str | Optional: Set to true to omit app_licensing fields. If you don’t need these fields, this may increase performance. If omitted, app_licensing fields are included in the response. (optional)
@@ -21566,7 +21566,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve User
         api_instance.objects_users_id_get(id, exclude_vault_membership=exclude_vault_membership, exclude_app_licensing=exclude_app_licensing, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_id_get: %s\n" % e)
 ```
 
 
@@ -21614,21 +21614,21 @@ Retrieve User Permissions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of the user. Use the value me to retrieve information for the currently authenticated user.
     filter = 'filter_example' # str | Filter the results to show only one specific name__v, which is in the format object.{object name}.{object or field}_actions. Wildcards are not supported. See example below. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -21639,7 +21639,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve User Permissions
         api_instance.objects_users_id_permissions_get(id, filter=filter, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_id_permissions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_id_permissions_get: %s\n" % e)
 ```
 
 
@@ -21686,21 +21686,21 @@ Update Single User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The user id field value. Use the value me to get information for the currently authenticated user.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -21710,7 +21710,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Single User
         api_instance.objects_users_id_put(id, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_id_put: %s\n" % e)
 ```
 
 
@@ -21756,21 +21756,21 @@ Validate Session User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     exclude_vault_membership = 'exclude_vault_membership_example' # str | Optional: Set to true to omit vault_membership fields. If you don’t need these fields, this may increase performance. If omitted, vault_membership fields are included in the response. (optional)
     exclude_app_licensing = 'exclude_app_licensing_example' # str | Optional: Set to true to omit app_licensing fields. If you don’t need these fields, this may increase performance. If omitted, app_licensing fields are included in the response. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -21781,7 +21781,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Validate Session User
         api_instance.objects_users_me_get(exclude_vault_membership=exclude_vault_membership, exclude_app_licensing=exclude_app_licensing, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_me_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_me_get: %s\n" % e)
 ```
 
 
@@ -21828,21 +21828,21 @@ Change My Password
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21852,7 +21852,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Change My Password
         api_instance.objects_users_me_password_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_me_password_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_me_password_post: %s\n" % e)
 ```
 
 
@@ -21898,21 +21898,21 @@ Retrieve My User Permissions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     filter = 'filter_example' # str | Filter the results to show only one specific name__v, which is in the format object.{object name}.{object or field}_actions. Wildcards are not supported. See example below. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -21922,7 +21922,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve My User Permissions
         api_instance.objects_users_me_permissions_get(filter=filter, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_me_permissions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_me_permissions_get: %s\n" % e)
 ```
 
 
@@ -21968,21 +21968,21 @@ Update My User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -21991,7 +21991,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update My User
         api_instance.objects_users_me_put(authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_me_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_me_put: %s\n" % e)
 ```
 
 
@@ -22036,21 +22036,21 @@ Create Single User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -22060,7 +22060,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Single User
         api_instance.objects_users_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_post: %s\n" % e)
 ```
 
 
@@ -22106,21 +22106,21 @@ Update Multiple Users
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'text/csv' # str |  (optional)
@@ -22130,7 +22130,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Users
         api_instance.objects_users_put(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_put: %s\n" % e)
 ```
 
 
@@ -22176,21 +22176,21 @@ Disable User
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     user_id = 'user_id_example' # str | The user id field value. 
     domain = true # bool | When true, this disables the user account in all vaults in the domain. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -22201,7 +22201,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Disable User
         api_instance.objects_users_user_id_delete(user_id, domain=domain, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_user_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_user_id_delete: %s\n" % e)
 ```
 
 
@@ -22248,21 +22248,21 @@ Update Vault Membership
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     user_id = 'user_id_example' # str | The user id field value.
     vault_id = 'vault_id_example' # str | The system-managed id field value assigned to each vault in the domain.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -22274,7 +22274,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Vault Membership
         api_instance.objects_users_user_id_vault_membership_vault_id_put(user_id, vault_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_users_user_id_vault_membership_vault_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_users_user_id_vault_membership_vault_id_put: %s\n" % e)
 ```
 
 
@@ -22322,21 +22322,21 @@ Vault Compare
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -22345,7 +22345,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Vault Compare
         api_instance.objects_vault_actions_compare_post(authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_vault_actions_compare_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_vault_actions_compare_post: %s\n" % e)
 ```
 
 
@@ -22390,21 +22390,21 @@ Vault Configuration Report
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -22413,7 +22413,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Vault Configuration Report
         api_instance.objects_vault_actions_configreport_post(authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->objects_vault_actions_configreport_post: %s\n" % e)
+        print("Exception when calling VeevaApi->objects_vault_actions_configreport_post: %s\n" % e)
 ```
 
 
@@ -22458,21 +22458,21 @@ Component Definition Query
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -22482,7 +22482,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Component Definition Query
         api_instance.query_components_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->query_components_post: %s\n" % e)
+        print("Exception when calling VeevaApi->query_components_post: %s\n" % e)
 ```
 
 
@@ -22528,21 +22528,21 @@ Next Page URL
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     next_page = 'next_page_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -22554,7 +22554,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Next Page URL
         api_instance.query_next_page_post(next_page, authorization=authorization, accept=accept, x_vault_api_describe_query=x_vault_api_describe_query, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->query_next_page_post: %s\n" % e)
+        print("Exception when calling VeevaApi->query_next_page_post: %s\n" % e)
 ```
 
 
@@ -22602,21 +22602,21 @@ Submitting a Query
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_describe_query = true # bool |  (optional)
@@ -22627,7 +22627,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Submitting a Query
         api_instance.query_post(authorization=authorization, accept=accept, x_vault_api_describe_query=x_vault_api_describe_query, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->query_post: %s\n" % e)
+        print("Exception when calling VeevaApi->query_post: %s\n" % e)
 ```
 
 
@@ -22674,21 +22674,21 @@ Previous Page URL
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     previous_page = 'previous_page_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -22700,7 +22700,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Previous Page URL
         api_instance.query_previous_page_post(previous_page, authorization=authorization, accept=accept, x_vault_api_describe_query=x_vault_api_describe_query, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->query_previous_page_post: %s\n" % e)
+        print("Exception when calling VeevaApi->query_previous_page_post: %s\n" % e)
 ```
 
 
@@ -22748,21 +22748,21 @@ Retrieve Current User with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
     excluded_attributes = 'excluded_attributes_example' # str | Optional: Exclude specific attributes from the response. Enter multiple values in a comma separated list. For example, to exclude user name and email from the response, excludedAttributes=userName,emails. Note that the schemas and id attributes are always returned and cannot be excluded. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -22773,7 +22773,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Current User with SCIM
         api_instance.scim_v2_me_get(attributes=attributes, excluded_attributes=excluded_attributes, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_me_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_me_get: %s\n" % e)
 ```
 
 
@@ -22820,21 +22820,21 @@ Update Current User with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
     excluded_attributes = 'excluded_attributes_example' # str | Optional: Exclude specific attributes from the response. Enter multiple values in a comma separated list. For example, to exclude user name and email from the response, excludedAttributes=userName,emails. Note that the schemas and id attributes are always returned and cannot be excluded. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -22846,7 +22846,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Current User with SCIM
         api_instance.scim_v2_me_put(attributes=attributes, excluded_attributes=excluded_attributes, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_me_put: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_me_put: %s\n" % e)
 ```
 
 
@@ -22894,21 +22894,21 @@ Retrieve All SCIM Resource Types
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -22917,7 +22917,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All SCIM Resource Types
         api_instance.scim_v2_resource_types_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_resource_types_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_resource_types_get: %s\n" % e)
 ```
 
 
@@ -22962,21 +22962,21 @@ Retrieve Single SCIM Resource Type
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | A specific resource type. You can retrieve all available types from the Retrieve All SCIM Resource Types endpoint, where the value for this parameter is the id value.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
@@ -22986,7 +22986,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single SCIM Resource Type
         api_instance.scim_v2_resource_types_type_get(type, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_resource_types_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_resource_types_type_get: %s\n" % e)
 ```
 
 
@@ -23032,21 +23032,21 @@ Retrieve All SCIM Schema Information
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -23055,7 +23055,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All SCIM Schema Information
         api_instance.scim_v2_schemas_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_schemas_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_schemas_get: %s\n" % e)
 ```
 
 
@@ -23100,21 +23100,21 @@ Retrieve Single SCIM Schema Information
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The ID of a specific schema. For example, urn:ietf:params:scim:schemas:extension:veevavault:2.0:User.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
@@ -23124,7 +23124,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single SCIM Schema Information
         api_instance.scim_v2_schemas_id_get(id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_schemas_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_schemas_id_get: %s\n" % e)
 ```
 
 
@@ -23170,21 +23170,21 @@ Retrieve SCIM Provider
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -23193,7 +23193,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve SCIM Provider
         api_instance.scim_v2_service_provider_config_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_service_provider_config_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_service_provider_config_get: %s\n" % e)
 ```
 
 
@@ -23238,21 +23238,21 @@ Retrieve SCIM Resources
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The resource type to retrieve. You can retrieve all available types from the Retrieve All SCIM Resource Types endpoint, where the value for this parameter is the endpoint value.
     filter = 'filter_example' # str | Optional: Filter for a specific attribute value. Must be in the format {attribute} eq \"{value}\". For example, to filter for a particular user name, userName eq \"john\". Complex expressions are not supported, and eq is the only supported operator. (optional)
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
@@ -23268,7 +23268,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve SCIM Resources
         api_instance.scim_v2_type_get(type, filter=filter, attributes=attributes, excluded_attributes=excluded_attributes, sort_by=sort_by, sort_order=sort_order, start_index=start_index, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_type_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_type_get: %s\n" % e)
 ```
 
 
@@ -23320,21 +23320,21 @@ Retrieve Single SCIM Resource
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     type = 'type_example' # str | The resource type to retrieve. You can retrieve all available types from the Retrieve All SCIM Resource Types endpoint, where the value for this parameter is the endpoint value.
     id = 'id_example' # str | The ID of the resource to retrieve. You can retrieve all resource IDs from a particular resource type with the Retrieve SCIM Resources endpoint. For example, business_admin__v.
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
@@ -23347,7 +23347,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single SCIM Resource
         api_instance.scim_v2_type_id_get(type, id, attributes=attributes, excluded_attributes=excluded_attributes, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_type_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_type_id_get: %s\n" % e)
 ```
 
 
@@ -23396,21 +23396,21 @@ Retrieve All Users with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     filter = 'filter_example' # str | Optional: Filter for a specific attribute value. Must be in the format {attribute} eq \"{value}\". For example, to filter for a particular user name, userName eq \"john\". Complex expressions are not supported, and eq is the only supported operator. (optional)
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
     excluded_attributes = 'excluded_attributes_example' # str | Optional: Exclude specific attributes from the response. Enter multiple values in a comma separated list. For example, to exclude user name and email from the response, excludedAttributes=userName,emails. Note that the schemas and id attributes are always returned and cannot be excluded. (optional)
@@ -23426,7 +23426,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Users with SCIM
         api_instance.scim_v2_users_get(filter=filter, attributes=attributes, excluded_attributes=excluded_attributes, sort_by=sort_by, sort_order=sort_order, count=count, start_index=start_index, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_users_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_users_get: %s\n" % e)
 ```
 
 
@@ -23478,21 +23478,21 @@ Retrieve Single User with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The id of the user you wish to update.
     filter = 'filter_example' # str | Optional: Filter for a specific attribute value. Must be in the format {attribute} eq \"{value}\". For example, to filter for a particular user name, userName eq \"john\". Complex expressions are not supported, and eq is the only supported operator. (optional)
     attributes = 'attributes_example' # str | Optional: Include specified attributes only. Enter multiple values in a comma separated list. For example, to include only user name and email in the response, attributes=userName,emails. Note that the schemas and id attributes are always returned. (optional)
@@ -23505,7 +23505,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single User with SCIM
         api_instance.scim_v2_users_id_get(id, filter=filter, attributes=attributes, excluded_attributes=excluded_attributes, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_users_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_users_id_get: %s\n" % e)
 ```
 
 
@@ -23554,21 +23554,21 @@ Update User with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     id = 'id_example' # str | The id of the user you wish to update.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
@@ -23579,7 +23579,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update User with SCIM
         api_instance.scim_v2_users_id_put(id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_users_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_users_id_put: %s\n" % e)
 ```
 
 
@@ -23626,21 +23626,21 @@ Create User with SCIM
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/scim+json' # str |  (optional)
     content_type = 'application/scim+json' # str |  (optional)
@@ -23650,7 +23650,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create User with SCIM
         api_instance.scim_v2_users_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->scim_v2_users_post: %s\n" % e)
+        print("Exception when calling VeevaApi->scim_v2_users_post: %s\n" % e)
 ```
 
 
@@ -23696,21 +23696,21 @@ Retrieve Signing Certificate
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     cert_id = 'cert_id_example' # str | The cert_id is provided in each Spark message in the X-VaultAPISignature-CertificateId header.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -23720,7 +23720,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Signing Certificate
         api_instance.services_certificate_cert_id_get(cert_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_certificate_cert_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_certificate_cert_id_get: %s\n" % e)
 ```
 
 
@@ -23766,21 +23766,21 @@ Disable Configuration Mode
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'content_type_example' # str |  (optional)
@@ -23790,7 +23790,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Disable Configuration Mode
         api_instance.services_configuration_mode_actions_disable_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_configuration_mode_actions_disable_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_configuration_mode_actions_disable_post: %s\n" % e)
 ```
 
 
@@ -23836,21 +23836,21 @@ Enable Configuration Mode
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'content_type_example' # str |  (optional)
@@ -23860,7 +23860,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Enable Configuration Mode
         api_instance.services_configuration_mode_actions_enable_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_configuration_mode_actions_enable_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_configuration_mode_actions_enable_post: %s\n" % e)
 ```
 
 
@@ -23906,21 +23906,21 @@ Retrieve Available Direct Data Files
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     extract_type = 'incremental_directdata' # str | The Direct Data file type: incremental_directdata, full_directdata, or log_directdata. If omitted, returns all files. (optional)
     start_time = 2023-12-07T00:00Z # int | Specify a time in YYYY-MM-DDTHH:MM:SSZ format. For example, 7AM on January 15, 2024 would use 2024-01-15T07:00:00Z. If omitted, defaults to the Vault’s creation date and time. (optional)
     stop_time = 2023-12-08T00:00Z # int | Specify a time in YYYY-MM-DDTHH:MM:SSZ format. For example, 9AM on January 15, 2024 would use 2024-01-15T09:00:00Z. If omitted, defaults to today’s date and current time. (optional)
@@ -23932,7 +23932,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Available Direct Data Files
         api_instance.services_directdata_files_get(extract_type=extract_type, start_time=start_time, stop_time=stop_time, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_directdata_files_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_directdata_files_get: %s\n" % e)
 ```
 
 
@@ -23980,21 +23980,21 @@ Download Direct Data File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     name = 'name_example' # str | The name of the Direct Data file part. Obtain this from the Retrieve Available Direct Data Files request. For example, 146478-20240213-0000-F.001.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -24004,7 +24004,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Direct Data File
         api_instance.services_directdata_files_name_get(name, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_directdata_files_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_directdata_files_name_get: %s\n" % e)
 ```
 
 
@@ -24050,21 +24050,21 @@ Download Item Content
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     item = 'item_example' # str | The absolute path to a file or folder. This path is specific to the authenticated user. Admin users can access the root directory. All other users can only access their own user directory.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24075,7 +24075,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Item Content
         api_instance.services_file_staging_items_content_item_get(item, authorization=authorization, accept=accept, range=range, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_items_content_item_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_items_content_item_get: %s\n" % e)
 ```
 
 
@@ -24122,21 +24122,21 @@ Delete File or Folder
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     item = 'item_example' # str | The absolute path to the file or folder to delete. This path is specific to the authenticated user. Admin users can access the root directory. All other users can only access their own user directory.
     recursive = 'recursive_example' # str | Applicable to deleting folders only. If true, the request will delete the contents of a folder and all subfolders. The default is false. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -24147,7 +24147,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete File or Folder
         api_instance.services_file_staging_items_item_delete(item, recursive=recursive, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_items_item_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_items_item_delete: %s\n" % e)
 ```
 
 
@@ -24194,21 +24194,21 @@ List Items at a Path
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     item = 'item_example' # str | The absolute path to the file or folder to delete. This path is specific to the authenticated user. Admin users can access the root directory. All other users can only access their own user directory.
     recursive = 'recursive_example' # str | If true, the response will contain the contents of all subfolders. If not specified, the default value is false. (optional)
     limit = 'limit_example' # str | Optional: The maximum number of items per page in the response. This can be any value between 1 and 1000. If omitted, the default value is 1000. (optional)
@@ -24221,7 +24221,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List Items at a Path
         api_instance.services_file_staging_items_item_get(item, recursive=recursive, limit=limit, format_result=format_result, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_items_item_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_items_item_get: %s\n" % e)
 ```
 
 
@@ -24270,21 +24270,21 @@ Update Folder or File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     item = 'item_example' # str | The absolute path to the file or folder to delete. This path is specific to the authenticated user. Admin users can access the root directory. All other users can only access their own user directory.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24294,7 +24294,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Folder or File
         api_instance.services_file_staging_items_item_put(item, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_items_item_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_items_item_put: %s\n" % e)
 ```
 
 
@@ -24340,21 +24340,21 @@ Create Folder or File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_md5 = 'content_md5_example' # str | Optional: The MD5 checksum of the file being uploaded. (optional)
@@ -24364,7 +24364,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Folder or File
         api_instance.services_file_staging_items_post(authorization=authorization, accept=accept, content_md5=content_md5, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_items_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_items_post: %s\n" % e)
 ```
 
 
@@ -24410,21 +24410,21 @@ List Upload Sessions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -24433,7 +24433,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List Upload Sessions
         api_instance.services_file_staging_upload_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_get: %s\n" % e)
 ```
 
 
@@ -24478,21 +24478,21 @@ Create Resumable Upload Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -24501,7 +24501,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Resumable Upload Session
         api_instance.services_file_staging_upload_post(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_post: %s\n" % e)
 ```
 
 
@@ -24546,21 +24546,21 @@ Abort Upload Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     upload_session_id = 'upload_session_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24570,7 +24570,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Abort Upload Session
         api_instance.services_file_staging_upload_upload_session_id_delete(upload_session_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_upload_session_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_upload_session_id_delete: %s\n" % e)
 ```
 
 
@@ -24616,21 +24616,21 @@ Get Upload Session Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     upload_session_id = 'upload_session_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24640,7 +24640,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get Upload Session Details
         api_instance.services_file_staging_upload_upload_session_id_get(upload_session_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_upload_session_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_upload_session_id_get: %s\n" % e)
 ```
 
 
@@ -24686,21 +24686,21 @@ List File Parts Uploaded to Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     upload_session_id = 'upload_session_id_example' # str | 
     limit = 'limit_example' # str | Optional: The maximum number of items per page in the response. This can be any value between 1 and 1000. If omitted, the default value is 1000. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -24711,7 +24711,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List File Parts Uploaded to Session
         api_instance.services_file_staging_upload_upload_session_id_parts_get(upload_session_id, limit=limit, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_upload_session_id_parts_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_upload_session_id_parts_get: %s\n" % e)
 ```
 
 
@@ -24758,21 +24758,21 @@ Commit Upload Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     upload_session_id = 'upload_session_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24782,7 +24782,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Commit Upload Session
         api_instance.services_file_staging_upload_upload_session_id_post(upload_session_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_upload_session_id_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_upload_session_id_post: %s\n" % e)
 ```
 
 
@@ -24828,21 +24828,21 @@ Upload to a Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     upload_session_id = 'upload_session_id_example' # str | 
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -24855,7 +24855,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Upload to a Session
         api_instance.services_file_staging_upload_upload_session_id_put(upload_session_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_file_part_number=x_vault_api_file_part_number, content_md5=content_md5, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_file_staging_upload_upload_session_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_file_staging_upload_upload_session_id_put: %s\n" % e)
 ```
 
 
@@ -24904,21 +24904,21 @@ Retrieve Job Histories
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     start_date = 'start_date_example' # str | Sets the date to start retrieving completed jobs, in the format YYYY-MM-DDTHH:MM:SSZ. For example, for 7AM on January 15, 2016, use 2016-01-15T07:00:00Z. If omitted, defaults to the first completed job. (optional)
     end_date = 'end_date_example' # str | Sets the date to end retrieving completed jobs, in the format YYYY-MM-DDTHH:MM:SSZ. For example, for 7AM on January 15, 2016, use 2016-01-15T07:00:00Z. If omitted, defaults to the current date and time. (optional)
     status = 'status_example' # str | Filter to only retrieve jobs in a certain status. Allowed values are success, errors_encountered, failed_to_run, missed_schedule, cancelled. If omitted, retrieves all statuses. (optional)
@@ -24932,7 +24932,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Job Histories
         api_instance.services_jobs_histories_get(start_date=start_date, end_date=end_date, status=status, limit=limit, offset=offset, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_histories_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_histories_get: %s\n" % e)
 ```
 
 
@@ -24982,21 +24982,21 @@ Retrieve Import Bulk Translation File Job Errors
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested import job. This was returned from the Import Bulk Translation File request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'text/csv' # str |  (optional)
@@ -25006,7 +25006,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Import Bulk Translation File Job Errors
         api_instance.services_jobs_job_id_errors_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_job_id_errors_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_job_id_errors_get: %s\n" % e)
 ```
 
 
@@ -25052,21 +25052,21 @@ Retrieve Job Status
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The ID of the job, returned from the original job request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25076,7 +25076,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Job Status
         api_instance.services_jobs_job_id_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_job_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_job_id_get: %s\n" % e)
 ```
 
 
@@ -25122,21 +25122,21 @@ Retrieve Import Bulk Translation File Job Summary
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested import job. This was returned from the Import Bulk Translation File request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25146,7 +25146,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Import Bulk Translation File Job Summary
         api_instance.services_jobs_job_id_summary_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_job_id_summary_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_job_id_summary_get: %s\n" % e)
 ```
 
 
@@ -25192,21 +25192,21 @@ Retrieve SDK Job Tasks
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The ID of the SDK job, returned from the original job request.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25216,7 +25216,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve SDK Job Tasks
         api_instance.services_jobs_job_id_tasks_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_job_id_tasks_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_job_id_tasks_get: %s\n" % e)
 ```
 
 
@@ -25262,21 +25262,21 @@ Retrieve Job Monitors
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     start_date = 'start_date_example' # str | Sets the date to start retrieving uncompleted jobs, based on the date and time the job instance was created. Value must be in the format YYYY-MM-DDTHH:MM:SSZ. For example, for 7AM on January 15, 2016, use 2016-01-15T07:00:00Z. If omitted, defaults to the first completed job. (optional)
     end_date = 'end_date_example' # str | Sets the date to end retrieving uncompleted jobs, based on the date and time the job instance was created. Value must be in the format YYYY-MM-DDTHH:MM:SSZ. For example, for 7AM on January 15, 2016, use 2016-01-15T07:00:00Z. If omitted, defaults to the current date and time. (optional)
     status = 'status_example' # str | Filter to only retrieve jobs in a certain status. Allowed values are scheduled, queued, running. If omitted, retrieves all statuses. (optional)
@@ -25290,7 +25290,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Job Monitors
         api_instance.services_jobs_monitors_get(start_date=start_date, end_date=end_date, status=status, limit=limit, offset=offset, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_monitors_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_monitors_get: %s\n" % e)
 ```
 
 
@@ -25340,21 +25340,21 @@ Start Job
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The ID of the scheduled job instance to start.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25364,7 +25364,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Start Job
         api_instance.services_jobs_start_now_job_id_post(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_jobs_start_now_job_id_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_jobs_start_now_job_id_post: %s\n" % e)
 ```
 
 
@@ -25410,21 +25410,21 @@ Extract Data Files
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
@@ -25434,7 +25434,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Extract Data Files
         api_instance.services_loader_extract_post(authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_extract_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_extract_post: %s\n" % e)
 ```
 
 
@@ -25480,21 +25480,21 @@ Retrieve Load Failure Log Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested extract job.
     task_id = 'task_id_example' # str | The id value of the requested extract task.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -25505,7 +25505,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Load Failure Log Results
         api_instance.services_loader_job_id_tasks_task_id_failurelog_get(job_id, task_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_job_id_tasks_task_id_failurelog_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_job_id_tasks_task_id_failurelog_get: %s\n" % e)
 ```
 
 
@@ -25552,21 +25552,21 @@ Retrieve Loader Extract Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested extract job.
     task_id = 'task_id_example' # str | The id value of the requested extract task.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -25577,7 +25577,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Loader Extract Results
         api_instance.services_loader_job_id_tasks_task_id_results_get(job_id, task_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_job_id_tasks_task_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_job_id_tasks_task_id_results_get: %s\n" % e)
 ```
 
 
@@ -25624,21 +25624,21 @@ Retrieve Loader Extract Renditions Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested extract job.
     task_id = 'task_id_example' # str | The id value of the requested extract task.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -25649,7 +25649,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Loader Extract Renditions Results
         api_instance.services_loader_job_id_tasks_task_id_results_renditions_get(job_id, task_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_job_id_tasks_task_id_results_renditions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_job_id_tasks_task_id_results_renditions_get: %s\n" % e)
 ```
 
 
@@ -25696,21 +25696,21 @@ Retrieve Load Success Log Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The id value of the requested extract job.
     task_id = 'task_id_example' # str | The id value of the requested extract task.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -25721,7 +25721,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Load Success Log Results
         api_instance.services_loader_job_id_tasks_task_id_successlog_get(job_id, task_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_job_id_tasks_task_id_successlog_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_job_id_tasks_task_id_successlog_get: %s\n" % e)
 ```
 
 
@@ -25768,21 +25768,21 @@ Load Data Objects
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25792,7 +25792,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Load Data Objects
         api_instance.services_loader_load_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_loader_load_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_loader_load_post: %s\n" % e)
 ```
 
 
@@ -25838,21 +25838,21 @@ Validate Package
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -25861,7 +25861,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Validate Package
         api_instance.services_package_actions_validate_post(authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_package_actions_validate_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_package_actions_validate_post: %s\n" % e)
 ```
 
 
@@ -25906,21 +25906,21 @@ Export Package
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -25929,7 +25929,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Package
         api_instance.services_package_post(authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_package_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_package_post: %s\n" % e)
 ```
 
 
@@ -25974,21 +25974,21 @@ Import Package
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -25998,7 +25998,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Package
         api_instance.services_package_put(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_package_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_package_put: %s\n" % e)
 ```
 
 
@@ -26044,21 +26044,21 @@ Retrieve All Queues
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -26067,7 +26067,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Queues
         api_instance.services_queues_get(authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_queues_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_queues_get: %s\n" % e)
 ```
 
 
@@ -26112,21 +26112,21 @@ Disable Delivery
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     queue_name = 'queue_name_example' # str | The name of a specific Queue.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26136,7 +26136,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Disable Delivery
         api_instance.services_queues_queue_name_actions_disable_delivery_put(queue_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_queues_queue_name_actions_disable_delivery_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_queues_queue_name_actions_disable_delivery_put: %s\n" % e)
 ```
 
 
@@ -26182,21 +26182,21 @@ Enable Delivery
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     queue_name = 'queue_name_example' # str | The name of a specific Queue.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26206,7 +26206,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Enable Delivery
         api_instance.services_queues_queue_name_actions_enable_delivery_put(queue_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_queues_queue_name_actions_enable_delivery_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_queues_queue_name_actions_enable_delivery_put: %s\n" % e)
 ```
 
 
@@ -26252,21 +26252,21 @@ Reset Queue
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     queue_name = 'queue_name_example' # str | The name of a specific Queue.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26276,7 +26276,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Reset Queue
         api_instance.services_queues_queue_name_actions_reset_put(queue_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_queues_queue_name_actions_reset_put: %s\n" % e)
+        print("Exception when calling VeevaApi->services_queues_queue_name_actions_reset_put: %s\n" % e)
 ```
 
 
@@ -26322,21 +26322,21 @@ Retrieve Queue Status
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     queue_name = 'queue_name_example' # str | The name of a specific queue. For example, queue__c.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26346,7 +26346,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Queue Status
         api_instance.services_queues_queue_name_get(queue_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_queues_queue_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->services_queues_queue_name_get: %s\n" % e)
 ```
 
 
@@ -26392,21 +26392,21 @@ Validate Imported Package
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     package_id = 'package_id_example' # str | The ID of the package to validate. You can find this in the API response of a package import, or in the URL of package in the Vault UI.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26416,7 +26416,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Validate Imported Package
         api_instance.services_vobject_vault_package_v_package_id_actions_validate_post(package_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->services_vobject_vault_package_v_package_id_actions_validate_post: %s\n" % e)
+        print("Exception when calling VeevaApi->services_vobject_vault_package_v_package_id_actions_validate_post: %s\n" % e)
 ```
 
 
@@ -26462,21 +26462,21 @@ End Session
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str | The Vault sessionId to end. (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -26485,7 +26485,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # End Session
         api_instance.session_delete(accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->session_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->session_delete: %s\n" % e)
 ```
 
 
@@ -26530,21 +26530,21 @@ Download Single Client Code Distribution
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     distribution_name = 'distribution_name_example' # str | The name attribute of the client code distribution to download.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -26554,7 +26554,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Single Client Code Distribution
         api_instance.uicode_distributions_distribution_name_code_get(distribution_name, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->uicode_distributions_distribution_name_code_get: %s\n" % e)
+        print("Exception when calling VeevaApi->uicode_distributions_distribution_name_code_get: %s\n" % e)
 ```
 
 
@@ -26600,21 +26600,21 @@ Delete Single Client Code Distribution
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     distribution_name = 'distribution_name_example' # str | The name attribute of the client code distribution to delete.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -26624,7 +26624,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Single Client Code Distribution
         api_instance.uicode_distributions_distribution_name_delete(distribution_name, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->uicode_distributions_distribution_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->uicode_distributions_distribution_name_delete: %s\n" % e)
 ```
 
 
@@ -26670,21 +26670,21 @@ Retrieve Single Client Code Distribution Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     distribution_name = 'distribution_name_example' # str | The name attribute of the client code distribution to delete.
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -26694,7 +26694,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Single Client Code Distribution Metadata
         api_instance.uicode_distributions_distribution_name_get(distribution_name, accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->uicode_distributions_distribution_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->uicode_distributions_distribution_name_get: %s\n" % e)
 ```
 
 
@@ -26740,21 +26740,21 @@ Retrieve All Client Code Distribution Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
@@ -26763,7 +26763,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve All Client Code Distribution Metadata
         api_instance.uicode_distributions_get(accept=accept, authorization=authorization, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->uicode_distributions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->uicode_distributions_get: %s\n" % e)
 ```
 
 
@@ -26808,21 +26808,21 @@ Add or Replace Single Client Code Distribution
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     accept = 'application/json' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'multipart/form-data' # str |  (optional)
@@ -26832,7 +26832,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Add or Replace Single Client Code Distribution
         api_instance.uicode_distributions_post(accept=accept, authorization=authorization, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->uicode_distributions_post: %s\n" % e)
+        print("Exception when calling VeevaApi->uicode_distributions_post: %s\n" % e)
 ```
 
 
@@ -26878,21 +26878,21 @@ Deploy Package
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     package_id = 'package_id_example' # str | The id field value of the vault_package__v object record used for deployment. See Import Package.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
@@ -26903,7 +26903,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Deploy Package
         api_instance.vobject_vault_package_v_package_id_actions_deploy_post(package_id, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobject_vault_package_v_package_id_actions_deploy_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobject_vault_package_v_package_id_actions_deploy_post: %s\n" % e)
 ```
 
 
@@ -26950,21 +26950,21 @@ Retrieve Package Deploy Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     package_id = 'package_id_example' # str | The id field value of the vault_package__v object record used for deployment. See Deploy Package.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -26974,7 +26974,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Package Deploy Results
         api_instance.vobject_vault_package_v_package_id_actions_deploy_results_get(package_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobject_vault_package_v_package_id_actions_deploy_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobject_vault_package_v_package_id_actions_deploy_results_get: %s\n" % e)
 ```
 
 
@@ -27020,21 +27020,21 @@ Retrieve Results of Cascade Delete Job
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     job_status = 'job_status_example' # str | 
     job_id = 'job_id_example' # str | 
@@ -27046,7 +27046,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Results of Cascade Delete Job
         api_instance.vobjects_cascadedelete_results_object_name_job_status_job_id_get(object_name, job_status, job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_cascadedelete_results_object_name_job_status_job_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_cascadedelete_results_object_name_job_status_job_id_get: %s\n" % e)
 ```
 
 
@@ -27094,21 +27094,21 @@ Retrieve Results of Deep Copy Job
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     job_status = 'job_status_example' # str | The ID of the job, retrieved from the response of the job request.
     job_id = 'job_id_example' # str | Possible values are success or failure. Find if your job succeeded or failed by retrieving the job status.
@@ -27120,7 +27120,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Results of Deep Copy Job
         api_instance.vobjects_deepcopy_results_object_name_job_status_job_id_get(object_name, job_status, job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_deepcopy_results_object_name_job_status_job_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_deepcopy_results_object_name_job_status_job_id_get: %s\n" % e)
 ```
 
 
@@ -27168,21 +27168,21 @@ Create a Placeholder from an EDL Item
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/x-www-form-urlencoded' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27192,7 +27192,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create a Placeholder from an EDL Item
         api_instance.vobjects_edl_item_v_actions_createplaceholder_post(authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_edl_item_v_actions_createplaceholder_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_edl_item_v_actions_createplaceholder_post: %s\n" % e)
 ```
 
 
@@ -27238,21 +27238,21 @@ Download Merge Records Job Log
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The job_id field value returned from the merge operation. You can start merge operations with the Initiate Record Merge API request or with the Vault Java SDK.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27262,7 +27262,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Merge Records Job Log
         api_instance.vobjects_merges_job_id_log_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_merges_job_id_log_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_merges_job_id_log_get: %s\n" % e)
 ```
 
 
@@ -27308,21 +27308,21 @@ Retrieve Record Merge Results
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The job_id field value returned from the merge operation. You can start merge operations with the Initiate Record Merge API request or with the Vault Java SDK.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27332,7 +27332,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Record Merge Results
         api_instance.vobjects_merges_job_id_results_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_merges_job_id_results_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_merges_job_id_results_get: %s\n" % e)
 ```
 
 
@@ -27378,21 +27378,21 @@ Retrieve Record Merge Status
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     job_id = 'job_id_example' # str | The job_id field value returned from the merge operation. You can start merge operations with the Initiate Record Merge API request or with the Vault Java SDK.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27402,7 +27402,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Record Merge Status
         api_instance.vobjects_merges_job_id_status_get(job_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_merges_job_id_status_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_merges_job_id_status_get: %s\n" % e)
 ```
 
 
@@ -27448,21 +27448,21 @@ Initiate Object Action on Multiple Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value.
     action_name = 'action_name_example' # str | Either the name of the Objectaction or Objectlifecyclestateuseraction to initiate. This is obtained from the Retrieve User Actions request. The format for action_name is Objectaction.vobject.action or Objectlifecyclestateuseraction.vobject.state.action.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -27474,7 +27474,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Object Action on Multiple Records
         api_instance.vobjects_object_name_actions_action_name_post(object_name, action_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_action_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_action_name_post: %s\n" % e)
 ```
 
 
@@ -27522,21 +27522,21 @@ Change Object Type
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str |  (optional)
@@ -27547,7 +27547,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Change Object Type
         api_instance.vobjects_object_name_actions_changetype_post(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_changetype_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_changetype_post: %s\n" % e)
 ```
 
 
@@ -27583,7 +27583,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **vobjects_object_name_actions_merge_post**
-> vobjects_object_name_actions_merge_post(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id, vobjects_object_name_actions_merge_post_request_inner=vobjects_object_name_actions_merge_post_request_inner)
+> vobjects_object_name_actions_merge_post(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id, merge_request=merge_request)
 
 Initiate Record Merge
 
@@ -27594,34 +27594,34 @@ Initiate Record Merge
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.vobjects_object_name_actions_merge_post_request_inner import VobjectsObjectNameActionsMergePostRequestInner
-from openapi_client.rest import ApiException
+import veeva
+from veeva.models.merge_request import MergeRequest
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value. For example, account__v. This object must have Enable Merges configured.
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'application/json' # str |  (optional)
     accept = 'application/json' # str |  (optional)
     x_vault_api_client_id = '{{clientId}}' # str | Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin > Logs > API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as `unknown` in the API Usage Log. (optional)
-    vobjects_object_name_actions_merge_post_request_inner = [openapi_client.VobjectsObjectNameActionsMergePostRequestInner()] # List[VobjectsObjectNameActionsMergePostRequestInner] |  (optional)
+    merge_request = [veeva.MergeRequest()] # List[MergeRequest] |  (optional)
 
     try:
         # Initiate Record Merge
-        api_instance.vobjects_object_name_actions_merge_post(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id, vobjects_object_name_actions_merge_post_request_inner=vobjects_object_name_actions_merge_post_request_inner)
+        api_instance.vobjects_object_name_actions_merge_post(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id, merge_request=merge_request)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_merge_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_merge_post: %s\n" % e)
 ```
 
 
@@ -27635,7 +27635,7 @@ Name | Type | Description  | Notes
  **content_type** | **str**|  | [optional] 
  **accept** | **str**|  | [optional] 
  **x_vault_api_client_id** | **str**| Include a Client ID to identify this request. This ID appears in the API Usage Logs, which is avaiable to download from Admin &gt; Logs &gt; API Usage Logs or through the Vault REST API with the Download Daily API Usage request. If omitted, the value will appear as &#x60;unknown&#x60; in the API Usage Log. | [optional] 
- **vobjects_object_name_actions_merge_post_request_inner** | [**List[VobjectsObjectNameActionsMergePostRequestInner]**](VobjectsObjectNameActionsMergePostRequestInner.md)|  | [optional] 
+ **merge_request** | [**List[MergeRequest]**](MergeRequest.md)|  | [optional]
 
 ### Return type
 
@@ -27669,21 +27669,21 @@ Retrieve Roll-up Field Recalculation Status
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object for which to check the status of a Roll-up field recalculation.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27693,7 +27693,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Roll-up Field Recalculation Status
         api_instance.vobjects_object_name_actions_recalculaterollups_get(object_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_recalculaterollups_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_recalculaterollups_get: %s\n" % e)
 ```
 
 
@@ -27739,21 +27739,21 @@ Recalculate Roll-up Fields
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object for which to check the status of a Roll-up field recalculation.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27763,7 +27763,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Recalculate Roll-up Fields
         api_instance.vobjects_object_name_actions_recalculaterollups_post(object_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_recalculaterollups_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_recalculaterollups_post: %s\n" % e)
 ```
 
 
@@ -27809,21 +27809,21 @@ Update Corporate Currency Fields
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27834,7 +27834,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Corporate Currency Fields
         api_instance.vobjects_object_name_actions_updatecorporatecurrency_put(object_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_actions_updatecorporatecurrency_put: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_actions_updatecorporatecurrency_put: %s\n" % e)
 ```
 
 
@@ -27881,21 +27881,21 @@ Delete Multiple Object Record Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     id_param = 'If you’re identifying attachments in your input by external id, add idParam=external_id__v to the request endpoint.' # str |  (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -27907,7 +27907,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Multiple Object Record Attachments
         api_instance.vobjects_object_name_attachments_batch_delete(object_name, id_param=id_param, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_attachments_batch_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_attachments_batch_delete: %s\n" % e)
 ```
 
 
@@ -27955,21 +27955,21 @@ Create Multiple Object Record Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -27980,7 +27980,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Multiple Object Record Attachments
         api_instance.vobjects_object_name_attachments_batch_post(object_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_attachments_batch_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_attachments_batch_post: %s\n" % e)
 ```
 
 
@@ -28027,21 +28027,21 @@ Update Multiple Object Record Attachment Descriptions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -28052,7 +28052,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Multiple Object Record Attachment Descriptions
         api_instance.vobjects_object_name_attachments_batch_put(object_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_attachments_batch_put: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_attachments_batch_put: %s\n" % e)
 ```
 
 
@@ -28099,21 +28099,21 @@ Delete Object Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str | Can be text/csv or application/json (optional)
@@ -28124,7 +28124,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Object Records
         api_instance.vobjects_object_name_delete(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_delete: %s\n" % e)
 ```
 
 
@@ -28171,21 +28171,21 @@ Retrieve Object Record Roles
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name.
     id = 'id_example' # str | The id of the document, binder, or object record.
     role_name = 'role_name_example' # str | Optional: Include a role name to filter for a specific role. For example, owner__v.
@@ -28197,7 +28197,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record Roles
         api_instance.vobjects_object_name_id_roles_role_name_get(object_name, id, role_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_id_roles_role_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_id_roles_role_name_get: %s\n" % e)
 ```
 
 
@@ -28245,21 +28245,21 @@ Retrieve Object User Actions Details
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value.
     object_record_id = 'object_record_id_example' # str | The object record id field value from which to retrieve user actions.
     action_name = 'action_name_example' # str | The name of the Objectaction or Objectlifecyclestateuseraction to initiate. You can retrieve this from the Retrieve User Actions request. The format for action_name is Objectaction.vobject.action or Objectlifecyclestateuseraction.vobject.state.action.
@@ -28271,7 +28271,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object User Actions Details
         api_instance.vobjects_object_name_object_record_id_actions_action_name_get(object_name, object_record_id, action_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_actions_action_name_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_actions_action_name_get: %s\n" % e)
 ```
 
 
@@ -28319,21 +28319,21 @@ Initiate Object Action on a Single Record
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value.
     object_record_id = 'object_record_id_example' # str | The object record id field value from which to retrieve user actions.
     action_name = 'action_name_example' # str | The name of the Objectaction or Objectlifecyclestateuseraction to initiate. You can retrieve this from the Retrieve User Actions request. The format for action_name is Objectaction.vobject.action or Objectlifecyclestateuseraction.vobject.state.action.
@@ -28346,7 +28346,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Initiate Object Action on a Single Record
         api_instance.vobjects_object_name_object_record_id_actions_action_name_post(object_name, object_record_id, action_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_actions_action_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_actions_action_name_post: %s\n" % e)
 ```
 
 
@@ -28395,21 +28395,21 @@ Cascade Delete Object Record
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -28420,7 +28420,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Cascade Delete Object Record
         api_instance.vobjects_object_name_object_record_id_actions_cascadedelete_post(object_name, object_record_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_actions_cascadedelete_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_actions_cascadedelete_post: %s\n" % e)
 ```
 
 
@@ -28467,21 +28467,21 @@ Deep Copy Object Record
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -28493,7 +28493,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Deep Copy Object Record
         api_instance.vobjects_object_name_object_record_id_actions_deepcopy_post(object_name, object_record_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_actions_deepcopy_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_actions_deepcopy_post: %s\n" % e)
 ```
 
 
@@ -28541,21 +28541,21 @@ Retrieve Object Record User Actions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value.
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     loc = true # bool | Optional: When true, retrieves localized (translated) strings for the label.  (optional)
@@ -28567,7 +28567,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record User Actions
         api_instance.vobjects_object_name_object_record_id_actions_get(object_name, object_record_id, loc=loc, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_actions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_actions_get: %s\n" % e)
 ```
 
 
@@ -28615,21 +28615,21 @@ Download Attachment Field File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value. For example, product__v.
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_field_name = 'attachment_field_name_example' # str | The name of the Attachment field to update.
@@ -28641,7 +28641,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Attachment Field File
         api_instance.vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get(object_name, object_record_id, attachment_field_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_get: %s\n" % e)
 ```
 
 
@@ -28689,21 +28689,21 @@ Update Attachment Field File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value. For example, product__v.
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_field_name = 'attachment_field_name_example' # str | The name of the Attachment field to update.
@@ -28715,7 +28715,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Attachment Field File
         api_instance.vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post(object_name, object_record_id, attachment_field_name, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachment_fields_attachment_field_name_file_post: %s\n" % e)
 ```
 
 
@@ -28763,21 +28763,21 @@ Download All Attachment Field Files
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value. For example, product__v.
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -28788,7 +28788,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download All Attachment Field Files
         api_instance.vobjects_object_name_object_record_id_attachment_fields_file_get(object_name, object_record_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachment_fields_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachment_fields_file_get: %s\n" % e)
 ```
 
 
@@ -28835,21 +28835,21 @@ Delete Object Record Attachment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -28862,7 +28862,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Object Record Attachment
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_delete(object_name, object_record_id, attachment_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_delete: %s\n" % e)
 ```
 
 
@@ -28911,21 +28911,21 @@ Retrieve Object Record Attachment Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -28937,7 +28937,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record Attachment Metadata
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_get(object_name, object_record_id, attachment_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_get: %s\n" % e)
 ```
 
 
@@ -28985,21 +28985,21 @@ Update Object Record Attachment Description
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29012,7 +29012,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Object Record Attachment Description
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_put(object_name, object_record_id, attachment_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_put: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_put: %s\n" % e)
 ```
 
 
@@ -29061,21 +29061,21 @@ Delete Object Record Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29088,7 +29088,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Delete Object Record Attachment Version
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete(object_name, object_record_id, attachment_id, attachment_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_delete: %s\n" % e)
 ```
 
 
@@ -29137,21 +29137,21 @@ Download Object Record Attachment File
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29164,7 +29164,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download Object Record Attachment File
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get(object_name, object_record_id, attachment_id, attachment_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_file_get: %s\n" % e)
 ```
 
 
@@ -29213,21 +29213,21 @@ Retrieve Object Record Attachment Version Metadata
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29240,7 +29240,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record Attachment Version Metadata
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get(object_name, object_record_id, attachment_id, attachment_version, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_get: %s\n" % e)
 ```
 
 
@@ -29289,21 +29289,21 @@ Restore Object Record Attachment Version
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29318,7 +29318,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Restore Object Record Attachment Version
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post(object_name, object_record_id, attachment_id, attachment_version, restore=restore, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_attachment_version_post: %s\n" % e)
 ```
 
 
@@ -29369,21 +29369,21 @@ Retrieve Object Record Attachment Versions
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     attachment_id = 'attachment_id_example' # str | The attachment id field value.
@@ -29395,7 +29395,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record Attachment Versions
         api_instance.vobjects_object_name_object_record_id_attachments_attachment_id_versions_get(object_name, object_record_id, attachment_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_attachment_id_versions_get: %s\n" % e)
 ```
 
 
@@ -29443,21 +29443,21 @@ Download All Object Record Attachment Files
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -29468,7 +29468,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Download All Object Record Attachment Files
         api_instance.vobjects_object_name_object_record_id_attachments_file_get(object_name, object_record_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_file_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_file_get: %s\n" % e)
 ```
 
 
@@ -29515,21 +29515,21 @@ Retrieve Object Record Attachments
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -29540,7 +29540,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record Attachments
         api_instance.vobjects_object_name_object_record_id_attachments_get(object_name, object_record_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_get: %s\n" % e)
 ```
 
 
@@ -29587,21 +29587,21 @@ Create Object Record Attachment
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -29613,7 +29613,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create Object Record Attachment
         api_instance.vobjects_object_name_object_record_id_attachments_post(object_name, object_record_id, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_attachments_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_attachments_post: %s\n" % e)
 ```
 
 
@@ -29661,21 +29661,21 @@ Retrieve Complete Audit History for a Single Object Record
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value.
     object_record_id = 'object_record_id_example' # str | The object record id field value from which to retrieve user actions.
     start_date = 'start_date_example' # str | Specify a start date to retrieve audit history. This date cannot be more than 30 days ago. Dates must be YYYY-MM-DDTHH:MM:SSZ format, for example, 7AM on January 15, 2018 would use 2018-01-15T07:00:00Z. If omitted, defaults to the vVault’s creation date.  (optional)
@@ -29692,7 +29692,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Complete Audit History for a Single Object Record
         api_instance.vobjects_object_name_object_record_id_audittrail_get(object_name, object_record_id, start_date=start_date, end_date=end_date, format_result=format_result, limit=limit, offset=offset, events=events, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_audittrail_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_audittrail_get: %s\n" % e)
 ```
 
 
@@ -29745,21 +29745,21 @@ Retrieve Object Record
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     object_record_id = 'object_record_id_example' # str | The object record id field value.
     authorization = '{{sessionId}}' # str |  (optional)
@@ -29770,7 +29770,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Object Record
         api_instance.vobjects_object_name_object_record_id_get(object_name, object_record_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_object_record_id_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_object_record_id_get: %s\n" % e)
 ```
 
 
@@ -29817,21 +29817,21 @@ Create & Upsert Object Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     id_param = 'id_param_example' # str | To upsert object records, add `idParam={field_name}` to the request endpoint. You can use any object field which has `unique` set to `true` in the object metadata. For example, `idParam=external_id__v`. (optional)
     authorization = '{{sessionId}}' # str |  (optional)
@@ -29845,7 +29845,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Create & Upsert Object Records
         api_instance.vobjects_object_name_post(object_name, id_param=id_param, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_no_triggers=x_vault_api_no_triggers, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_post: %s\n" % e)
 ```
 
 
@@ -29895,21 +29895,21 @@ Update Object Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The object name__v field value (product__v, country__v, custom_object__c, etc.).
     authorization = '{{sessionId}}' # str |  (optional)
     content_type = 'text/csv' # str | Can be text/csv or application/json (optional)
@@ -29922,7 +29922,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Update Object Records
         api_instance.vobjects_object_name_put(object_name, authorization=authorization, content_type=content_type, accept=accept, x_vault_api_migration_mode=x_vault_api_migration_mode, x_vault_api_no_triggers=x_vault_api_no_triggers, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_put: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_put: %s\n" % e)
 ```
 
 
@@ -29971,21 +29971,21 @@ Remove Users & Groups from Roles on Object Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object where you want to remove roles.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -29996,7 +29996,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Remove Users & Groups from Roles on Object Records
         api_instance.vobjects_object_name_roles_delete(object_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_roles_delete: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_roles_delete: %s\n" % e)
 ```
 
 
@@ -30043,21 +30043,21 @@ Assign Users & Groups to Roles on Object Records
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     object_name = 'object_name_example' # str | The name of the object where you want to remove roles.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -30068,7 +30068,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Assign Users & Groups to Roles on Object Records
         api_instance.vobjects_object_name_roles_post(object_name, authorization=authorization, accept=accept, content_type=content_type, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_object_name_roles_post: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_object_name_roles_post: %s\n" % e)
 ```
 
 
@@ -30115,21 +30115,21 @@ Retrieve Outbound Package Dependencies
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import veeva
+from veeva.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://}/api/v25.1
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = veeva.Configuration(
     host = "http://}/api/v25.1"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with veeva.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DefaultApi(api_client)
+    api_instance = veeva.VeevaApi(api_client)
     package_id = 'package_id_example' # str | The ID of the outbound_package__v record from which to retrieve dependencies.
     authorization = '{{sessionId}}' # str |  (optional)
     accept = 'application/json' # str |  (optional)
@@ -30139,7 +30139,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Retrieve Outbound Package Dependencies
         api_instance.vobjects_outbound_package_v_package_id_dependencies_get(package_id, authorization=authorization, accept=accept, x_vault_api_client_id=x_vault_api_client_id)
     except Exception as e:
-        print("Exception when calling DefaultApi->vobjects_outbound_package_v_package_id_dependencies_get: %s\n" % e)
+        print("Exception when calling VeevaApi->vobjects_outbound_package_v_package_id_dependencies_get: %s\n" % e)
 ```
 
 

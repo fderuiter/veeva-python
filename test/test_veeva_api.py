@@ -13,18 +13,19 @@
 
 
 import unittest
+import veeva
 
-from openapi_client.api.default_api import DefaultApi  # noqa: E501
+from veeva.api.veeva_api import VeevaApi
 
 
-class TestDefaultApi(unittest.TestCase):
-    """DefaultApi unit test stubs"""
+class TestVeevaApi(unittest.TestCase):
+    """VeevaApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = DefaultApi()
+        self.api = VeevaApi(veeva.ApiClient(veeva.Configuration()))
 
     def tearDown(self) -> None:
-        self.api.api_client.close()
+        pass
 
     def test_api_get(self) -> None:
         """Test case for api_get

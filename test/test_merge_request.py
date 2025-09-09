@@ -15,10 +15,10 @@
 import unittest
 import datetime
 
-from openapi_client.models.vobjects_object_name_actions_merge_post_request_inner import VobjectsObjectNameActionsMergePostRequestInner  # noqa: E501
+from veeva.models.merge_request import MergeRequest
 
-class TestVobjectsObjectNameActionsMergePostRequestInner(unittest.TestCase):
-    """VobjectsObjectNameActionsMergePostRequestInner unit test stubs"""
+class TestMergeRequest(unittest.TestCase):
+    """MergeRequest unit test stubs"""
 
     def setUp(self):
         pass
@@ -26,26 +26,26 @@ class TestVobjectsObjectNameActionsMergePostRequestInner(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional) -> VobjectsObjectNameActionsMergePostRequestInner:
-        """Test VobjectsObjectNameActionsMergePostRequestInner
+    def make_instance(self, include_optional) -> MergeRequest:
+        """Test MergeRequest
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # uncomment below to create an instance of `VobjectsObjectNameActionsMergePostRequestInner`
+        # uncomment below to create an instance of `MergeRequest`
         """
-        model = VobjectsObjectNameActionsMergePostRequestInner()  # noqa: E501
+        model = MergeRequest()
         if include_optional:
-            return VobjectsObjectNameActionsMergePostRequestInner(
+            return MergeRequest(
                 duplicate_record_id = '',
                 main_record_id = ''
             )
         else:
-            return VobjectsObjectNameActionsMergePostRequestInner(
+            return MergeRequest(
         )
         """
 
-    def testVobjectsObjectNameActionsMergePostRequestInner(self):
-        """Test VobjectsObjectNameActionsMergePostRequestInner"""
+    def testMergeRequest(self):
+        """Test MergeRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
