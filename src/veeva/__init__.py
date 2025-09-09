@@ -29,6 +29,7 @@ __all__ = [
     "ApiAttributeError",
     "ApiException",
     "MergeRequest",
+    "VaultClient",
 ]
 
 # import apis into sdk package
@@ -44,6 +45,7 @@ from veeva.exceptions import ApiValueError
 from veeva.exceptions import ApiKeyError
 from veeva.exceptions import ApiAttributeError
 from veeva.exceptions import ApiException
+from veeva.client import VaultClient
 
 # import models into sdk package
 from veeva.models.merge_request import MergeRequest
