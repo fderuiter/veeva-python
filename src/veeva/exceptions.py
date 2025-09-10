@@ -17,24 +17,21 @@ class VeevaException(Exception):
 
 
 class ApiTypeError(VeevaException, TypeError):
+    """Raised when a type is invalid."""
     def __init__(self, msg, path_to_item=None, valid_classes=None,
                  key_type=None) -> None:
-        """ Raises an exception for TypeErrors
+        """Initializes an ApiTypeError.
 
         Args:
             msg (str): the exception message
-
-        Keyword Args:
-            path_to_item (list): a list of keys an indices to get to the
-                                 current_item
-                                 None if unset
-            valid_classes (tuple): the primitive classes that current item
-                                   should be an instance of
-                                   None if unset
-            key_type (bool): False if our value is a value in a dict
-                             True if it is a key in a dict
-                             False if our item is an item in a list
-                             None if unset
+            path_to_item (list, optional): a list of keys an indices to get to the
+                current_item. Defaults to None.
+            valid_classes (tuple, optional): the primitive classes that current item
+                should be an instance of. Defaults to None.
+            key_type (bool, optional): False if our value is a value in a dict
+                True if it is a key in a dict
+                False if our item is an item in a list.
+                Defaults to None.
         """
         self.path_to_item = path_to_item
         self.valid_classes = valid_classes
@@ -46,16 +43,15 @@ class ApiTypeError(VeevaException, TypeError):
 
 
 class ApiValueError(VeevaException, ValueError):
+    """Raised when a value is invalid."""
     def __init__(self, msg, path_to_item=None) -> None:
-        """
+        """Initializes an ApiValueError.
+
         Args:
             msg (str): the exception message
-
-        Keyword Args:
-            path_to_item (list) the path to the exception in the
-                received_data dict. None if unset
+            path_to_item (list, optional): the path to the exception in the
+                received_data dict. Defaults to None.
         """
-
         self.path_to_item = path_to_item
         full_msg = msg
         if path_to_item:
@@ -64,16 +60,14 @@ class ApiValueError(VeevaException, ValueError):
 
 
 class ApiAttributeError(VeevaException, AttributeError):
+    """Raised when an attribute reference or assignment fails."""
     def __init__(self, msg, path_to_item=None) -> None:
-        """
-        Raised when an attribute reference or assignment fails.
+        """Initializes an ApiAttributeError.
 
         Args:
             msg (str): the exception message
-
-        Keyword Args:
-            path_to_item (None/list) the path to the exception in the
-                received_data dict
+            path_to_item (list, optional): the path to the exception in the
+                received_data dict. Defaults to None.
         """
         self.path_to_item = path_to_item
         full_msg = msg
@@ -83,14 +77,14 @@ class ApiAttributeError(VeevaException, AttributeError):
 
 
 class ApiKeyError(VeevaException, KeyError):
+    """Raised when a key is not found in a dictionary."""
     def __init__(self, msg, path_to_item=None) -> None:
-        """
+        """Initializes an ApiKeyError.
+
         Args:
             msg (str): the exception message
-
-        Keyword Args:
-            path_to_item (None/list) the path to the exception in the
-                received_data dict
+            path_to_item (list, optional): the path to the exception in the
+                received_data dict. Defaults to None.
         """
         self.path_to_item = path_to_item
         full_msg = msg
@@ -100,8 +94,16 @@ class ApiKeyError(VeevaException, KeyError):
 
 
 class ApiException(VeevaException):
+    """The base exception class for all API exceptions."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes an ApiException.
+
+        Args:
+            status (int, optional): The HTTP status code. Defaults to None.
+            reason (str, optional): The HTTP reason phrase. Defaults to None.
+            http_resp (urllib3.HTTPResponse, optional): The HTTP response. Defaults to None.
+        """
         if http_resp:
             self.status = http_resp.status
             self.reason = http_resp.reason
@@ -126,32 +128,44 @@ class ApiException(VeevaException):
 
         return error_message
 
+
 class BadRequestException(ApiException):
+    """Raised for a 400 Bad Request."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes a BadRequestException."""
         super(BadRequestException, self).__init__(status, reason, http_resp)
 
+
 class NotFoundException(ApiException):
+    """Raised for a 404 Not Found."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes a NotFoundException."""
         super(NotFoundException, self).__init__(status, reason, http_resp)
 
 
 class UnauthorizedException(ApiException):
+    """Raised for a 401 Unauthorized."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes an UnauthorizedException."""
         super(UnauthorizedException, self).__init__(status, reason, http_resp)
 
 
 class ForbiddenException(ApiException):
+    """Raised for a 403 Forbidden."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes a ForbiddenException."""
         super(ForbiddenException, self).__init__(status, reason, http_resp)
 
 
 class ServiceException(ApiException):
+    """Raised for a 5xx server error."""
 
     def __init__(self, status=None, reason=None, http_resp=None) -> None:
+        """Initializes a ServiceException."""
         super(ServiceException, self).__init__(status, reason, http_resp)
 
 

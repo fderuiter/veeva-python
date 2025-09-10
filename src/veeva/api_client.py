@@ -263,8 +263,7 @@ class ApiClient:
         If obj is None, return None.
         If obj is SecretStr, return obj.get_secret_value()
         If obj is str, int, long, float, bool, return directly.
-        If obj is datetime.datetime, datetime.date
-            convert to string in iso8601 format.
+        If obj is datetime.datetime, datetime.date, convert to string in iso8601 format.
         If obj is list, sanitize each element in the list.
         If obj is dict, return the dict.
         If obj is OpenAPI model, return the properties dict.
@@ -382,13 +381,17 @@ class ApiClient:
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :type post_params: dict
+        :param auth_settings: Auth Settings names for the request.
+        :type auth_settings: list
         :param response: Response data type.
-        :param files dict: key -> filename, value -> filepath,
+        :param files: key -> filename, value -> filepath,
             for `multipart/form-data`.
-        :param async_req bool: execute request asynchronously
+        :type files: dict
+        :param async_req: execute request asynchronously
+        :type async_req: bool
         :param _return_http_data_only: response data instead of ApiResponse
                                        object with status code, headers, etc
         :param _preload_content: if False, the ApiResponse.data will
@@ -498,7 +501,8 @@ class ApiClient:
         """Get parameters as list of tuples, formatting collections.
 
         :param params: Parameters as dict or list of two-tuples
-        :param dict collection_formats: Parameter collection formats
+        :param collection_formats: Parameter collection formats
+        :type collection_formats: dict
         :return: Parameters as list of tuples, collections formatted
         """
         new_params = []
@@ -528,7 +532,8 @@ class ApiClient:
         """Get parameters as list of tuples, formatting collections.
 
         :param params: Parameters as dict or list of two-tuples
-        :param dict collection_formats: Parameter collection formats
+        :param collection_formats: Parameter collection formats
+        :type collection_formats: dict
         :return: URL query string (e.g. a=Hello%20World&b=123)
         """
         new_params = []
@@ -624,12 +629,13 @@ class ApiClient:
         :param headers: Header parameters dict to be updated.
         :param queries: Query parameters tuple list to be updated.
         :param auth_settings: Authentication setting identifiers list.
-        :resource_path: A string representation of the HTTP request resource path.
-        :method: A string representation of the HTTP request method.
-        :body: A object representing the body of the HTTP request.
-        The object type is the return value of sanitize_for_serialization().
+        :param resource_path: A string representation of the HTTP request resource path.
+        :param method: A string representation of the HTTP request method.
+        :param body: A object representing the body of the HTTP request.
+                     The object type is the return value of sanitize_for_serialization().
         :param request_auth: if set, the provided settings will
                              override the token in the configuration.
+
         """
         if not auth_settings:
             return

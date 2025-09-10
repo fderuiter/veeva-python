@@ -25,10 +25,10 @@ from typing_extensions import Self
 
 class MergeRequest(BaseModel):
     """
-    MergeRequest
+    A request to merge two records.
     """ # noqa: E501
-    duplicate_record_id: Optional[StrictStr] = Field(default=None, alias="duplicateRecordId")
-    main_record_id: Optional[StrictStr] = Field(default=None, alias="mainRecordId")
+    duplicate_record_id: Optional[StrictStr] = Field(default=None, description="The ID of the duplicate record to merge.", alias="duplicateRecordId")
+    main_record_id: Optional[StrictStr] = Field(default=None, description="The ID of the main record to merge into.", alias="mainRecordId")
     __properties: ClassVar[List[str]] = ["duplicateRecordId", "mainRecordId"]
 
     model_config = ConfigDict(

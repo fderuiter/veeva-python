@@ -19,6 +19,14 @@ class ApiResponse:
                  headers=None,
                  data=None,
                  raw_data=None) -> None:
+        """
+        Initializes the ApiResponse object.
+
+        :param status_code: HTTP status code.
+        :param headers: HTTP headers.
+        :param data: Deserialized data given the data type.
+        :param raw_data: Raw data (HTTP response body).
+        """
         self.status_code = status_code
         self.headers = headers
         self.data = data

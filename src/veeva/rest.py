@@ -30,6 +30,9 @@ SUPPORTED_SOCKS_PROXIES = {"socks5", "socks5h", "socks4", "socks4a"}
 
 
 def is_socks_proxy_url(url):
+    """
+    Returns True if the url is a SOCKS proxy url.
+    """
     if url is None:
         return False
     split_section = url.split("://")
@@ -42,6 +45,11 @@ def is_socks_proxy_url(url):
 class RESTResponse(io.IOBase):
 
     def __init__(self, resp) -> None:
+        """
+        Initializes a RESTResponse.
+
+        :param resp: The urllib3.HTTPResponse object.
+        """
         self.urllib3_response = resp
         self.status = resp.status
         self.reason = resp.reason
@@ -59,6 +67,13 @@ class RESTResponse(io.IOBase):
 class RESTClientObject:
 
     def __init__(self, configuration, pools_size=4, maxsize=None) -> None:
+        """Initializes a RESTClientObject.
+
+        Args:
+            configuration (veeva.Configuration): The configuration object.
+            pools_size (int, optional): The number of connection pools to cache. Defaults to 4.
+            maxsize (int, optional): The maximum number of connections to save in the pool. Defaults to None.
+        """
         # urllib3.PoolManager will pass all kw parameters to connectionpool
         # https://github.com/shazow/urllib3/blob/f9409436f83aeb79fbaf090181cd81b784f1b8ce/urllib3/poolmanager.py#L75  # noqa: E501
         # https://github.com/shazow/urllib3/blob/f9409436f83aeb79fbaf090181cd81b784f1b8ce/urllib3/connectionpool.py#L680  # noqa: E501
@@ -265,6 +280,7 @@ class RESTClientObject:
 
     def get_request(self, url, headers=None, query_params=None, _preload_content=True,
             _request_timeout=None):
+        """Make a GET request."""
         return self.request("GET", url,
                             headers=headers,
                             _preload_content=_preload_content,
@@ -273,6 +289,7 @@ class RESTClientObject:
 
     def head_request(self, url, headers=None, query_params=None, _preload_content=True,
              _request_timeout=None):
+        """Make a HEAD request."""
         return self.request("HEAD", url,
                             headers=headers,
                             _preload_content=_preload_content,
@@ -281,6 +298,7 @@ class RESTClientObject:
 
     def options_request(self, url, headers=None, query_params=None, post_params=None,
                 body=None, _preload_content=True, _request_timeout=None):
+        """Make an OPTIONS request."""
         return self.request("OPTIONS", url,
                             headers=headers,
                             query_params=query_params,
@@ -291,6 +309,7 @@ class RESTClientObject:
 
     def delete_request(self, url, headers=None, query_params=None, body=None,
                _preload_content=True, _request_timeout=None):
+        """Make a DELETE request."""
         return self.request("DELETE", url,
                             headers=headers,
                             query_params=query_params,
@@ -300,6 +319,7 @@ class RESTClientObject:
 
     def post_request(self, url, headers=None, query_params=None, post_params=None,
              body=None, _preload_content=True, _request_timeout=None):
+        """Make a POST request."""
         return self.request("POST", url,
                             headers=headers,
                             query_params=query_params,
@@ -310,6 +330,7 @@ class RESTClientObject:
 
     def put_request(self, url, headers=None, query_params=None, post_params=None,
             body=None, _preload_content=True, _request_timeout=None):
+        """Make a PUT request."""
         return self.request("PUT", url,
                             headers=headers,
                             query_params=query_params,
@@ -320,6 +341,7 @@ class RESTClientObject:
 
     def patch_request(self, url, headers=None, query_params=None, post_params=None,
               body=None, _preload_content=True, _request_timeout=None):
+        """Make a PATCH request."""
         return self.request("PATCH", url,
                             headers=headers,
                             query_params=query_params,

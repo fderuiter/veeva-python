@@ -4,15 +4,17 @@ A Python SDK for the Veeva Vault API, providing a user-friendly interface for co
 
 ## Installation
 
-This project uses Poetry for dependency management. To install the necessary dependencies, run:
+Install the package from PyPI using pip:
 
 ```sh
-poetry install
+pip install veeva-vault-sdk
 ```
 
 ## Getting Started
 
 Here's a quick example of how to authenticate and run a VQL query.
+
+**Note:** You will need to replace placeholder values like `your-vault-domain.veevavault.com`, `your_username`, and `your_password` with your actual Vault credentials.
 
 ```python
 from veeva import VaultClient
@@ -107,3 +109,16 @@ try:
 except Exception as e:
     print(f"\nAn error occurred while updating document: {e}")
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+For development, you can use Poetry to manage dependencies:
+```sh
+poetry install
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

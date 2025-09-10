@@ -65,7 +65,8 @@ class Configuration:
                  server_operation_index=None, server_operation_variables=None,
                  ssl_ca_cert=None,
                  ) -> None:
-        """Constructor
+        """
+        Initializes the Configuration object.
         """
         self._base_path = "http://}/api/v25.1" if host is None else host
         """Default Base url

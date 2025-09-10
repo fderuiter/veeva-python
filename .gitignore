@@ -23,6 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+poetry.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -58,9 +59,17 @@ venv/
 
 # Sphinx documentation
 docs/_build/
+docs/build/
 
 # PyBuilder
 target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# IDEs
+.idea/
+.vscode/
+
+# Example files
+my_document.txt
