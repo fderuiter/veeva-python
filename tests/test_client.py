@@ -1,6 +1,7 @@
 import unittest
 from unittest.mock import MagicMock, patch
 from veeva.client import VaultClient
+from veeva.models.auth_discovery_request import AuthDiscoveryRequest
 
 class TestVaultClient(unittest.TestCase):
 
@@ -69,6 +70,16 @@ class TestVaultClient(unittest.TestCase):
             doc_id=doc_id,
             body='{"status__v": "Approved"}'
         )
+
+    def test_discover_authentication(self):
+        username = "test_user@veeva.com"
+        self.client.discover_authentication(username)
+        self.mock_veeva_api.auth_discovery_post.assert_called_once()
+        call_args = self.mock_veeva_api.auth_discovery_post.call_args
+        self.assertIn('body', call_args[1])
+        body_arg = call_args[1]['body']
+        self.assertIsInstance(body_arg, AuthDiscoveryRequest)
+        self.assertEqual(body_arg.username, username)
 
 if __name__ == '__main__':
     unittest.main()

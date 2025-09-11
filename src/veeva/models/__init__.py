@@ -14,4 +14,5 @@
 
 
 # import models into model package
+from veeva.models.auth_discovery_request import AuthDiscoveryRequest
 from veeva.models.merge_request import MergeRequest

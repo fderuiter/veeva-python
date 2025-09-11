@@ -4,6 +4,7 @@ A user-friendly client for interacting with the Veeva Vault API.
 from veeva.api.veeva_api import VeevaApi
 from veeva.api_client import ApiClient
 from veeva.configuration import Configuration
+from veeva.models.auth_discovery_request import AuthDiscoveryRequest
 
 
 class VaultClient:
@@ -24,6 +25,16 @@ class VaultClient:
         self.api_client = ApiClient(configuration=self.configuration)
         self.veeva_api = VeevaApi(api_client=self.api_client)
         self.session_id = None
+
+    def discover_authentication(self, username: str):
+        """
+        Discovers the available authentication methods for a user.
+
+        :param username: The username to discover authentication methods for.
+        :return: The authentication discovery response.
+        """
+        auth_discovery_request = AuthDiscoveryRequest(username=username)
+        return self.veeva_api.auth_discovery_post(body=auth_discovery_request)
 
     def authenticate(self, username, password):
         """
